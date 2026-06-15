@@ -1,0 +1,672 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+}
+
+
+.h-padding {
+    padding: 0 5%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.header-top {
+    background-color: black;
+    color: white;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    min-width: 90%;
+}
+
+.header-top .head-line {
+    width: 90%;
+    text-align: center;
+    display: inline-block;
+}
+
+.header-top p a {
+    color: aliceblue;
+}
+
+.header-top span {
+    text-align: right;
+    display: inline-block;
+    width: 9%;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 90%;
+}
+
+.menubar {
+    display: none;
+}
+
+.navmenu {
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+
+.cat-list {
+    position: relative;
+}
+
+.cat-list:hover .category {
+    display: block;
+}
+
+.category ul li a:hover {
+    color: gainsboro;
+    text-decoration: underline;
+    display: block;
+}
+
+.menu {
+    min-width: 25%;
+    /* min-width:32%; */
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    /* gap: 50px; */
+    padding-left: 0;
+    justify-content: center;
+}
+
+.menu ul li {
+    min-width: 12%;
+    padding: 0 20px;
+    text-align: center;
+}
+
+
+.category {
+    display: none;
+    position: absolute;
+    top: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.category ul {
+    display: block;
+    width: 20%;
+
+}
+
+.category ul li {
+    padding: 10px;
+    color: rgb(2, 49, 50);
+    border-radius: 12px;
+}
+
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu ul li a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+
+
+.serchicon {
+    display: none;
+}
+
+.icon-menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.search-box {
+    background-color: rgb(226, 224, 224);
+    border-radius: 20px;
+    padding: 10px 15px;
+    position: relative;
+    /* width: 100%; */
+}
+
+.search-box span {
+    position: absolute;
+    left: 15px;
+    top: 12px;
+}
+
+.search-box input {
+    border: none;
+    background-color: rgb(226, 224, 224);
+    width: 90%;
+    padding-left: 22px;
+}
+
+.search-box input:focus {
+    outline: none;
+}
+
+.nav-icons {
+    font-size: 25px;
+    color: black;
+}
+
+.hero {
+    display: flex;
+    background-color: #F2F0F1;
+    /* background-color: #f3e5ec; */
+    align-items: center;
+    justify-content: center
+}
+
+.hero-content {
+    /* min-width: 22%; */
+    max-width: 40%;
+}
+
+.hero-content p {
+    font-size: 17.5px;
+    color: gray;
+    padding: 20px 0;
+}
+
+.hero-content-top h1 {
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 60px;
+}
+
+.hero-content-bottom {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hero-img {
+    overflow: hidden;
+    display: flex;
+}
+
+.hero-img img {
+    overflow: hidden;
+    height: 100%;
+}
+
+.button {
+    background-color: black;
+    border-radius: 40px;
+    color: #ffffff;
+    padding: 10px 30px;
+    border: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.hero-content-bottom p {
+    padding: 0;
+    padding-top: 4px;
+}
+
+.border {
+    border: 1px solid rgb(180, 180, 180);
+}
+
+.company {
+    background-color: black;
+}
+
+.cmp-logo {
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.logo_img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+
+}
+
+.logo_img img {
+    max-width: 90%;
+}
+
+.logo_space {
+    background-color: black;
+}
+.new_arr{
+    max-width: 90%;
+}
+
+.things-section {
+    text-align: center;
+    /* padding: 0 20%; */
+    padding-top: 4%;
+}
+
+.things-section h1 {
+    font-weight: 900;
+}
+
+.things {
+    display: flex;
+    margin-top: 3%;
+    justify-content: space-between;
+}
+
+
+.cloth-img {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.cloth-desc{
+    padding-top: 15px;
+}
+.cloth-desc p{
+    font-weight: 800;
+}
+
+.cloth-desc .mdi,
+.mdi-star {
+    color: #FFC633;
+}
+
+.cloth-desc p,
+span,
+h2 {
+    text-align: left;
+}
+
+.rating {
+    text-align: left;
+    padding-top: 10px;
+}
+
+.real-price p{
+    display: inline-block;
+    font-weight: 100;
+}
+
+.delete-price {
+    color: rgb(166, 166, 166);
+}
+
+.thing-price {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    justify-content: flex-start;
+}
+.thing-price h2{
+    min-width: 70px;
+}
+.discount {
+    background-color: #f7bcbc;
+    color: #FF3333;
+    padding: 7px 20px;
+    border-radius: 20px;
+}
+.all-btn{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    margin-top: 30px;
+}
+
+@media(max-width:1500px) {
+    nav {
+        justify-content: space-between;
+    }
+
+    .hero-content {
+        max-width: 55%;
+    }
+
+    .cmp-logo {
+        justify-content: space-between;
+    }
+
+}
+
+
+@media(max-width:1200px) {
+    nav {
+        min-width: 90%;
+    }
+
+    .logo h1 {
+        padding-right: 30px;
+    }
+
+    .menu ul li {
+        padding: 0 20px 0 0;
+    }
+
+    .icon-menu {
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .hero-content-top h1 {
+        font-size: 49px;
+        line-height: 48px;
+    }
+
+    .hero-content-top p {
+        font-size: 20px;
+    }
+
+    .track {
+        width: 25%;
+    }
+
+    .hero-img {
+        width: 49%;
+    }
+
+    .cmp-logo {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo_img {
+        width: 33%;
+        justify-content: center;
+    }
+
+}
+
+@media(max-width:992px) {
+    .logo {
+        font-size: 10px;
+    }
+
+    .menu ul li {
+        padding: 0 15px 0 0;
+    }
+
+    .icon-menu {
+        gap: 10px;
+    }
+
+    .menu-list-2 {
+        width: 35%;
+    }
+
+    .search-box {
+        width: 60%;
+    }
+
+    .hero-content-top h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .hero-content-top p {
+        font-size: 15px;
+    }
+
+    .track h1 {
+        font-size: 20px;
+    }
+
+    .track p {
+        font-size: 15px;
+    }
+
+    .hero-content-top {
+        padding-top: 10px;
+    }
+
+    .track p {
+        font-size: 15px;
+    }
+
+    .cmp-logo {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .logo_img {
+        width: 30%;
+        justify-content: center;
+    }
+
+}
+
+@media(max-width:768px) {
+    .logo {
+        font-size: 7px;
+    }
+
+    .menu ul {
+        gap: 20px;
+    }
+
+    .menu ul li {
+        padding: 0 10px 0 0;
+    }
+
+    .nav-icons {
+        font-size: 20px;
+    }
+
+    .serchicon {
+        display: block;
+    }
+
+    .search-box {
+        display: none;
+    }
+
+    .icon-menu {
+        justify-content: flex-end;
+        gap: 20px;
+    }
+
+    .menu-list-2 {
+        width: 20%;
+    }
+
+    .hero-content {
+        padding: 10px 0;
+    }
+
+    .hero-content-top h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .track {
+        width: 27%;
+    }
+
+    .track p {
+        font-size: 12px;
+    }
+
+    .hero {
+        align-items: normal;
+    }
+}
+
+@media(max-width:600px) {
+    header {
+        max-width: 98%;
+    }
+
+    .header-top {
+        min-width: 100%;
+    }
+
+    .header-top span {
+        display: none;
+    }
+
+    .header-top .head-line {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .h-padding {
+        padding: 0.5% 2%;
+    }
+
+    .menubar {
+        display: block;
+        font-size: 20px;
+        color: black;
+    }
+
+    nav {
+        min-width: 100%;
+        justify-content: space-between;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        background: white;
+        z-index: 1000;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo .menubar {
+        padding-right: 20px;
+    }
+
+    .checkbtn {
+        display: block;
+        margin-left: 20px;
+        color: #333;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .menu ul li {
+        width: 100%;
+        text-align: left;
+    }
+
+    #check:checked~.menu {
+        display: block;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .category {
+        position: static;
+        width: 100%;
+        background: #ffffff;
+    }
+
+    .category ul {
+        width: 100%;
+    }
+
+    .category ul li {
+        padding: 0px 30px;
+    }
+
+    .cat-list:hover .category {
+        display: block;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-content {
+        min-width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .hero-content-top h1 {
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    .hero-content-bottom {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .track {
+        width: 49%;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .hero-img {
+        width: 100%;
+    }
+
+    .border {
+        margin-top: 20px;
+    }
+
+    .none-boorder {
+        display: none;
+    }
+
+    .cmp-logo {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .logo_img {
+        width: 26%;
+    }
+
+    .logo_img img {
+        width: 100%;
+        overflow: hidden;
+    }
+
+}
