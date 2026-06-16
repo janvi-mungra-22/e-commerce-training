@@ -158,7 +158,6 @@ nav {
     border-radius: 20px;
     padding: 10px 15px;
     position: relative;
-    /* width: 100%; */
 }
 
 .search-box span {
@@ -268,9 +267,6 @@ nav {
     background-color: black;
 }
 
-
-
-
 .things-section {
     text-align: center;
     /* padding: 0 20%; */
@@ -285,6 +281,8 @@ nav {
     display: flex;
     justify-content: space-between;
     margin-top: 3%;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .cloth-img {
@@ -355,30 +353,256 @@ h2 {
     margin-top: 30px;
 }
 
-.dress-style{
+.dress-style {
     background-color: #F0F0F0;
     border-radius: 30px;
+    padding-bottom: 60px;
 }
-.dress-style h1{
+
+.dress-style h1 {
     text-align: center;
     padding: 40px;
     font-weight: 900;
 }
 
-.type-of-dress{
+.type-of-dress {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
+    padding: 0 100px;
 }
-.layout{
+
+.layout {
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: white;
     position: relative;
 }
-.layout p{
+
+.layout1 {
+    flex-grow: 1;
+}
+
+.layout2 {
+    flex-grow: 4;
+}
+
+.layout p {
     font-size: 25px;
     font-weight: 900;
+}
+
+.text-format {
     position: absolute;
-    top: 30;
-    left: 30;
+    top: 50px;
+    left: 50px;
+}
+
+.layout img {
+    width: 65%;
+    translate: 200px;
+}
+
+.happy_cust {
+    padding-top: 60px;
+}
+
+.head-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-line h1 {
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.head-line span {
+    font-size: 30px;
+}
+
+.cust_detail {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 60px;
+
+}
+
+.rev_detail {
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 20.5%;
+}
+
+.rev_detail h2 {
+    padding: 10px 0;
+}
+
+footer {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.footer-top {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 24px;
+    padding: 40px 40px;
+    max-width: 85%;
+    position: absolute;
+    top: 5px;
+}
+
+.head-line-footer {
+    max-width: 40%;
+}
+
+.footer-compo {
+    display: flex;
+    min-width: 30%;
+    justify-content: end;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-compo .search-box {
+    min-width: 60%;
+
+}
+
+.footer-compo .subscribe {
+    min-width: 66.5%;
+}
+
+.subscribe button {
+    background-color: white;
+    color: black;
+    min-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.head-line-footer h2 {
+    color: white;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.main-footer {
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    flex-direction: column;
+    min-width: 90%;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13%;
+    flex-wrap: wrap;
+}
+
+.menu-part {
+    max-width: 30%;
+    padding: 20px 0;
+}
+
+.menu-part h2 {
+    font-weight: 900;
+}
+
+.menu-part p {
+    font-weight: 600;
+}
+
+.menu-part ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-part ul,
+li {
+    padding-top: 15px;
+}
+
+.menu-part ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-logo p {
+    font-weight: 10;
+    color: rgb(65, 65, 65);
+    padding-top: 15px;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons span {
+    display: inline-block;
+    min-width: 23px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.twd {
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid rgb(189, 189, 189);
+    margin-right: 10px;
+}
+
+.bottom-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+
+.payment {
+    display: flex;
+    justify-content: space-between;
+    min-width: 22%;
+}
+
+.author p {
+    padding: 0;
+}
+
+.pmt{
+        display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    min-width: 45px;
+}
+
+.pmt img{
+    height: 80%;
+    width: 80%;
+    object-fit: contain;
 }
 
 @media(max-width:1500px) {
@@ -397,6 +621,18 @@ h2 {
     .cloth {
         max-width: 24.5%;
         height: auto;
+    }
+
+    .type-of-dress {
+        padding: 0px 40px;
+    }
+
+    .rev_detail {
+        max-width: 28%;
+    }
+
+    .head-line-footer h2{
+        font-size: 33px;
     }
 
 }
@@ -485,6 +721,24 @@ h2 {
         font-size: 15px;
     }
 
+    .layout {
+        width: 100%;
+    }
+
+    .layout img {
+        width: 65%;
+        translate: 300px;
+    }
+
+    .rev_detail {
+        max-width: 27%;
+    }
+
+    .head-line-footer h2{
+        font-size: 27px;
+    }
+
+
 }
 
 @media(max-width:992px) {
@@ -547,9 +801,33 @@ h2 {
         height: 50%;
     }
 
-    .thing-price h2{
+    .thing-price h2 {
         font-size: 17px;
         min-width: 0;
+    }
+
+    .layout {
+        height: 300px;
+    }
+
+    .layout img {
+        width: 65%;
+        translate: 220px;
+    }
+
+    .rev_detail {
+        max-width: 42%;
+    }
+
+    .head-line-footer h2{
+        font-size: 21px;
+    }
+
+    .footer-top{
+        padding: 10px 30px;
+    }
+    .subscribe button{
+        margin-top: 10px;
     }
 
 }
@@ -612,9 +890,33 @@ h2 {
     .cloth-img {
         height: 180px;
     }
-    .rating span{
+
+    .rating span {
         font-size: 12px;
     }
+
+    .text-format {
+        top: 30px;
+        left: 30px;
+    }
+
+    .layout {
+        height: 300px;
+    }
+
+    .layout img {
+        width: 65%;
+        translate: 120px;
+    }
+
+    .rev_detail {
+        max-width: 40%;
+    }
+
+    .footer-compo .search-box{
+        display: block;
+    }
+
 
 
 }
@@ -725,7 +1027,7 @@ h2 {
         min-width: 100%;
     }
 
-    .shop{
+    .shop {
         width: 100%;
     }
 
@@ -774,44 +1076,113 @@ h2 {
         width: 100%;
         overflow: hidden;
     }
-    .things{
+
+    .things {
         overflow: auto;
         white-space: nowrap;
-        gap:0;
+        gap: 0;
+        flex-wrap: nowrap;
     }
-    .cloth{
-        max-width:58%;
+
+    .cloth {
+        max-width: 58%;
     }
-    .cloth-img{
+
+    .cloth-img {
         display: block;
         height: auto;
         height: 230px;
         width: 88%;
         display: flex;
     }
-    .thing-price{
+
+    .thing-price {
         justify-content: flex-start;
     }
-    .h-padding{
+
+    .h-padding {
         padding: 0 2%;
     }
-    .cloth-desc p{
+
+    .cloth-desc p {
         font-size: 15px;
         font-weight: 400;
     }
 
-    .thing-price h2{
+    .thing-price h2 {
         font-size: 15px;
     }
-    .discount p{
+
+    .discount p {
         font-size: 10px;
     }
-    .delete-price, .discount{
+
+    .delete-price,
+    .discount {
         margin-left: 10px;
     }
-    .all-btn{
+
+    .all-btn {
         width: 90%;
     }
 
+    .dress-style-section {
+        margin-top: 30px;
+    }
+
+    .text-format {
+        top: 10px;
+        left: 10px;
+    }
+
+    .layout {
+        height: 200px;
+    }
+
+    .type-of-dress {
+        padding: 0 15px;
+    }
+
+    .rev_detail {
+        max-width: 100%;
+    }
+
+    .slider {
+        display: flex;
+        align-items: end;
+    }
+
+    .head-line h1 {
+        font-size: 30px;
+    }
+
+    .happy_cust {
+        padding-top: 10%;
+    }
+    .footer-top{
+        flex-direction: column;
+    }
+
+    .head-line-footer {
+        max-width: 100%;
+    }
+
+    .footer-compo{
+        min-width: 100%;
+    }
+    .footer-compo .search-box {
+        min-width: 95%;
+    }
+
+    .footer-compo .subscribe{
+        min-width: 100%;
+    }
+
+    .footer-logo{
+        min-width: 100%;
+    }
+    .bottom-part{
+        justify-content: center;
+    }
 
 }
