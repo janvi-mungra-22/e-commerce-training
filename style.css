@@ -285,9 +285,20 @@ nav {
     gap: 20px;
 }
 
+.cloth {
+    max-width: 30%;
+}
+
 .cloth-img {
     border-radius: 20px;
     overflow: hidden;
+    height: 298px;
+    display: flex;
+    background-color: #F0EEED;
+}
+
+.cloth-img img {
+    width: 295px;
 }
 
 .cloth-desc {
@@ -299,7 +310,8 @@ nav {
 }
 
 .cloth-desc .mdi,
-.mdi-star {
+.mdi-star,
+.mdi-star-half {
     color: #FFC633;
 }
 
@@ -336,7 +348,7 @@ h2 {
 }
 
 .discount {
-    background-color: #f7bcbc;
+    background-color: rgba(255, 51, 51, 0.1);
     color: #FF3333;
     padding: 3px 8px;
     border-radius: 20px;
@@ -590,8 +602,8 @@ li {
     padding: 0;
 }
 
-.pmt{
-        display: flex;
+.pmt {
+    display: flex;
     background-color: white;
     justify-content: center;
     align-items: center;
@@ -599,11 +611,233 @@ li {
     min-width: 45px;
 }
 
-.pmt img{
+.pmt img {
     height: 80%;
     width: 80%;
     object-fit: contain;
 }
+
+/* 2 page */
+
+.navigation {
+    margin: 20px 0;
+}
+
+.navigation p,
+span {
+    display: inline;
+    color: gray;
+}
+
+.navigation .active {
+    color: black;
+}
+
+.t-shirt-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.t-shirt-images {
+    max-width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.multiple-parts {
+    max-width: 27%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.multiple-parts .active {
+    border: 1px solid gray;
+}
+
+.single-img {
+    overflow: hidden;
+    background-color: #F0EEED;
+    border-radius: 20px;
+    max-width: 87%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 31%
+}
+
+.single-img img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.selected-images {
+    max-width: 73%;
+    background-color: #F0EEED;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.selected-images img {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.t-shirt-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 50%;
+}
+
+.t-shirt-desc h1 {
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.t-shirt-desc span {
+    font-size: 24px;
+
+}
+
+.t-shirt-desc .rating {
+    padding: 0;
+}
+
+.t-shirt-desc .thing-price h2 {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.t-shirt-desc .thing-price .discount p {
+    padding: 0;
+}
+
+.t-shirt-desc p {
+    padding: 15px 0;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.t-shirt-desc .thing-price .discount {
+    padding: 6px 20px;
+}
+
+.t-shirt-desc .thing-price .discount p {
+    color: #FF3333;
+}
+
+.t-shirt-desc .thing-price .delete-price {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.selected-length {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.check-mark {
+    visibility: hidden;
+}
+
+.circle {
+    display: flex;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.bg-black {
+    background-color: #4F4631;
+}
+
+.circle2 {
+    background-color: #314F4A;
+}
+
+.circle3 {
+    background-color: #31344F;
+}
+
+.circle span {
+    color: #F0EEED;
+    font-size: 15px;
+}
+
+.choose-size {
+    background-color: rgb(201, 201, 201);
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 20px;
+    padding: 16px 30px
+}
+
+.choose-size-lg {
+    font-size: 20px;
+    padding: 16px 30px
+}
+
+.handle-cart {
+    background-color: rgb(207, 207, 207);
+    display: flex;
+    justify-content: space-between;
+    min-width: 33%;
+    padding: 3px 10px;
+    border-radius: 50px;
+}
+
+.handle-cart span {
+    color: black;
+    font-size: 35px;
+}
+
+.cartno {
+    display: flex;
+    align-items: center;
+}
+
+.handle-cart .cartno span {
+    font-size: 20px;
+}
+
+
+
+.handle-cart-flow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+
+}
+
+.addtocart {
+    margin-bottom: 0;
+    min-width: 100%;
+    padding: 16px 30px;
+}
+
+.cartbtn {
+    min-width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.rating-text {
+    color: black;
+}
+
+.len-btn {
+    display: flex;
+    gap: 10px;
+}
+
+.hr-line {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-width: 0;
+    height: 2px;
+}
+
+
 
 @media(max-width:1500px) {
     nav {
@@ -619,8 +853,16 @@ li {
     }
 
     .cloth {
-        max-width: 24.5%;
+        max-width: 23.5%;
         height: auto;
+    }
+
+    .cloth-img {
+        height: 280px;
+    }
+
+    .cloth-img img {
+        width: 254px;
     }
 
     .type-of-dress {
@@ -631,8 +873,20 @@ li {
         max-width: 28%;
     }
 
-    .head-line-footer h2{
+    .head-line-footer h2 {
         font-size: 33px;
+    }
+
+    .t-shirt-images {
+        max-width: 51%;
+    }
+
+    .t-shirt-desc {
+        max-width: 46%;
+    }
+
+    .multiple-parts {
+        max-width: 30.5;
     }
 
 }
@@ -734,8 +988,48 @@ li {
         max-width: 27%;
     }
 
-    .head-line-footer h2{
+    .head-line-footer h2 {
         font-size: 27px;
+    }
+
+    .payment {
+        min-width: 29%;
+    }
+
+    .t-shirt-desc h1 {
+        font-size: 26px;
+    }
+
+    .t-shirt-desc p {
+        font-size: 16px;
+    }
+
+    .t-shirt-images {
+        max-width: 53%;
+    }
+
+    .t-shirt-desc {
+        max-width: 44%;
+    }
+
+    .multiple-parts {
+        max-width: 30%;
+    }
+
+    .selected-images {
+        max-width: 70%;
+    }
+
+    .choose-size {
+        padding: 10px 20px;
+    }
+
+    .cloth-img {
+        height: 240px;
+    }
+
+    .cloth-img img {
+        width: 214px;
     }
 
 
@@ -819,18 +1113,73 @@ li {
         max-width: 42%;
     }
 
-    .head-line-footer h2{
+    .head-line-footer h2 {
         font-size: 21px;
     }
 
-    .footer-top{
+    .footer-top {
         padding: 10px 30px;
     }
-    .subscribe button{
+
+    .subscribe button {
         margin-top: 10px;
     }
 
+    .payment {
+        min-width: 36%;
+    }
+
+    .multiple-parts {
+        flex-direction: row;
+        max-width: 100%;
+    }
+
+    .single-img {
+        max-width: 31%;
+    }
+
+    .selected-images {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .t-shirt-section {
+        flex-direction: column;
+
+    }
+
+    .t-shirt-images {
+        flex-direction: column-reverse;
+        min-width: 100%;
+        gap: 25px;
+    }
+
+    .t-shirt-desc {
+        padding-top: 20px;
+        max-width: 100%;
+    }
+
+    .t-shirt-desc h1 {
+        font-size: 40px;
+    }
+
+    .t-shirt-desc p {
+        font-size: 20px;
+    }
+
+     .cloth-img {
+        height: 180px;
+    }
+
+    .cloth-img img {
+        width: 165px;
+    }
 }
+
+
+
+
 
 @media(max-width:768px) {
     .logo {
@@ -913,8 +1262,31 @@ li {
         max-width: 40%;
     }
 
-    .footer-compo .search-box{
+    .footer-compo .search-box {
         display: block;
+    }
+
+    .bottom-part {
+        flex-direction: column;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .payment {
+        min-width: 48%;
+    }
+
+    .author,
+    .payment {
+        margin-bottom: 20px;
+    }
+
+    .pmt {
+        min-width: 50px;
+    }
+
+    .t-shirt-desc .rating span {
+        font-size: 18px;
     }
 
 
@@ -1159,30 +1531,94 @@ li {
     .happy_cust {
         padding-top: 10%;
     }
-    .footer-top{
+
+    .footer-top {
         flex-direction: column;
+        top: 0;
+        margin: 0 15px;
     }
 
     .head-line-footer {
         max-width: 100%;
     }
 
-    .footer-compo{
+    .footer-compo {
         min-width: 100%;
+        margin-top: 20px;
     }
+
     .footer-compo .search-box {
-        min-width: 95%;
+        min-width: 91%;
     }
 
-    .footer-compo .subscribe{
+    .footer-compo .subscribe {
         min-width: 100%;
     }
 
-    .footer-logo{
+    .footer-logo {
         min-width: 100%;
     }
-    .bottom-part{
+
+    .bottom-part {
         justify-content: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 20px;
     }
+
+    .footer-logo p {
+        padding-bottom: 15px;
+    }
+
+    .head-line-footer h2 {
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 34px;
+    }
+
+    .footer-menu {
+        margin-top: 250px;
+    }
+
+    .author,
+    .payment {
+        margin-bottom: 20px;
+    }
+
+    .payment {
+        min-width: 99%;
+    }
+
+    .rating span {
+        font-size: 18px;
+    }
+
+    .t-shirt-desc h1 {
+        font-size: 30px;
+    }
+
+    .t-shirt-desc p {
+        font-size: 15px;
+    }
+
+    .circle {
+        padding: 11px;
+    }
+
+    .choose-size {
+        padding: 13px;
+        font-size: 13px;
+    }
+
+    .len-btn {
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    .cloth-img img {
+        width: 198px;
+    }
+        .cloth-img{
+            height: 200px;
+        }
 
 }
