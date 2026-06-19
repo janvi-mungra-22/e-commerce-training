@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="top-c">
+        <div class="container">
+            <header>
+                <div class="header-top h-padding">
+                    <p class="head-line">
+                        Sign up and 20% off your first order. <a href="">Sign Up Now</a>
+                    </p>
+                    <span class="mdi mdi-close"></span>
+                </div>
+                <nav class="navmenu h-padding">
+                    <input type="checkbox" id="check">
+                    <div class="logo">
+
+                        <label for="check" class="checkbtn">
+                            <span class="mdi mdi-menu menubar"></span>
+                        </label>
+                        <h1>SHOP.CO</h1>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li class="cat-list">
+                                <a href="">Shop</a>
+                                <span class="mdi mdi-chevron-down"></span>
+                                <div class="category">
+                                    <ul>
+                                        <li><a href="prodect_detail.html">Men</a></li>
+                                        <li><a href="">Women</a></li>
+                                        <li><a href="">Children</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="category.html">On sale</a></li>
+                            <li>
+                                <a href="cart.html">New Arrivals</a>
+                            </li>
+                            <li><a href="">Brands</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-list-2">
+                        <div class="icon-menu">
+
+                            <div class="search-box">
+                                <span class="mdi mdi-magnify"></span>
+                                <input type="text" placeholder="Search for products">
+                            </div>
+                            <span class="mdi mdi-magnify serchicon nav-icons"></span>
+                            <a href=""><span class="mdi mdi-cart-outline nav-icons"></a></span>
+                            <a href=""><span class="mdi mdi-account-circle-outline nav-icons"></a></span>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <hr class="hr-line">
+
+            <div class="navigation h-padding">
+                <p>Home</p>
+                <span class="mdi mdi-chevron-right"></span>
+                <p class="active">Causal</p>
+            </div>
+
+            <div class="casual-section h-padding">
+                <div class="filter">
+                    <div class="filter-area">
+                        <div class="filter-row-first">
+                            <h2>Filters</h2>
+                            <span class="mdi mdi-filter-variant-plus"></span>
+                        </div>
+                        <hr class="cat-hr-line">
+                        <div class="filter-row-second">
+                            <div class="filter-row-second-item">
+                                <p class="color-gray">T-shirts</p>
+                                <span class="mdi mdi-chevron-right"></span>
+                            </div>
+                            <div class="filter-row-second-item">
+                                <p class="color-gray">Shorts</p>
+                                <span class="mdi mdi-chevron-right"></span>
+                            </div>
+                            <div class="filter-row-second-item">
+                                <p class="color-gray">Shirts</p>
+                                <span class="mdi mdi-chevron-right"></span>
+                            </div>
+                            <div class="filter-row-second-item">
+                                <p class="color-gray">Hoodie</p>
+                                <span class="mdi mdi-chevron-right"></span>
+                            </div>
+                            <div class="filter-row-second-item">
+                                <p class="color-gray">Jeans</p>
+                                <span class="mdi mdi-chevron-right"></span>
+                            </div>
+                        </div>
+                        <hr class="cat-hr-line">
+                        <div class="filter-row-third">
+                            <div class="filter-row-second-item">
+                                <h2>Price</h2>
+                                <span class="mdi mdi-chevron-up"></span>
+                            </div>
+                            <input type="range" name="Price" min="100" max="1000" class="slider" id="myrange" />
+                            <p>Value: <span id="demo"></span></p>
+                        </div>
+                        <hr class="cat-hr-line">
+                        <div class="filter-row-forth">
+                            <div class="filter-row-second-item">
+                                <h2>Colors</h2>
+                                <span class="mdi mdi-chevron-up"></span>
+                            </div>
+                            <div class="all-circle">
+                                <div class="circle green">
+                                    <span class="mdi mdi-check check-mark"></span>
+                                </div>
+                                <div class="circle red">
+                                    <span class="mdi mdi-check check-mark"></span>
+                                </div>
+                                <div class="circle yellow">
+                                    <span class="mdi mdi-check check-mark"></span>
+                                </div>
+                                <div class="circle orange">
+                                    <span class="mdi mdi-check check-mark"></span>
+                                </div>
+                                <div class="circle nav-blue">
+                                    <span class="mdi mdi-check check-mark"></span>
+                                </div>
+                                <div class="circle blue">
+                                    <span class="mdi mdi-check"></span>
+                                </div>
+                                <div class="circle violte">
+                                    <span class="mdi mdi-check check-mark"></span>
+                                </div>
+                                <div class="circle pink">
+                                    <span class="mdi mdi-check check-mark"></span>
+                                </div>
+                                <div class="circle white">
+                                    <span class="mdi mdi-check check-mark"></span>
+                                </div>
+                                <div class="circle black">
+                                    <span class="mdi mdi-check check-mark"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="cat-hr-line">
+                        <div class="filter-row-fifth">
+                            <div class="filter-row-second-item">
+                                <h2>Size</h2>
+                                <span class="mdi mdi-chevron-up"></span>
+                            </div>
+                            <div class="len-btn-filter">
+                                <button type="button" class="button choose-size-filter">XX-Small</button>
+                                <button type="button" class="button choose-size-filter">X-Small</button>
+                                <button type="button" class="button choose-size-filter">Small</button>
+                                <button type="button" class="button choose-size-filter">Medium</button>
+                                <button type="button" class="button choose-size-filter">Large</button>
+                                <button type="button" class="button choose-size-filter">X-Large</button>
+                                <button type="button" class="button choose-size-filter">XX-Large</button>
+                                <button type="button" class="button choose-size-filter">3X-Large</button>
+                                <button type="button" class="button choose-size-filter">4X-Large</button>
+                            </div>
+                        </div>
+                        <hr class="cat-hr-line">
+                        <div class="filter-row-sixth">
+                            <div class="filter-row-second-item">
+                                <h2>Dress Style</h2>
+                                <span class="mdi mdi-chevron-up"></span>
+                            </div>
+                            <div>
+                                <div class="filter-row-second-item">
+                                    <p>T-shirts</p>
+                                    <span class="mdi mdi-chevron-right"></span>
+                                </div>
+                                <div class="filter-row-second-item">
+                                    <p>Shorts</p>
+                                    <span class="mdi mdi-chevron-right"></span>
+                                </div>
+                                <div class="filter-row-second-item">
+                                    <p>Shirts</p>
+                                    <span class="mdi mdi-chevron-right"></span>
+                                </div>
+                                <div class="filter-row-second-item">
+                                    <p>Hoodie</p>
+                                    <span class="mdi mdi-chevron-right"></span>
+                                </div>
+                                <div class="filter-row-second-item">
+                                    <p>Jeans</p>
+                                    <span class="mdi mdi-chevron-right"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="button apply-filter">Apply Filter</button>
+                    </div>
+                </div>
+
+                <div class="filter-product-section">
+                    <div class="filter-product-headline">
+                        <h1>Casual</h1>
+                        <div class="filter-product-headline-part2">
+                            <p class="color-gray">Showing 1-10 of 100 Products</p>
+                            <div class="sorting">
+                                <p class="color-gray">Sort by:
+                                </p>
+                                <p class="select-filter">Most Popular<span
+                                        class="mdi mdi-chevron-down color-black"></span>
+                                </p>
+                            </div>
+                            <div class="mobile-filter">
+                                <span class="mdi mdi-filter-variant-plus color-black"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="things">
+                        <div class="cloth">
+                            <div class="cloth-img">
+                                <img src="images/t1.png">
+                            </div>
+                            <div class="cloth-desc">
+                                <p>T-shirt with Tape Details</p>
+                                <div class="rating">
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star-half"></span>
+                                    <span>4.5/5</span>
+                                </div>
+                                <div class="thing-price">
+                                    <h2 class="real-price">$120</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cloth">
+                            <div class="cloth-img">
+                                <img src="images/shirt1.png">
+                            </div>
+                            <div class="cloth-desc">
+                                <p>Skinny Fit Jeans</p>
+                                <div class="rating">
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star-half"></span>
+                                    <span>3.5/5</span>
+                                </div>
+                                <div class="thing-price">
+                                    <h2 class="real-price">$240</h2>
+                                    <h2 class="real-price delete-price"><del>$260</del></h2>
+                                    <div class="discount real-price">
+                                        <p class="real-price">-20%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cloth">
+                            <div class="cloth-img">
+                                <img src="images/cloth3.png">
+                            </div>
+                            <div class="cloth-desc">
+                                <p>Checkered Shirt</p>
+                                <div class="rating">
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star-half"></span>
+                                    <span>4.5/5</span>
+                                </div>
+                                <div class="thing-price">
+                                    <h2 class="real-price">$180</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cloth">
+                            <div class="cloth-img">
+                                <img src="images/shirt2.png">
+                            </div>
+                            <div class="cloth-desc">
+                                <p>Checkered Shirt</p>
+                                <div class="rating">
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star-half"></span>
+                                    <span>4.5/5</span>
+                                </div>
+                                <div class="thing-price">
+                                    <h2 class="real-price">$180</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cloth">
+                            <div class="cloth-img">
+                                <img src="images/cloth4.png">
+                            </div>
+                            <div class="cloth-desc">
+                                <p>Sleeve Striped T-shirt</p>
+                                <div class="rating">
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star-half"></span>
+                                    <span>4.5/5</span>
+                                </div>
+                                <div class="thing-price">
+                                    <h2 class="real-price">$130</h2>
+                                    <h2 class="real-price delete-price"><del>$160</del></h2>
+                                    <div class="discount real-price">
+                                        <p class="real-price">-30%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cloth">
+                            <div class="cloth-img">
+                                <img src="images/t1.png">
+                            </div>
+                            <div class="cloth-desc">
+                                <p>T-shirt with Tape Details</p>
+                                <div class="rating">
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star-half"></span>
+                                    <span>4.5/5</span>
+                                </div>
+                                <div class="thing-price">
+                                    <h2 class="real-price">$120</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cloth">
+                            <div class="cloth-img">
+                                <img src="images/shirt1.png">
+                            </div>
+                            <div class="cloth-desc">
+                                <p>Skinny Fit Jeans</p>
+                                <div class="rating">
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star-half"></span>
+                                    <span>3.5/5</span>
+                                </div>
+                                <div class="thing-price">
+                                    <h2 class="real-price">$240</h2>
+                                    <h2 class="real-price delete-price"><del>$260</del></h2>
+                                    <div class="discount real-price">
+                                        <p class="real-price">-20%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cloth">
+                            <div class="cloth-img">
+                                <img src="images/cloth3.png">
+                            </div>
+                            <div class="cloth-desc">
+                                <p>Checkered Shirt</p>
+                                <div class="rating">
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star-half"></span>
+                                    <span>4.5/5</span>
+                                </div>
+                                <div class="thing-price">
+                                    <h2 class="real-price">$180</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cloth">
+                            <div class="cloth-img">
+                                <img src="images/shirt2.png">
+                            </div>
+                            <div class="cloth-desc">
+                                <p>Checkered Shirt</p>
+                                <div class="rating">
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star"></span>
+                                    <span class="mdi mdi-star-half"></span>
+                                    <span>4.5/5</span>
+                                </div>
+                                <div class="thing-price">
+                                    <h2 class="real-price">$180</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer-top">
+                    <div class="head-line-footer">
+                        <h2>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+                    </div>
+                    <div class="footer-compo">
+                        <div class="search-box">
+                            <span class="mdi mdi-email-outline"></span>
+                            <input type="text" placeholder="Enter your email address">
+                        </div>
+                        <div class="subscribe">
+                            <button type="button" class="button subscribe-btn">Subscribe to Newsletter</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-footer h-padding">
+                    <div class="footer-menu">
+                        <div class="menu-part footer-logo">
+                            <h2>SHOP.CO</h2>
+                            <p>We have clothes that suits your style and which you’re proud to wear. From women to men.
+                            </p>
+                            <div class="social-icons">
+                                <div class="twd">
+                                    <span class="mdi mdi-twitter color-black"></span>
+                                </div>
+                                <div class="twd">
+                                    <span class="mdi mdi-facebook color-black"></span>
+                                </div>
+                                <div class="twd">
+                                    <span class="mdi mdi-instagram color-black"></span>
+                                </div>
+                                <div class="twd">
+                                    <span class="mdi mdi-github color-black"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-part">
+                            <p>
+                                COMPANY
+                            </p>
+                            <ul>
+                                <li><a href="#" class="color-gray">About</a></li>
+                                <li><a href="#" class="color-gray">Features</a></li>
+                                <li><a href="#" class="color-gray">Works</a></li>
+                                <li><a href="#" class="color-gray">Career</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-part">
+                            <p>
+                                HELP
+                            </p>
+                            <ul>
+                                <li><a href="#" class="color-gray">About</a></li>
+                                <li><a href="#" class="color-gray">Features</a></li>
+                                <li><a href="#" class="color-gray">Works</a></li>
+                                <li><a href="#" class="color-gray">Career</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-part">
+                            <p>
+                                FAQ
+                            </p>
+                            <ul>
+                                <li><a href="#" class="color-gray">About</a></li>
+                                <li><a href="#" class="color-gray">Features</a></li>
+                                <li><a href="#" class="color-gray">Works</a></li>
+                                <li><a href="#" class="color-gray">Career</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-part">
+                            <p>
+                                RESOURES
+                            </p>
+                            <ul>
+                                <li><a href="#" class="color-gray">About</a></li>
+                                <li><a href="#" class="color-gray">Features</a></li>
+                                <li><a href="#" class="color-gray">Works</a></li>
+                                <li><a href="#" class="color-gray">Career</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="bottom-part">
+                        <div class="author">
+                            <p>Shop.co © 2000-2023, All rights reserved</p>
+                        </div>
+                        <div class="payment">
+                            <div class="pmt">
+                                <img src="images/Visa.png">
+                            </div>
+                            <div class="pmt">
+                                <img src="images/Mastercard.png">
+                            </div>
+                            <div class="pmt">
+                                <img src="images/Paypal.png">
+                            </div>
+                            <div class="pmt">
+                                <img src="images/applepay.png">
+                            </div>
+                            <div class="pmt">
+                                <img src="images/GPay.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        var slider = document.getElementById("myrange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+
+        slider.oninput = function () {
+            output.innerHTML = this.value;
+        }
+    </script>
+</body>
+
+</html>
