@@ -1,3 +1,8 @@
+
+@import "tailwindcss";
+@theme {
+  --color-white: white;
+}
 @font-face {
     font-family: Satoshi-Regular;
     src: url(fonts/Satoshi-Regular.otf);
@@ -57,8 +62,9 @@
 
 
 * {
-    font-family: Satoshi-Regular;
-    margin: 0px;
+    /* font-family: Satoshi-Regular; */
+    /* margin: 0px; */
+    box-sizing: border-box;
 }
 
 .color-black {
@@ -69,10 +75,6 @@
     color: rgba(0, 0, 0, 0.6);
 }
 
-.top-c {
-    display: flex;
-    justify-content: center;
-}
 
 .container {
     max-width: 1500px;
@@ -86,15 +88,15 @@
     padding: 0 5%;
 }
 
-header {
+/* header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     background-color: #ffffff;
     z-index: 2;
     position: sticky;
-    top: 0;
-}
+    top: 0;     
+} */
 
 
 .header-top {
@@ -311,9 +313,9 @@ nav {
     padding-top: 4px;
 }
 
-.border {
+/* .border {
     border: 1px solid rgb(180, 180, 180);
-}
+} */
 
 .company {
     background-color: black;
@@ -717,10 +719,10 @@ input:focus {
     padding: 0;
 }
 
-.menu-part ul,
+/* .menu-part ul,
 li {
     padding-top: 15px;
-}
+} */
 
 .menu-part ul li a {
     text-decoration: none;
@@ -798,11 +800,11 @@ li {
     margin: 20px 0;
 }
 
-.navigation p,
+/* .navigation p,
 span {
     display: inline;
     color: gray;
-}
+} */
 
 .navigation .active {
     color: black;
@@ -923,9 +925,9 @@ span {
     padding: 8px;
 }
 
-.bg-black {
+/* .bg-black {
     background-color: #4F4631;
-}
+} */
 
 .circle2 {
     background-color: #314F4A;
@@ -2096,9 +2098,6 @@ span {
 
     }
 
-    .top-c {
-        display: block;
-    }
 
     .cloth-desc {
         max-width: 92%;
@@ -2650,9 +2649,9 @@ span {
 
 
 @media(max-width:600px) {
-    header {
+    /* header {
         max-width: 98%;
-    }
+    } */
 
     .header-top {
         min-width: 100%;
@@ -2783,9 +2782,9 @@ span {
         width: 100%;
     }
 
-    .border {
+    /* .border {
         margin-top: 20px;
-    }
+    } */
 
     .none-boorder {
         display: none;
@@ -3105,10 +3104,10 @@ span {
         flex-wrap: wrap;
     }
 
-    .menu-part ul,
+    /* .menu-part ul,
     li {
         padding-top: 10px;
-    }
+    } */
 
     .f-and-n p,
     .f-and-n span,

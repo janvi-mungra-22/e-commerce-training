@@ -7,339 +7,368 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
-    <div class="top-c">
-        <div class="container">
-            <header>
-                <div class="header-top h-padding">
-                    <p class="head-line">
-                        Sign up and 20% off your first order. <a href="">Sign Up Now</a>
+    <div class="xl:flex justify-center">
+        <div class="max-w-7xl flex flex-col justify-center">
+            <header class="flex justify-center flex-wrap sticky bg-white z-99 -top-px">
+                <div class="bg-black text-white min-w-full flex justify-between py-2 md:px-15 px-2">
+                    <p class="w-full inline-block text-center text-xs sm:w-[90%] sm:text-sm">
+                        Sign up and 20% off your first order. <a href="" class="underline">Sign Up Now</a>
                     </p>
-                    <span class="mdi mdi-close"></span>
+                    <span class="mdi mdi-close hidden sm:inline"></span>
                 </div>
-                <nav class="navmenu h-padding">
-                    <input type="checkbox" id="check">
-                    <div class="logo">
-
-                        <label for="check" class="checkbtn">
-                            <span class="mdi mdi-menu menubar"></span>
+                <nav class="w-full flex justify-between items-center py-2 md:px-15 sm:relative px-2">
+                    <input type="checkbox" id="check" class="peer hidden">
+                    <div class="flex items-center w-[50%] justify-start sm:w-[28%]">
+                        <label for="check">
+                            <span class="mdi mdi-menu text-[25.2px] text-black md:hidden"></span>
                         </label>
-                        <h1>SHOP.CO</h1>
+                        <h1 class="font-[integralcf-bold] text-[25.2px] pl-2.5 sm:text-[32px]">SHOP.CO</h1>
                     </div>
-                    <div class="menu">
-                        <ul>
-                            <li class="cat-list">
+                    <div
+                        class="min-w-full hidden peer-checked:block top-20 absolute bg-white left-0 md:block md:min-w-[60%] md:static">
+                        <ul class="w-full pl-5 md:flex md:justify-center md:gap-[25px] md:pl-0 md:items-center">
+                            <li class="w-full bg-white group relative pb-[15px] md:inline md:w-auto md:pb-0">
                                 <a href="">Shop</a>
                                 <span class="mdi mdi-chevron-down"></span>
-                                <div class="category">
-                                    <ul>
-                                        <li><a href="prodect_detail.html">Men</a></li>
-                                        <li><a href="">Women</a></li>
-                                        <li><a href="">Children</a></li>
+                                <div
+                                    class="hidden top-5 group-hover:block group-hover:top-0 group-hover:static md:top-2.5">
+                                    <ul class="w-[20%] md:block md:w-full md:bg-white md:pl-5 md:pr-5 md:absolute">
+                                        <li class="pl-5 pt-[15px] md:pt-5 md:w-20 md:bg-white md:pl-0"><a
+                                                href="prodect_detail.html">Men</a></li>
+                                        <li class="pl-5 pt-[15px] md:pt-5 md:w-20 md:bg-white md:pl-0"><a
+                                                href="">Women</a></li>
+                                        <li class="pl-5 pt-[15px] md:pt-5 md:w-20 md:bg-white md:pl-0"><a
+                                                href="">Children</a></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="category.html">On sale</a></li>
-                            <li>
+                            <li class="pb-[15px] md:inline md:pb-0"><a href="category.html">On sale</a></li>
+                            <li class="pb-[15px] md:inline md:pb-0">
                                 <a href="">New Arrivals</a>
                             </li>
-                            <li><a href="">Brands</a></li>
+                            <li class="pb-[15px] md:inline md:pb-0"><a href="">Brands</a></li>
                         </ul>
                     </div>
 
-                    <div class="menu-list-2">
-                        <div class="icon-menu">
-
-                            <div class="search-box">
-                                <span class="mdi mdi-magnify"></span>
-                                <input type="text" placeholder="Search for products">
+                    <div class="w-[50%] sm:w-[40%]">
+                        <div class="flex justify-end items-center gap-x-2.5">
+                            <div class="hidden lg:block sm:bg-[#F0F0F0] p-2 rounded-[50px] lg:relative">
+                                <span class="mdi mdi-magnify lg:absolute lg:left-5"></span>
+                                <input type="text" placeholder="Search for products" class="lg:pl-[35px]">
                             </div>
-                            <span class="mdi mdi-magnify serchicon nav-icons"></span>
-                            <a href="cart.html"><span class="mdi mdi-cart-outline nav-icons"></a></span>
-                            <a href=""><span class="mdi mdi-account-circle-outline nav-icons"></a></span>
+                            <span class="mdi mdi-magnify text-[25.2px] lg:hidden"></span>
+                            <a href="cart.html"><span class="mdi mdi-cart-outline text-[25.2px]"></a></span>
+                            <a href=""><span class="mdi mdi-account-circle-outline text-[25.2px]"></a></span>
                         </div>
                     </div>
                 </nav>
             </header>
 
-            <div class="hero h-padding">
-                <div class="hero-content">
-                    <div class="hero-content-top">
-                        <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
-                        <p>Browse through our diverse range of meticulously crafted garments, designed to bring out your
+            <div class=" flex flex-col pt-5 md:px-15 bg-[#F2F0F1] px-2 sm:flex-row sm:items-[normal]">
+                <div class="flex flex-col gap-5 sm:max-w-[60%] md:justify-center">
+                    <div class="flex flex-col gap-5">
+                        <p
+                            class="font-[integralcf-bold] leading-[34px] text-[36px] sm:text-[64ox] lg:text-[64px] lg:leading-16">
+                            FIND CLOTHES THAT MATCHES YOUR STYLE</p>
+                        <p class="font-[Satoshi-Regular] leading-5 text-[14px] text-[rgba(0,0,0,0.6)] md:text-[16px]">
+                            Browse through our diverse range of meticulously crafted garments, designed to bring out
+                            your
                             individuality and cater to your sense of style.</p>
-                        <button type="button" class="button shop">Shop Now</button>
+                        <button type="button"
+                            class="bg-black text-white p-4 rounded-[50px] text-[16px] font-[Satoshi-Medium] sm:w-[200px]">Shop
+                            Now</button>
                     </div>
-                    <div class="hero-content-bottom">
-                        <div class="track">
-                            <h1>200+</h1>
-                            <p>International Brands</p>
+                    <div class="flex justify-center flex-wrap md:flex-nowrap md:justify-start">
+                        <div class="w-[50%] text-center md:w-[33%] md:text-left sm:p-0.5">
+                            <h1 class="font-[Satoshi-Bold] text-[24px] xl:text-[40px]">200<span
+                                    class="mdi mdi-plus"></span></h1>
+                            <p class="font-[Satoshi-Regular] text-[12px] text-[rgba(0,0,0,0.6)] md:text-[16px]">
+                                International Brands</p>
                         </div>
-                        <div class="border"></div>
-                        <div class="track">
-                            <h1>2,000+</h1>
-                            <p>High-Quality Products</p>
+
+                        <div
+                            class="w-[50%] text-center border-l border-[rgba(0,0,0,0.1)] md:w-[33%] md:text-left sm:p-0.5 md:border-0">
+                            <h1 class="font-[Satoshi-Bold] text-[24px] xl:text-[40px]">2,000<span
+                                    class="mdi mdi-plus"></span></h1>
+                            <p class="font-[Satoshi-Regular text-[12px] text-[rgba(0,0,0,0.6)] md:text-[16px]">
+                                High-Quality Products</p>
                         </div>
-                        <div class="border none-boorder"></div>
-                        <div class="track">
-                            <h1>30,000+</h1>
-                            <p>Happy Customers</p>
+
+                        <div class="w-[50%] text-center pt-3 md:w-[33%] md:text-left sm:p-0.5">
+                            <h1 class="font-[Satoshi-Bold] text-[24px] xl:text-[40px]">30,000<span
+                                    class="mdi mdi-plus"></span></h1>
+                            <p class="font-[Satoshi-Regular] text-[12px] text-[rgba(0,0,0,0.6)] md:text-[16px]">Happy
+                                Customers</p>
                         </div>
                     </div>
                 </div>
-                <div class="hero-img">
-                    <img src="images/hero.png" alt="hero-image">
+                <div class="sm:flex sm:w-[49%] sm:overflow-hidden sm:min-h-full ]">
+                    <img src="images/hero.png" alt="hero-image" class="overflow-hidden sm:min-h-full ">
                 </div>
             </div>
 
-            <div>
-                <div class="company">
-                    <div class="cmp-logo h-padding">
-                        <div class="logo_img"><img src="images/logo1.png" alt="logo1"></div>
-                        <div class="logo_img"><img src="images/logo2.png" alt="logo2"></div>
-                        <div class="logo_img"><img src="images/logo3.png" alt="logo3"></div>
-                        <div class="logo_img"><img src="images/logo4.png" alt="logo4"></div>
-                        <div class="logo_img"><img src="images/logo5.png" alt="logo5"></div>
-                    </div>
-                </div>
-                <div class="things-section">
-                    <h1>NEW ARRIVALS</h1>
-                    <div class="new_arr h-padding">
-                        <div class="things">
-                            <div class="cloth">
-                                <div class="cloth-img">
-                                    <img src="images/t1.png">
-                                </div>
-                                <div class="cloth-desc">
-                                    <p>T-shirt with Tape Details</p>
-                                    <div class="rating">
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star-half"></span>
-                                        <span>4.5/5</span>
-                                    </div>
-                                    <div class="thing-price">
-                                        <h2 class="real-price">$120</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cloth">
-                                <div class="cloth-img">
-                                    <img src="images/bg1.png">
-                                </div>
-                                <div class="cloth-desc">
-                                    <p>Skinny Fit Jeans</p>
-                                    <div class="rating">
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star-half"></span>
-                                        <span>3.5/5</span>
-                                    </div>
-                                    <div class="thing-price">
-                                        <h2 class="real-price">$240</h2>
-                                        <h2 class="real-price delete-price"><del>$260</del></h2>
-                                        <div class="discount real-price">
-                                            <p class="real-price">-20%</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cloth">
-                                <div class="cloth-img">
-                                    <img src="images/cloth3.png">
-                                </div>
-                                <div class="cloth-desc">
-                                    <p>Checkered Shirt</p>
-                                    <div class="rating">
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star-half"></span>
-                                        <span>4.5/5</span>
-                                    </div>
-                                    <div class="thing-price">
-                                        <h2 class="real-price">$180</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cloth">
-                                <div class="cloth-img">
-                                    <img src="images/shirt2.png">
-                                </div>
-                                <div class="cloth-desc">
-                                    <p>Checkered Shirt</p>
-                                    <div class="rating">
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star-half"></span>
-                                        <span>4.5/5</span>
-                                    </div>
-                                    <div class="thing-price">
-                                        <h2 class="real-price">$180</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cloth">
-                                <div class="cloth-img">
-                                    <img src="images/cloth4.png">
-                                </div>
-                                <div class="cloth-desc">
-                                    <p>Sleeve Striped T-shirt</p>
-                                    <div class="rating">
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star-half"></span>
-                                        <span>4.5/5</span>
-                                    </div>
-                                    <div class="thing-price">
-                                        <h2 class="real-price">$130</h2>
-                                        <h2 class="real-price delete-price"><del>$160</del></h2>
-                                        <div class="discount real-price">
-                                            <p class="real-price">-30%</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button type="button" class="button all-btn">View All</button>
-                </div>
 
-                <hr>
-
-                <div class="things-section">
-                    <h1>TOP SELLING</h1>
-                    <div class="new_arr h-padding">
-                        <div class="things">
-                            <div class="cloth">
-                                <div class="cloth-img">
-                                    <img src="images/cloth5.png">
-                                </div>
-                                <div class="cloth-desc">
-                                    <p>Vertical Striped Shirt</p>
-                                    <div class="rating">
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star"></span>
-                                        <span>5.0/5</span>
-                                    </div>
-                                    <div class="thing-price">
-                                        <h2 class="real-price">$212</h2>
-                                        <h2 class="real-price delete-price"><del>$232</del></h2>
-                                        <div class="discount real-price">
-                                            <p class="real-price">-20%</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cloth">
-                                <div class="cloth-img">
-                                    <img src="images/cloth6.png">
-                                </div>
-                                <div class="cloth-desc">
-                                    <p>Courage Graphic T-shirt</p>
-                                    <div class="rating">
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star"></span>
-                                        <span>4.0/5</span>
-                                    </div>
-                                    <div class="thing-price">
-                                        <h2 class="real-price">$145</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cloth">
-                                <div class="cloth-img">
-                                    <img src="images/cloth7.png">
-                                </div>
-                                <div class="cloth-desc">
-                                    <p>Loose Fit Bermuda Shorts</p>
-                                    <div class="rating">
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star"></span>
-                                        <span>3.0/5</span>
-                                    </div>
-                                    <div class="thing-price">
-                                        <h2 class="real-price">$80</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cloth">
-                                <div class="cloth-img">
-                                    <img src="images/cloth8.png">
-                                </div>
-                                <div class="cloth-desc">
-                                    <p>Faded Skinny Jeans</p>
-                                    <div class="rating">
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star-half"></span>
-                                        <span>4.5/5</span>
-                                    </div>
-                                    <div class="thing-price">
-                                        <h2 class="real-price">$210</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button type="button" class="button all-btn">View All</button>
-                </div>
-
+            <div class="flex flex-wrap justify-around px-2 lg:flex-nowrap bg-black md:px-15 lg:py-5 lg:justify-between">
+                <div class="flex w-[30%] py-5 lg:py-2.5 justify-center lg:justify-start"><img src="images/logo1.png" alt="logo1"
+                        class="lg:max-w-[50%]"></div>
+                <div class="flex w-[30%] py-5 lg:py-2.5 justify-center lg:justify-start"><img src="images/logo2.png" alt="logo2"
+                        class="lg:max-w-[50%]"></div>
+                <div class="flex w-[30%] py-5 lg:py-2.5 justify-center lg:justify-start"><img src="images/logo3.png" alt="logo3"
+                        class="lg:max-w-[50%]"></div>
+                <div class="flex w-[30%] py-5 lg:py-2.5 justify-center lg:justify-start"><img src="images/logo4.png" alt="logo4"
+                        class="lg:max-w-[50%]"></div>
+                <div class="flex w-[30%] py-5 lg:py-2.5 justify-center lg:justify-start"><img src="images/logo5.png" alt="logo5"
+                        class="lg:max-w-[50%]"></div>
             </div>
 
-            <div class="dress-style-section h-padding">
+            <!-- things section part 1-->
 
-                <div class="dress-style">
-                    <h1>BROWSE BY DRESS STYLE</h1>
-                    <div class="type-of-dress">
-                        <div class="layout layout1">
-                            <div class="text-format">
-                                <p>Casual</p>
+            <div class="px-2 pt-[50px] md:px-15 sm:pt-[72px]">
+                <div class="border-b border-[rgba(0,0,0,0.1)]">
+                    <p
+                        class="font-[integralcf-bold] text-[32px] text-black text-center md:text-[48px] pb-8 sm:pb-[55px]">
+                        NEW
+                        ARRIVALS</p>
+                    <div
+                        class="flex overflow-auto whitespace-nowrap gap-5 mb-6 sm:flex-wrap justify-between lg:gap-2.5 sm:mb-9">
+                        <div class="w-[198px] lg:w-[280px]">
+                            <div class="h-[200px] bg-[#F0EEED] flex items-center rounded-2xl w-full lg:h-[298px]">
+                                <img src="images/t1.png" class="min-w-full max-w-none">
                             </div>
-                            <div class="img-format">
-                                <img src="images/bg1.png">
+                            <div class="">
+                                <p class="font-[Satoshi-Bold] text-[16px] lg:text-[20px]">T-shirt with Tape Details</p>
+                                <div class="">
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span
+                                        class="mdi mdi-star-half font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="font-[Satoshi-Regular] text-[12px] lg:text-[14px]">4.5/5</span>
+                                </div>
+                                <div class="flex gap-[10px] items-center">
+                                    <p class="font-[Satoshi-Bold] text-[20px] lg:text-[24px]">$120</p>
+                                    <del class="text-[rgba(0,0,0,0.4)] font-[Satoshi-Bold] text-[20px] lg:text-[24px]">$220</del>
+                                    <p class="font-[Satoshi-Medium] text-[10px] lg:text-[12px] text-[#FF3333] px-[14px] py-[6px] bg-[rgba(255,51,51,0.1)] rounded-2xl">-20%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[198px] lg:w-[280px]">
+                            <div class="h-[200px] bg-[#F0EEED] flex items-center rounded-2xl w-full lg:h-[298px]">
+                                <img src="images/t1.png" class="min-w-full max-w-none">
+                            </div>
+                            <div class="">
+                                <p class="font-[Satoshi-Bold] text-[16px] lg:text-[20px]">T-shirt with Tape Details</p>
+                                <div class="">
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span
+                                        class="mdi mdi-star-half font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="font-[Satoshi-Regular] text-[12px] lg:text-[14px]">4.5/5</span>
+                                </div>
+                                <div class="">
+                                    <h2 class="font-[Satoshi-Bold] text-[20px]">$120</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[198px] lg:w-[280px]">
+                            <div class="h-[200px] bg-[#F0EEED] flex items-center rounded-2xl w-full lg:h-[298px]">
+                                <img src="images/t1.png" class="min-w-full max-w-none">
+                            </div>
+                            <div class="">
+                                <p class="font-[Satoshi-Bold] text-[16px] lg:text-[20px]">T-shirt with Tape Details</p>
+                                <div class="">
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span
+                                        class="mdi mdi-star-half font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="font-[Satoshi-Regular] text-[12px] lg:text-[14px]">4.5/5</span>
+                                </div>
+                                <div class="">
+                                    <h2 class="font-[Satoshi-Bold] text-[20px]">$120</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[198px] lg:w-[280px]">
+                            <div class="h-[200px] bg-[#F0EEED] flex items-center rounded-2xl w-full lg:h-[298px]">
+                                <img src="images/t1.png" class="min-w-full max-w-none">
+                            </div>
+                            <div class="">
+                                <p class="font-[Satoshi-Bold] text-[16px] lg:text-[20px]">T-shirt with Tape Details</p>
+                                <div class="">
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span
+                                        class="mdi mdi-star-half font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="font-[Satoshi-Regular] text-[12px] lg:text-[14px]">4.5/5</span>
+                                </div>
+                                <div class="">
+                                    <h2 class="font-[Satoshi-Bold] text-[20px]">$120</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <button type="button"
+                            class="w-full p-2.5 rounded-3xl border border-[rgba(0,0,0,0.1)] mb-10 sm:w-[50%] lg:w-[30%] sm:mb-16">View
+                            All</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- things section part 2-->
+
+            <div class="px-2 pt-10 md:px-15 sm:pt-16">
+                <div>
+                    <p
+                        class="font-[integralcf-bold] text-[32px] text-black text-center md:text-[48px] pb-8 sm:pb-[55px]">
+                        NEW
+                        ARRIVALS</p>
+                    <div
+                        class="flex overflow-auto whitespace-nowrap gap-5 mb-6 sm:flex-wrap justify-between lg:gap-2.5 sm:mb-9">
+                        <div class="w-[198px] lg:w-[280px]">
+                            <div class="h-[200px] bg-[#F0EEED] flex items-center rounded-2xl w-full lg:h-[298px]">
+                                <img src="images/t1.png" class="min-w-full max-w-none">
+                            </div>
+                            <div>
+                                <p class="font-[Satoshi-Bold] text-[16px] lg:text-[20px]">T-shirt with Tape Details</p>
+                                <div>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span
+                                        class="mdi mdi-star-half font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="font-[Satoshi-Regular] text-[12px] lg:text-[14px]">4.5/5</span>
+                                </div>
+                                <div>
+                                    <h2 class="font-[Satoshi-Bold] text-[20px]">$120</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[198px] lg:w-[280px]">
+                            <div class="h-[200px] bg-[#F0EEED] flex items-center rounded-2xl w-full lg:h-[298px]">
+                                <img src="images/t1.png" class="min-w-full max-w-none">
+                            </div>
+                            <div class="">
+                                <p class="font-[Satoshi-Bold] text-[16px] lg:text-[20px]">T-shirt with Tape Details</p>
+                                <div class="">
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span
+                                        class="mdi mdi-star-half font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="font-[Satoshi-Regular] text-[12px] lg:text-[14px]">4.5/5</span>
+                                </div>
+                                <div class="">
+                                    <h2 class="font-[Satoshi-Bold] text-[20px]">$120</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[198px] lg:w-[280px]">
+                            <div class="h-[200px] bg-[#F0EEED] flex items-center rounded-2xl w-full lg:h-[298px]">
+                                <img src="images/t1.png" class="min-w-full max-w-none">
+                            </div>
+                            <div class="">
+                                <p class="font-[Satoshi-Bold] text-[16px] lg:text-[20px]">T-shirt with Tape Details</p>
+                                <div class="">
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span
+                                        class="mdi mdi-star-half font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="font-[Satoshi-Regular] text-[12px] lg:text-[14px]">4.5/5</span>
+                                </div>
+                                <div class="">
+                                    <h2 class="font-[Satoshi-Bold] text-[20px]">$120</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[198px] lg:w-[280px]">
+                            <div class="h-[200px] bg-[#F0EEED] flex items-center rounded-2xl w-full lg:h-[298px]">
+                                <img src="images/t1.png" class="min-w-full max-w-none">
+                            </div>
+                            <div class="">
+                                <p class="font-[Satoshi-Bold] text-[16px] lg:text-[20px]">T-shirt with Tape Details</p>
+                                <div class="">
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span
+                                        class="mdi mdi-star-half font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="font-[Satoshi-Regular] text-[12px] lg:text-[14px]">4.5/5</span>
+                                </div>
+                                <div class="">
+                                    <h2 class="font-[Satoshi-Bold] text-[20px]">$120</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <button type="button"
+                            class="w-full p-2.5 rounded-3xl border border-[rgba(0,0,0,0.1)] sm:w-[50%] lg:w-[30%]">View
+                            All</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- dress style -->
+
+            <div class="sm:mt-20 mt-[50px] px-2 md:px-15">
+                <div class="bg-[#F0F0F0] rounded-2xl px-[15px] sm:px-10">
+                    <p class="font-[integralcf-bold] text-[32px] text-center pt-[30px] sm:pt-[50px]">BROWSE BY DRESS STYLE</p>
+                    <div class="flex flex-wrap py-5 gap-2.5 justify-between sm:py-[50px] sm:gap-5">
+                        <div class="bg-[#FFFFFF] rounded-2xl h-[190px] relative overflow-hidden w-full sm:w-[40%] lg:h-[289px]">
+                            <div class="absolute top-2.5 left-[30px]">
+                                <p class="font-[Satoshi-Bold] text-[24px] lg:text-[36px]">Casual</p>
+                            </div>
+                            <div class="flex justify-end">
+                                <img src="images/bg1.png" class="w-[70%]">
                             </div>
 
                         </div>
-                        <div class="layout layout2">
-                            <div class="text-format">
-                                <p>Formal</p>
+                        <div class="bg-[#FFFFFF] rounded-2xl h-[190px] relative overflow-hidden w-full sm:w-[30%] sm:grow lg:h-[289px]">
+                            <div class="absolute top-2.5 left-[30px]">
+                                <p class="font-[Satoshi-Bold] text-[24px] lg:text-[36px]">Casual</p>
                             </div>
-                            <img src="images/formal3.png">
+                             <div class="flex justify-end">
+                                <img src="images/bg1.png" class="w-[70%]">
+                            </div>
+
                         </div>
-                        <div class="layout layout2">
-                            <div class="text-format">
-                                <p>Party</p>
+                        <div class="bg-[#FFFFFF] rounded-2xl h-[190px] relative overflow-hidden w-full sm:max-w-[55%] lg:h-[289px]">
+                            <div class="absolute top-2.5 left-[30px]">
+                                <p class="font-[Satoshi-Bold] text-[24px] lg:text-[36px]">Casual</p>
                             </div>
-                            <img src="images/party.png">
+                             <div class="flex justify-end">
+                                <img src="images/bg1.png" class="w-[70%]">
+                            </div>
+
                         </div>
-                        <div class="layout layout1">
-                            <div class="text-format">
-                                <p>Gym</p>
+                        <div class="bg-[#FFFFFF] rounded-2xl h-[190px] relative overflow-hidden sm:w-[35%] w-full sm:grow lg:h-[289px]">
+                            <div class="absolute top-2.5 left-[30px]">
+                                <p class="font-[Satoshi-Bold] text-[24px] lg:text-[36px]">Casual</p>
                             </div>
-                            <img src="images/bg2.png">
+                             <div class="flex justify-end">
+                                <img src="images/bg1.png" class="w-[70%]">
+                            </div>
+
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <div class="happy_cust h-padding">
