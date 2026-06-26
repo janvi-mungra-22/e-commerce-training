@@ -7,592 +7,668 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
     <div class="xl:flex justify-center">
         <div class="max-w-7xl flex flex-col justify-center">
-            <header>
-                <div class="header-top h-padding">
-                    <p class="head-line">
-                        Sign up and 20% off your first order. <a href="">Sign Up Now</a>
+            <header class="flex justify-between flex-wrap sticky bg-white z-99 -top-px">
+                <div class="bg-black text-white min-w-full flex justify-between py-2 md:px-15 px-2">
+                    <p class="w-full inline-block text-center text-xs sm:w-[90%] sm:text-sm">
+                        Sign up and 20% off your first order. <a href="" class="underline">Sign Up Now</a>
                     </p>
-                    <span class="mdi mdi-close"></span>
+                    <span class="mdi mdi-close hidden sm:inline"></span>
                 </div>
-                <nav class="navmenu h-padding">
-                    <input type="checkbox" id="check">
-                    <div class="logo">
-                        <label for="check" class="checkbtn">
-                            <span class="mdi mdi-menu menubar"></span>
-                        </label>
-                        <h1>SHOP.CO</h1>
-                    </div>
-                    <div class="menu">
-                        <ul>
-                            <li class="cat-list">
-                                <a href="">Shop</a>
-                                <span class="mdi mdi-chevron-down"></span>
-                                <div class="category">
-                                    <ul>
-                                        <li><a href="prodect_detail.html">Men</a></li>
-                                        <li><a href="">Women</a></li>
-                                        <li><a href="">Children</a></li>
-                                    </ul>
+                <nav class="py-2 md:px-15 px-2 border-b border-[rgba(0,0,0,0.1)] w-full">
+                    <div class="flex justify-between items-center w-full sm:relative">
+                        <input type="checkbox" id="check" class="peer hidden">
+                        <div class="flex items-center w-[50%] justify-start sm:w-[28%]">
+                            <label for="check">
+                                <span class="mdi mdi-menu text-[25.2px] text-black md:hidden"></span>
+                            </label>
+                            <h1 class="font-[integralcf-bold] text-[25.2px] pl-2.5 sm:text-[32px]">SHOP.CO</h1>
+                        </div>
+                        <div
+                            class="min-w-full hidden peer-checked:block top-20 absolute bg-white left-0 md:block md:min-w-[59%] md:static lg:min-w-[49%]">
+                            <ul class="w-full pl-5 md:flex md:justify-center md:gap-[25px] md:pl-0 md:items-center">
+                                <li class="w-full bg-white group relative pb-[15px] md:inline md:w-auto md:pb-0">
+                                    <a href="">Shop</a>
+                                    <span class="mdi mdi-chevron-down"></span>
+                                    <div
+                                        class="hidden top-5 group-hover:block group-hover:top-0 group-hover:static md:top-2.5">
+                                        <ul class="w-[20%] md:block md:w-full md:bg-white md:pl-5 md:pr-5 md:absolute">
+                                            <li class="pl-5 pt-[15px] md:pt-5 md:w-20 md:bg-white md:pl-0"><a
+                                                    href="prodect_detail.html">Men</a></li>
+                                            <li class="pl-5 pt-[15px] md:pt-5 md:w-20 md:bg-white md:pl-0"><a
+                                                    href="">Women</a></li>
+                                            <li class="pl-5 pt-[15px] md:pt-5 md:w-20 md:bg-white md:pl-0"><a
+                                                    href="">Children</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="pb-[15px] md:inline md:pb-0"><a href="category.html">On sale</a></li>
+                                <li class="pb-[15px] md:inline md:pb-0">
+                                    <a href="">New Arrivals</a>
+                                </li>
+                                <li class="pb-[15px] md:inline md:pb-0"><a href="">Brands</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="w-[50%] sm:w-[40%]">
+                            <div class="flex justify-end items-center gap-x-2.5">
+                                <div class="hidden lg:block sm:bg-[#F0F0F0] p-2 rounded-[50px] lg:relative">
+                                    <span class="mdi mdi-magnify lg:absolute lg:left-5"></span>
+                                    <input type="text" placeholder="Search for products" class="lg:pl-[35px]">
                                 </div>
-                            </li>
-                            <li><a href="category.html">On sale</a></li>
-                            <li>
-                                <a href="">New Arrivals</a>
-                            </li>
-                            <li><a href="">Brands</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="menu-list-2">
-                        <div class="icon-menu">
-
-                            <div class="search-box">
-                                <span class="mdi mdi-magnify"></span>
-                                <input type="text" placeholder="Search for products">
+                                <span class="mdi mdi-magnify text-[25.2px] lg:hidden"></span>
+                                <a href="cart.html"><span class="mdi mdi-cart-outline text-[25.2px]"></a></span>
+                                <a href=""><span class="mdi mdi-account-circle-outline text-[25.2px]"></a></span>
                             </div>
-                            <span class="mdi mdi-magnify serchicon nav-icons"></span>
-                            <a href="cart.html"><span class="mdi mdi-cart-outline nav-icons"></a></span>
-                            <a href=""><span class="mdi mdi-account-circle-outline nav-icons"></a></span>
                         </div>
                     </div>
                 </nav>
             </header>
 
-            <hr class="hr-line">
-
-            <div class="navigation h-padding">
-                <p>Home</p>
+            <div class="md:px-15 px-2 py-5 flex">
+                <p class="text-[rgba(0,0,0,0.6)] font-[Satoshi-Regular] text-[14px] md:text-[16px]">Home</p>
 
                 <span class="mdi mdi-chevron-right"></span>
-                <p>Shop</p>
+                <p class="text-[rgba(0,0,0,0.6)] font-[Satoshi-Regular] text-[14px] md:text-[16px]">Shop</p>
 
                 <span class="mdi mdi-chevron-right"></span>
-                <p>Men</p>
+                <p class="text-[rgba(0,0,0,0.6)] font-[Satoshi-Regular] text-[14px] md:text-[16px]">Men</p>
 
                 <span class="mdi mdi-chevron-right"></span>
-                <p class="active">T-shirts</p>
+                <p class="font-[Satoshi-Regular] text-[14px] md:text-[16px]"></p>T-shirts</p>
             </div>
 
-            <div class="t-shirt-section h-padding">
-                <div class="t-shirt-images">
-                    <div class="multiple-parts">
-                        <div class="single-img active">
-                            <img src="images/t1.png">
-                        </div>
-                        <div class="single-img">
-                            <img src="images/t1.png">
-                        </div>
-                        <div class="single-img">
-                            <img src="images/t1.png">
-                        </div>
+            <div class="md:px-15 px-2 flex flex-col md:flex-row md:items-center md:gap-2.5">
+                <div class="flex flex-col gap-3 lg:flex-row-reverse md:w-[50%]">
+                    <div class="w-full bg-[#F0EEED] rounded-2xl overflow-hidden flex justify-center items-center">
+                        <img src="images/t1.png" class="h-[290px]">
                     </div>
-                    <div class="selected-images">
-                        <img src="images/t1.png">
+                    <div class="flex justify-between gap-3 lg:flex-col lg:w-[35%] md:flex-row">
+                        <div class="flex items-center justify-between bg-[rgba(240,238,237,1)] rounded-2xl border">
+                            <img src="images/t1.png">
+                        </div>
+                        <div class="flex items-center justify-between bg-[rgba(240,238,237,1)] rounded-2xl">
+                            <img src="images/t1.png">
+                        </div>
+                        <div class="flex items-center justify-between bg-[rgba(240,238,237,1)] rounded-2xl">
+                            <img src="images/t1.png">
+                        </div>
                     </div>
                 </div>
-                <div class="t-shirt-desc">
-                    <div>
-                        <h1>ONE LIFE GRAPHIC T-SHIRT</h1>
-                    </div>
-                    <div class="rating">
-                        <span class="mdi mdi-star"></span>
-                        <span class="mdi mdi-star"></span>
-                        <span class="mdi mdi-star"></span>
-                        <span class="mdi mdi-star"></span>
-                        <span class="mdi mdi-star-half"></span>
-                        <span class="rating-text">4.5/<span>5</span></span>
-                    </div>
-                    <div class="thing-price">
-                        <h2 class="real-price">$240</h2>
-                        <h2 class="real-price delete-price"><del>$260</del></h2>
-                        <div class="discount real-price">
-                            <p class="real-price">-20%</p>
+                <div class="flex flex-col pt-5 md:w-[50%] md:h-[385px] md:justify-center md:pt-0">
+                    <div class="flex flex-col gap-5 md:gap-2.5 lg:gap-0">
+                        <div class="flex flex-col gap-3 md:gap-1.5 lg:gap-0">
+                            <h1 class="font-[integralcf-bold] text-[24px] leading-7 xl:text-[40px] xl:leading-10">ONE
+                                LIFE GRAPHIC T<span class="mdi mdi-minus"></span>SHIRT</h1>
+                            <div class="flex">
+                                <span class="mdi mdi-star text-[#FFC633]"></span>
+                                <span class="mdi mdi-star text-[#FFC633]"></span>
+                                <span class="mdi mdi-star text-[#FFC633]"></span>
+                                <span class="mdi mdi-star text-[#FFC633]"></span>
+                                <span class="mdi mdi-star-half text-[#FFC633]"></span>
+                                <p class="font-[Satoshi-Regular] text-[14px] lg:text-[16px]">4.5/<span
+                                        class="text-[rgba(0,0,0,0.6)]">5</span></p>
+                            </div>
+                            <div class="flex gap-2.5">
+                                <h2 class="font-[Satoshi-Bold] text-[24px] xl:text-[32px]">$240</h2>
+                                <h2 class="font-[Satoshi-Bold] text-[24px] text-[rgba(0,0,0,0.3)] xl:text-[32px]">
+                                    <del>$260</del></h2>
+                                <p
+                                    class="font-[Satoshi-Medium] text-[14px] text-[#FF3333] px-3 py-1.5 bg-[rgba(255,51,51,0.1)] rounded-2xl xl:text-[16px] lg:py-0 lg:flex items-center lg:px-5">
+                                    -20%</p>
+                            </div>
+                        </div>
+                        <div class="pb-6 border-b border-[rgba(0,0,0,0.1)] md:pb-3">
+                            <p
+                                class="font-[Satoshi-Regular] text-[14px] leading-5 text-[rgba(0,0,0,0.6)] xl:text-[16px] xl:leading-[22px]">
+                                This graphic t-shirt which is perfect for any occasion. Crafted from a soft and
+                                breathable
+                                fabric, it offers superior comfort and style.
+                            </p>
                         </div>
                     </div>
-                    <div>
-                        <p>
-                            This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable
-                            fabric, it offers superior comfort and style.
+                    <div class="py-6 border-b border-[rgba(0,0,0,0.1)] flex flex-col gap-4 md:py-3 md:gap-2">
+                        <p class="font-[Satoshi-Regular] text-[14px] text-[rgba(0,0,0,0.6)] xl:text-[16px]">Select
+                            Colors</p>
+                        <div class="flex gap-3">
+                            <div class="bg-[#4F4631] w-10 py-2 rounded-3xl flex justify-center">
+                                <span class="mdi mdi-check text-[#FFFFFF]"></span>
+                            </div>
+                            <div class="bg-[#314F4A]  w-10 py-2 rounded-3xl">
+                                <!-- <span class="mdi mdi-check"></span> -->
+                            </div>
+                            <div class="bg-[#31344F] w-10 py-2 rounded-3xl">
+                                <!-- <span class="mdi mdi-check"></span> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-6 border-b border-[rgba(0,0,0,0.1)] flex flex-col gap-4 md:gap-2 md:py-3">
+                        <p class="font-[Satoshi-Regular] text-[14px] text-[rgba(0,0,0,0.6)] xl:text-[16px]">Choose Size
                         </p>
-                    </div>
-                    <hr class="hr-line">
-                    <div>
-                        <p>Select Colors</p>
-                        <div class="selected-length">
-                            <div class="circle bg-black">
-                                <span class="mdi mdi-check"></span>
-                            </div>
-                            <div class="circle circle2">
-                                <span class="mdi mdi-check check-mark"></span>
-                            </div>
-                            <div class="circle circle3">
-                                <span class="mdi mdi-check check-mark"></span>
-                            </div>
+                        <div class="flex gap-4 md:gap-2 items-center">
+                            <div
+                                class="px-4 sm:px-5 py-1.5 sm:py-2.5 bg-[rgba(240,240,240,1)] rounded-3xl text-[rgba(0,0,0,0.6)] font-[Satoshi-Regular] text-[14px] md:py-1 md:px-2.5 xl:text-[16px] xl:py-3 lg:px-4">
+                                Small</div>
+                            <div
+                                class="px-4 sm:px-5 py-1.5 sm:py-2.5 bg-[rgba(240,240,240,1)] rounded-3xl text-[rgba(0,0,0,0.6)] font-[Satoshi-Regular] text-[14px] md:py-1 md:px-2.5 xl:text-[16px] xl:py-3 lg:px-4">
+                                Medium</div>
+                            <div
+                                class="px-4 sm:px-5 py-1.5 sm:py-2.5 bg-[#000000] rounded-3xl text-white font-[Satoshi-Regular] text-[14px] md:py-1 md:px-2.5 xl:text-[16px] xl:py-3 lg:px-4">
+                                Large</div>
+                            <div
+                                class="px-4 sm:px-5 py-1.5 sm:py-2.5 bg-[rgba(240,240,240,1)] rounded-3xl text-[rgba(0,0,0,0.6)] font-[Satoshi-Regular] text-[14px] md:py-1 md:px-2.5 xl:text-[16px] xl:py-3 lg:px-4">
+                                X-Large</div>
                         </div>
                     </div>
-                    <hr class="hr-line">
-                    <div>
-                        <p>Choose Size</p>
-                        <div class="len-btn">
-                            <button type="button" class="button choose-size">Small</button>
-                            <button type="button" class="button choose-size">Medium</button>
-                            <button type="button" class="button choose-size-lg">Large</button>
-                            <button type="button" class="button choose-size">X-Large</button>
-                        </div>
-                    </div>
-                    <hr class="hr-line">
-                    <div class="handle-cart-flow">
-                        <div class="handle-cart">
+                    <div class="py-6 flex justify-between md:py-3">
+                        <div class="bg-[#F0F0F0] px-4 py-3 min-w-[30%] rounded-3xl flex justify-between">
                             <span class="mdi mdi-minus"></span>
-                            <div class="cartno">
-                                <span>1</span>
-                            </div>
+                            <span class="font-[Satoshi-Medium] text-[14px]">1</span>
                             <span class="mdi mdi-plus"></span>
                         </div>
-                        <div class="cartbtn">
-                            <button type="button" class="button addtocart choose-size-lg">Add to Cart</button>
+                        <div class="bg-black flex items-center px-5 min-w-[65%] rounded-3xl justify-center">
+                            <p class="text-white">Add to Cart</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="review-part h-padding">
-                <div class="review-part-menu">
-                    <p>Product Details</p>
+            <div class="md:px-15 px-2 flex justify-between pt-[26px] border-b border-[rgba(0,0,0,0.1)] md:pt-[70px] lg:justify-around">
+                <div class="pb-5">
+                    <p class="font-[Satoshi-Regular] text-[16px] leading-[22px] md:text-[20px] text-[rgba(0,0,0,0.6)]">Product Details</p>
                 </div>
-                <div class="review-part-menu review-part-menu-active">
-                    <p>Rating & Reviews</p>
+                <div class="border-b border-black pb-5">
+                    <p class="font-[Satoshi-Regular] text-[16px] leading-[22px] md:text-[20px]">Rating & Reviews</p>
                 </div>
-                <div class="review-part-menu">
-                    <p>FAQs</p>
+                <div class="pb-5">
+                    <p class="font-[Satoshi-Regular] text-[16px] leading-[22px] md:text-[20px] text-[rgba(0,0,0,0.6)]">FAQs</p>
                 </div>
             </div>
 
-            <div class="review-part-overview h-padding">
-                <div class="review-part-len">
-                    <p>All Reviews</p>
-                    <span class="no-of-rev">(451)</span>
+            <div class="md:px-15 px-2 flex items-center justify-between py-5">
+                <div class="flex items-center">
+                    <p class="font-[Satoshi-Bold] text-[20px] sm:text-[24px]">All Reviews</p>
+                    <span class="font-[Satoshi-Regular] text-[14px] leading-[22px] text-[rgba(0,0,0,0.6)] sm:text-[16px]">(451)</span>
                 </div>
-                <div class="review-part-len side-option">
-                    <div class="filter-icon">
+                <div class="flex gap-2.5">
+                    <div class="bg-[#F0F0F0] px-2.5 rounded-2xl p-[5px]">
                         <span class="mdi mdi-filter-variant-plus"></span>
                     </div>
-                    <div class="priority">
-                        <span>Latest</span>
-                        <div class="priority-drop-down">
+                    <div class="bg-[#F0F0F0] hidden sm:flex sm:px-4.5 sm:rounded-2xl sm:items-center">
+                        <span class="font-[Satoshi-Medium] text-[12px] sm:text-[16px]">Latest</span>
+                        <div class="">
                             <span class="mdi mdi-chevron-down"></span>
                         </div>
                     </div>
-                    <div class="write-review">
-                        <button type="button" class="button write-review-button">Write a Review</button>
+                    <div class="bg-[#000000] rounded-2xl flex items-center justify-center px-2.5 sm:px-4.5">
+                        <p class="font-[Satoshi-Medium] text-[12px] text-white sm:text-[16px]">Write a Review</p>
                     </div>
                 </div>
             </div>
 
-            <div class="all-review h-padding">
-                <div class="personal-review">
-                    <div class="review-text">
-                        <div class="rating review-star">
+            <div class="md:px-15 px-2 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+                 <div class="border p-6 border-[rgba(0,0,0,0.1)] rounded-2xl sm:max-w-[48%] lg:max-w-[32%]">
+                    <div class="">
+                        <div class="flex gap-[5px]">
                             <span class="mdi mdi-star"></span>
                             <span class="mdi mdi-star"></span>
                             <span class="mdi mdi-star"></span>
                             <span class="mdi mdi-star"></span>
                             <span class="mdi mdi-star-half"></span>
                         </div>
-                        <div class="more-dot">
+                        <div class="hidden">
                             <span class="mdi mdi-dots-horizontal"></span>
                         </div>
                     </div>
-                    <div class="review-person-name">
-                        <div class="r-p-name">
-                            <h2>
+                    <div class="flex gap-2.5 pb-2">
+                        <div class="">
+                            <h2 class="font-[Satoshi-Bold] text-[16px] leading-[22px] lg:text-[20px]">
                                 Samantha D.
                             </h2>
                         </div>
-                        <div class="r-p-valid">
-                            <span class="mdi mdi-check"></span>
+                        <div class="bg-[#01AB31] rounded-2xl px-1">
+                            <span class="mdi mdi-check text-white"></span>
                         </div>
                     </div>
-                    <p>
+                    <p class="text-[rgba(0,0,0,0.6)] font-[Satoshi-Regular] text-[14px] leading-5 pb-4 lg:text-[16px]">
                         "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a
                         fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."
                     </p>
-                    <div class="review-date">
-                        <p>
+                    <div class="">
+                        <p class="text-[rgba(0,0,0,0.6)] font-[Satoshi-Medium] text-[14px] leading-[22px] lg:text-[16px]">
                             Posted on August 14, 2023
                         </p>
                     </div>
                 </div>
-                <div class="personal-review">
-                    <div class="review-text">
-                        <div class="rating review-star">
+                <div class="border p-6 border-[rgba(0,0,0,0.1)] rounded-2xl sm:max-w-[48%] lg:max-w-[32%]">
+                    <div class="">
+                        <div class="flex gap-[5px]">
                             <span class="mdi mdi-star"></span>
                             <span class="mdi mdi-star"></span>
                             <span class="mdi mdi-star"></span>
                             <span class="mdi mdi-star"></span>
                             <span class="mdi mdi-star-half"></span>
                         </div>
-                        <div class="more-dot">
+                        <div class="hidden">
                             <span class="mdi mdi-dots-horizontal"></span>
                         </div>
                     </div>
-                    <div class="review-person-name">
-                        <div class="r-p-name">
-                            <h2>
+                    <div class="flex gap-2.5 pb-2">
+                        <div class="">
+                            <h2 class="font-[Satoshi-Bold] text-[16px] leading-[22px] lg:text-[20px]">
                                 Samantha D.
                             </h2>
                         </div>
-                        <div class="r-p-valid">
-                            <span class="mdi mdi-check"></span>
+                        <div class="bg-[#01AB31] rounded-2xl px-1">
+                            <span class="mdi mdi-check text-white"></span>
                         </div>
                     </div>
-                    <p>
+                    <p class="text-[rgba(0,0,0,0.6)] font-[Satoshi-Regular] text-[14px] leading-5 pb-4 lg:text-[16px]">
                         "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a
                         fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."
                     </p>
-                    <div class="review-date">
-                        <p>
+                    <div class="">
+                        <p class="text-[rgba(0,0,0,0.6)] font-[Satoshi-Medium] text-[14px] leading-[22px] lg:text-[16px]">
                             Posted on August 14, 2023
                         </p>
                     </div>
                 </div>
-                <div class="personal-review">
-                    <div class="review-text">
-                        <div class="rating review-star">
+                 <div class="border p-6 border-[rgba(0,0,0,0.1)] rounded-2xl sm:max-w-[48%] lg:max-w-[32%]">
+                    <div class="">
+                        <div class="flex gap-[5px]">
                             <span class="mdi mdi-star"></span>
                             <span class="mdi mdi-star"></span>
                             <span class="mdi mdi-star"></span>
                             <span class="mdi mdi-star"></span>
                             <span class="mdi mdi-star-half"></span>
                         </div>
-                        <div class="more-dot">
+                        <div class="hidden">
                             <span class="mdi mdi-dots-horizontal"></span>
                         </div>
                     </div>
-                    <div class="review-person-name">
-                        <div class="r-p-name">
-                            <h2>
+                    <div class="flex gap-2.5 pb-2">
+                        <div class="">
+                            <h2 class="font-[Satoshi-Bold] text-[16px] leading-[22px] lg:text-[20px]">
                                 Samantha D.
                             </h2>
                         </div>
-                        <div class="r-p-valid">
-                            <span class="mdi mdi-check"></span>
+                        <div class="bg-[#01AB31] rounded-2xl px-1">
+                            <span class="mdi mdi-check text-white"></span>
                         </div>
                     </div>
-                    <p>
+                    <p class="text-[rgba(0,0,0,0.6)] font-[Satoshi-Regular] text-[14px] leading-5 pb-4 lg:text-[16px]">
                         "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a
                         fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."
                     </p>
-                    <div class="review-date">
-                        <p>
+                    <div class="">
+                        <p class="text-[rgba(0,0,0,0.6)] font-[Satoshi-Medium] text-[14px] leading-[22px] lg:text-[16px]">
                             Posted on August 14, 2023
                         </p>
                     </div>
                 </div>
-                <div class="personal-review">
-                    <div class="review-text">
-                        <div class="rating review-star">
+                 <div class="border p-6 border-[rgba(0,0,0,0.1)] rounded-2xl sm:max-w-[48%] lg:max-w-[32%]">
+                    <div class="">
+                        <div class="flex gap-[5px]">
                             <span class="mdi mdi-star"></span>
                             <span class="mdi mdi-star"></span>
                             <span class="mdi mdi-star"></span>
                             <span class="mdi mdi-star"></span>
                             <span class="mdi mdi-star-half"></span>
                         </div>
-                        <div class="more-dot">
+                        <div class="hidden">
                             <span class="mdi mdi-dots-horizontal"></span>
                         </div>
                     </div>
-                    <div class="review-person-name">
-                        <div class="r-p-name">
-                            <h2>
+                    <div class="flex gap-2.5 pb-2">
+                        <div class="">
+                            <h2 class="font-[Satoshi-Bold] text-[16px] leading-[22px] lg:text-[20px]">
                                 Samantha D.
                             </h2>
                         </div>
-                        <div class="r-p-valid">
-                            <span class="mdi mdi-check"></span>
+                        <div class="bg-[#01AB31] rounded-2xl px-1">
+                            <span class="mdi mdi-check text-white"></span>
                         </div>
                     </div>
-                    <p>
+                    <p class="text-[rgba(0,0,0,0.6)] font-[Satoshi-Regular] text-[14px] leading-5 pb-4 lg:text-[16px]">
                         "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a
                         fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."
                     </p>
-                    <div class="review-date">
-                        <p>
+                    <div class="">
+                        <p class="text-[rgba(0,0,0,0.6)] font-[Satoshi-Medium] text-[14px] leading-[22px] lg:text-[16px]">
                             Posted on August 14, 2023
                         </p>
                     </div>
                 </div>
-                <div class="personal-review">
-                    <div class="review-text">
-                        <div class="rating review-star">
+                <div class="border p-6 border-[rgba(0,0,0,0.1)] rounded-2xl sm:max-w-[48%] lg:max-w-[32%]">
+                    <div class="">
+                        <div class="flex gap-[5px]">
                             <span class="mdi mdi-star"></span>
                             <span class="mdi mdi-star"></span>
                             <span class="mdi mdi-star"></span>
                             <span class="mdi mdi-star"></span>
                             <span class="mdi mdi-star-half"></span>
                         </div>
-                        <div class="more-dot">
+                        <div class="hidden">
                             <span class="mdi mdi-dots-horizontal"></span>
                         </div>
                     </div>
-                    <div class="review-person-name">
-                        <div class="r-p-name">
-                            <h2>
+                    <div class="flex gap-2.5 pb-2">
+                        <div class="">
+                            <h2 class="font-[Satoshi-Bold] text-[16px] leading-[22px] lg:text-[20px]">
                                 Samantha D.
                             </h2>
                         </div>
-                        <div class="r-p-valid">
-                            <span class="mdi mdi-check"></span>
+                        <div class="bg-[#01AB31] rounded-2xl px-1">
+                            <span class="mdi mdi-check text-white"></span>
                         </div>
                     </div>
-                    <p>
+                    <p class="text-[rgba(0,0,0,0.6)] font-[Satoshi-Regular] text-[14px] leading-5 pb-4 lg:text-[16px]">
                         "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a
                         fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt."
                     </p>
-                    <div class="review-date">
-                        <p>
+                    <div class="">
+                        <p class="text-[rgba(0,0,0,0.6)] font-[Satoshi-Medium] text-[14px] leading-[22px] lg:text-[16px]">
                             Posted on August 14, 2023
                         </p>
                     </div>
                 </div>
-
             </div>
 
-            <div class="load-review-btn">
-                <button type="button" class="button load-review">Load More Reviews</button>
+            <div class="flex justify-center pt-[30px] ">
+                <button type="button" class="text-[14px] p-3 border rounded-2xl border-[rgba(0,0,0,0.1)] px-10">Load More Reviews</button>
             </div>
 
-            <div class="things-section">
-                <h1>YOU MIGHT ALSO LIKE</h1>
-                <div class="new_arr h-padding">
-                    <div class="things">
-                        <div class="cloth">
-                            <div class="cloth-img">
-                                <img src="images/t1.png">
+            <div class="px-2 pt-[50px] md:px-15 sm:pt-[72px] pb-[200px] md:pb-[200px]">
+                <div>
+                    <p
+                        class="font-[integralcf-bold] text-[32px] text-black text-center md:text-[48px] pb-8 sm:pb-[55px]">
+                        You might also like</p>
+                    <div
+                        class="flex overflow-auto whitespace-nowrap gap-5 mb-6 sm:flex-wrap justify-between lg:gap-2.5 sm:mb-9">
+                        <div class="w-[198px] lg:w-[280px]">
+                            <div class="h-[200px] bg-[#F0EEED] flex items-center rounded-2xl w-full lg:h-[298px]  overflow-hidden">
+                                <img src="images/cloth1.png" class="min-w-full max-w-none">
                             </div>
-                            <div class="cloth-desc">
-                                <p>T-shirt with Tape Details</p>
-                                <div class="rating">
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star-half"></span>
-                                    <span>4.5/5</span>
+                            <div class="">
+                                <p class="font-[Satoshi-Bold] text-[16px] lg:text-[20px]">T-shirt with Tape Details</p>
+                                <div class="">
+                                    <span
+                                        class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px] text-[#FFC633]"></span>
+                                    <span
+                                        class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px] text-[#FFC633]"></span>
+                                    <span
+                                        class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px] text-[#FFC633]"></span>
+                                    <span
+                                        class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px] text-[#FFC633]"></span>
+                                    <span
+                                        class="mdi mdi-star-half font-[Satoshi-Regular] text-[12px] lg:text-[14px] text-[#FFC633]"></span>
+                                    <span class="font-[Satoshi-Regular] text-[12px] lg:text-[14px]">4.5/<span
+                                            class="text-[rgba(0,0,0,0.6)]">5</span></span>
                                 </div>
-                                <div class="thing-price">
-                                    <h2 class="real-price">$120</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cloth">
-                            <div class="cloth-img">
-                                <img src="images/bg1.png">
-                            </div>
-                            <div class="cloth-desc">
-                                <p>Skinny Fit Jeans</p>
-                                <div class="rating">
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star-half"></span>
-                                    <span>3.5/5</span>
-                                </div>
-                                <div class="thing-price">
-                                    <h2 class="real-price">$240</h2>
-                                    <h2 class="real-price delete-price"><del>$260</del></h2>
-                                    <div class="discount real-price">
-                                        <p class="real-price">-20%</p>
-                                    </div>
+                                <div class="flex gap-2.5 items-center">
+                                    <p class="font-[Satoshi-Bold] text-[20px] lg:text-[24px]">$120</p>
+                                    <del
+                                        class="text-[rgba(0,0,0,0.4)] font-[Satoshi-Bold] text-[20px] lg:text-[24px]">$220</del>
+                                    <p
+                                        class="font-[Satoshi-Medium] text-[10px] lg:text-[12px] text-[#FF3333] px-3.5 py-1.5 bg-[rgba(255,51,51,0.1)] rounded-2xl">
+                                        -20%</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="cloth">
-                            <div class="cloth-img">
-                                <img src="images/cloth3.png">
+                        <div class="w-[198px] lg:w-[280px]">
+                            <div
+                                class="h-[200px] bg-[#F0EEED] flex items-center rounded-2xl w-full lg:h-[298px] overflow-hidden">
+                                <img src="images/cloth2.png" class="min-w-full max-w-none">
                             </div>
-                            <div class="cloth-desc">
-                                <p>Checkered Shirt</p>
-                                <div class="rating">
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star-half"></span>
-                                    <span>4.5/5</span>
+                            <div class="">
+                                <p class="font-[Satoshi-Bold] text-[16px] lg:text-[20px]">Skinny Fit Jeans</p>
+                                <div class="">
+                                    <span
+                                        class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px] text-[#FFC633]"></span>
+                                    <span
+                                        class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px] text-[#FFC633]"></span>
+                                    <span
+                                        class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px] text-[#FFC633]"></span>
+                                    <span
+                                        class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px] text-[#FFC633]"></span>
+                                    <span
+                                        class="mdi mdi-star-half font-[Satoshi-Regular] text-[12px] lg:text-[14px] text-[#FFC633]"></span>
+                                    <span class="font-[Satoshi-Regular] text-[12px] lg:text-[14px]">3.5/<span
+                                            class="text-[rgba(0,0,0,0.6)]">5</span></span>
                                 </div>
-                                <div class="thing-price">
-                                    <h2 class="real-price">$180</h2>
+                                <div class="">
+                                    <h2 class="font-[Satoshi-Bold] text-[20px]">$120</h2>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="cloth">
-                                <div class="cloth-img">
-                                    <img src="images/shirt2.png">
-                                </div>
-                                <div class="cloth-desc">
-                                    <p>Checkered Shirt</p>
-                                    <div class="rating">
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star"></span>
-                                        <span class="mdi mdi-star-half"></span>
-                                        <span>4.5/5</span>
-                                    </div>
-                                    <div class="thing-price">
-                                        <h2 class="real-price">$180</h2>
-                                    </div>
-                                </div>
-                            </div> -->
-                        <div class="cloth">
-                            <div class="cloth-img">
-                                <img src="images/cloth4.png">
+                        <div class="w-[198px] lg:w-[280px]">
+                            <div class="h-[200px] bg-[#F0EEED] flex items-center rounded-2xl w-full lg:h-[298px] overflow-hidden">
+                                <img src="images/cloth3.png" class="min-w-full max-w-none">
                             </div>
-                            <div class="cloth-desc">
-                                <p>Sleeve Striped T-shirt</p>
-                                <div class="rating">
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star-half"></span>
-                                    <span>4.5/5</span>
+                            <div class="">
+                                <p class="font-[Satoshi-Bold] text-[16px] lg:text-[20px]">T-shirt with Tape Details</p>
+                                <div class="">
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span
+                                        class="mdi mdi-star-half font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="font-[Satoshi-Regular] text-[12px] lg:text-[14px]">4.5/5</span>
                                 </div>
-                                <div class="thing-price">
-                                    <h2 class="real-price">$130</h2>
-                                    <h2 class="real-price delete-price"><del>$160</del></h2>
-                                    <div class="discount real-price">
-                                        <p class="real-price">-30%</p>
-                                    </div>
+                                <div class="">
+                                    <h2 class="font-[Satoshi-Bold] text-[20px]">$120</h2>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="w-[198px] lg:w-[280px]">
+                            <div class="h-[200px] bg-[#F0EEED] flex items-center rounded-2xl w-full lg:h-[298px] overflow-hidden">
+                                <img src="images/cloth4.png" class="min-w-full max-w-none">
+                            </div>
+                            <div class="">
+                                <p class="font-[Satoshi-Bold] text-[16px] lg:text-[20px]">T-shirt with Tape Details</p>
+                                <div class="">
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span
+                                        class="mdi mdi-star-half font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="font-[Satoshi-Regular] text-[12px] lg:text-[14px]">4.5/5</span>
+                                </div>
+                                <div class="">
+                                    <h2 class="font-[Satoshi-Bold] text-[20px]">$120</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <button type="button"
+                            class="w-full p-2.5 rounded-3xl border border-[rgba(0,0,0,0.1)] mb-10 sm:w-[50%] lg:w-[30%] sm:mb-16">View
+                            All</button>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="flex flex-col items-center bg-[#F0F0F0] relative">
+                <div
+                    class="bg-black flex flex-col py-8 px-[25PX] rounded-3xl mx-2 md:mx-15 h-[300px] absolute top-[-150px] md:h-[200px] md:flex-row md:justify-between md:top-[-100px] justify-center items-center">
+                    <div class="md:max-w-[40%]">
+                        <h2 class="font-[integralcf-bold] text-[32px] leading-[35px] text-[#FFFFFF]">STAY UPTO DATE
+                            ABOUT OUR LATEST OFFERS</h2>
+                    </div>
+                    <div class="pt-8 flex flex-col gap-3 md:max-w-[45%] w-full md:justify-center md:pt-0">
+                        <div class="bg-white rounded-3xl py-3 px-4 flex gap-3">
+                            <span
+                                class="mdi mdi-email-outline text-[rgba(0,0,0,0.4)] text-[20px] leading-5 font-bold"></span>
+                            <input type="text" placeholder="Enter your email address"
+                                class="focus:outline-none font-[Satoshi-Regular] text-[14px] grow placeholder:text-[rgba(0,0,0,0.4)]">
+                        </div>
+                        <div class="py-3 px-4 bg-white rounded-3xl">
+                            <div class="flex justify-center">
+                                <span class="font-[Satoshi-Medium] text-[14px] leading-normal">Subscribe to
+                                    Newsletter</span>
                             </div>
                         </div>
                     </div>
                 </div>
-
-            </div>
-
-             <footer>
-                <div class="footer-top">
-                    <div class="head-line-footer">
-                        <h2>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
-                    </div>
-                    <div class="footer-compo">
-                        <div class="footer-box email-box">
-                            <span class="mdi mdi-email-outline"></span>
-                            <input type="text" placeholder="Enter your email address">
-                        </div>
-                        <div class="footer-box">
-                            <!-- <button type="button" class="button subscribe-btn">Subscribe to Newsletter</button> -->
-                            <div class="subscribe-site">
-                                <span>Subscribe to Newsletter</span>
+                <div class="px-2 md:px-15 bg-[#F0F0F0] pb-10 pt-[170px] w-full">
+                    <div class="md:flex md:gap-7 md:border-b md:border-[rgba(0,0,0,0.1)] md:items-center md:pb-[30px]">
+                        <div class="flex flex-col gap-5 md:w-[30%] md:justify-start md:gap-4">
+                            <div class="flex flex-col gap-3.5">
+                                <h1 class="font-[integralcf-bold] text-[28.85px] md:text-[33.45]">SHOP.CO</h1>
+                                <p
+                                    class="font-[Satoshi-Regular] leading-5 text-[14px] text-[rgba(0,0,0,0.6)] md:leading-[22px]">
+                                    We have
+                                    clothes that suits your style and which you’re proud to wear. From women to
+                                    men.
+                                </p>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="main-footer h-padding">
-                    <div class="footer-menu">
-                        <div class="footer-logo">
-                            <h2>SHOP.CO</h2>
-                            <p>We have clothes that suits your style and which you’re proud to wear. From women to
-                                men.
-                            </p>
-                            <div class="social-icons">
-                                <div class="twd">
+                            <div class="flex gap-3">
+                                <div
+                                    class="border rounded-full w-7 bg-white border-[rgba(0,0,0,0.2)] flex justify-center p-0.5">
                                     <span class="mdi mdi-twitter color-black"></span>
                                 </div>
-                                <div class="twd">
+                                <div
+                                    class="border rounded-full w-7 bg-white border-[rgba(0,0,0,0.2)] flex justify-center p-0.5">
                                     <span class="mdi mdi-facebook color-black"></span>
                                 </div>
-                                <div class="twd">
+                                <div
+                                    class="border rounded-full w-7 bg-white border-[rgba(0,0,0,0.2)] flex justify-center p-0.5">
                                     <span class="mdi mdi-instagram color-black"></span>
                                 </div>
-                                <div class="twd">
+                                <div
+                                    class="border rounded-full w-7 bg-white border-[rgba(0,0,0,0.2)] flex justify-center p-0.5">
                                     <span class="mdi mdi-github color-black"></span>
                                 </div>
                             </div>
                         </div>
-                        <div class="all-part-menu">
-                            <div class="menu-part">
-                                <p>
+                        <div
+                            class="flex flex-wrap pb-10 border-b border-[rgba(0,0,0,0.1)] md:justify-between md:w-[70%] md:border-0 md:pb-0">
+                            <div class="pt-6 w-[50%] flex flex-col gap-4 sm:w-[25%] md:pt-0">
+                                <p class="text-[14px] font-[Satoshi-Medium] leading-[18px] tracking-[3px] md:text-16px">
                                     COMPANY
                                 </p>
-                                <ul>
-                                    <li><a href="#" class="color-gray">About</a></li>
-                                    <li><a href="#" class="color-gray">Features</a></li>
-                                    <li><a href="#" class="color-gray">Works</a></li>
-                                    <li><a href="#" class="color-gray">Career</a></li>
+                                <ul class="flex flex-col gap-3">
+                                    <li
+                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        <a href="#" class="">About</a>
+                                    </li>
+                                    <li
+                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        <a href="#" class="">Features</a>
+                                    </li>
+                                    <li
+                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        <a href="#" class="">Works</a>
+                                    </li>
+                                    <li
+                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        <a href="#" class="">Career</a>
+                                    </li>
                                 </ul>
                             </div>
-                            <div class="menu-part">
-                                <p>
-                                    HELP
+                            <div class="pt-6 w-[50%] flex flex-col gap-4 sm:w-[25%] md:pt-0">
+                                <p class="text-[14px] font-[Satoshi-Medium] leading-[18px] tracking-[3px] md:text-16px">
+                                    COMPANY
                                 </p>
-                                <ul>
-                                    <li><a href="#" class="color-gray">Customer Support</a></li>
-                                    <li><a href="#" class="color-gray">Delivery Details</a></li>
-                                    <li><a href="#" class="color-gray">Terms and Conditions</a></li>
-                                    <li><a href="#" class="color-gray">Privacy Policy</a></li>
+                                <ul class="flex flex-col gap-3">
+                                    <li
+                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        <a href="#" class="">About</a>
+                                    </li>
+                                    <li
+                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        <a href="#" class="">Features</a>
+                                    </li>
+                                    <li
+                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        <a href="#" class="">Works</a>
+                                    </li>
+                                    <li
+                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        <a href="#" class="">Career</a>
+                                    </li>
                                 </ul>
                             </div>
-                            <div class="menu-part">
-                                <p>
-                                    FAQ
+                            <div class="pt-6 w-[50%] flex flex-col gap-4 sm:w-[25%] md:pt-0">
+                                <p class="text-[14px] font-[Satoshi-Medium] leading-[18px] tracking-[3px] md:text-16px">
+                                    COMPANY
                                 </p>
-                                <ul>
-                                    <li><a href="#" class="color-gray">Account</a></li>
-                                    <li><a href="#" class="color-gray">Manage Deliveries</a></li>
-                                    <li><a href="#" class="color-gray">Orders</a></li>
-                                    <li><a href="#" class="color-gray">Payments</a></li>
+                                <ul class="flex flex-col gap-3">
+                                    <li
+                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        <a href="#" class="">About</a>
+                                    </li>
+                                    <li
+                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        <a href="#" class="">Features</a>
+                                    </li>
+                                    <li
+                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        <a href="#" class="">Works</a>
+                                    </li>
+                                    <li
+                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        <a href="#" class="">Career</a>
+                                    </li>
                                 </ul>
                             </div>
-                            <div class="menu-part">
-                                <p>
-                                    RESOURES
+                            <div class="pt-6 w-[50%] flex flex-col gap-4 sm:w-[25%] md:pt-0">
+                                <p class="text-[14px] font-[Satoshi-Medium] leading-[18px] tracking-[3px] md:text-16px">
+                                    COMPANY
                                 </p>
-                                <ul>
-                                    <li><a href="#" class="color-gray">Free eBooks</a></li>
-                                    <li><a href="#" class="color-gray">Development Tutorial</a></li>
-                                    <li><a href="#" class="color-gray">How to - Blog</a></li>
-                                    <li><a href="#" class="color-gray">Youtube Playlist</a></li>
+                                <ul class="flex flex-col gap-3">
+                                    <li
+                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        <a href="#" class="">About</a>
+                                    </li>
+                                    <li
+                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        <a href="#" class="">Features</a>
+                                    </li>
+                                    <li
+                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        <a href="#" class="">Works</a>
+                                    </li>
+                                    <li
+                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        <a href="#" class="">Career</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
-
                     </div>
-                    <hr>
-                    <div class="bottom-part">
-                        <div class="author">
-                            <p>Shop.co © 2000-2023, All rights reserved</p>
+                    <div class="md:flex md:justify-between">
+                        <div class="flex justify-center pt-4">
+                            <p class="font-[Satoshi-Regular] text-[14px] text-[rgba(0,0,0,0.6)]">Shop.co © 2000-2023,
+                                All rights reserved</p>
                         </div>
-                        <div class="payment">
-                            <div class="pmt">
-                                <img src="images/Visa.png">
+                        <div class="pt-4 flex gap-[5px] justify-center">
+                            <div class="bg-white flex items-center justify-center rounded-sm min-w-[45px] p-[5px]">
+                                <img src="images/Visa.png" class="w-[80%] h-[80%] object-contain">
                             </div>
-                            <div class="pmt">
-                                <img src="images/Mastercard.png">
+                            <div class="bg-white flex items-center justify-center rounded-sm min-w-[45px] p-[5px]">
+                                <img src="images/Mastercard.png" class="w-[80%] h-[80%] object-contain">
                             </div>
-                            <div class="pmt">
-                                <img src="images/Paypal.png">
+                            <div class="bg-white flex items-center justify-center rounded-sm min-w-[45px] p-[5px]">
+                                <img src="images/Paypal.png" class="w-[80%] h-[80%] object-contain">
                             </div>
-                            <div class="pmt">
-                                <img src="images/applepay.png">
+                            <div class="bg-white flex items-center justify-center rounded-sm min-w-[45px] p-[5px]">
+                                <img src="images/applepay.png" class="w-[80%] h-[80%] object-contain">
                             </div>
-                            <div class="pmt">
-                                <img src="images/GPay.png">
+                            <div class="bg-white flex items-center justify-center rounded-sm min-w-[45px] p-[5px]">
+                                <img src="images/GPay.png" class="w-[80%] h-[80%] object-contain">
                             </div>
                         </div>
                     </div>
                 </div>
             </footer>
-
-
         </div>
     </div>
 </body>

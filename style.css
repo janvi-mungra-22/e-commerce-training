@@ -1,8 +1,10 @@
-
 @import "tailwindcss";
+
 @theme {
-  --color-white: white;
+    --color-mint-500: oklch(57.7% 0.245 27.325)
+
 }
+
 @font-face {
     font-family: Satoshi-Regular;
     src: url(fonts/Satoshi-Regular.otf);
@@ -57,6 +59,8 @@
     font-family: integralcf-bold;
     src: url(fonts/Demo_Fonts/Fontspring-DEMO-integralcf-bold.otf);
 }
+
+
 
 
 
@@ -138,12 +142,12 @@
     display: none;
 }
 
-nav {
+/* nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     min-width: 90%;
-}
+} */
 
 .menubar {
     display: none;
@@ -626,9 +630,9 @@ footer {
     width: 80%;
 }
 
-input:focus {
-    outline: none;
-}
+/* input:focus {
+        outline: none;
+    } */
 
 
 .footer-search-box {
@@ -2724,9 +2728,9 @@ span {
         display: block;
     }
 
-    input {
+    /* input {
         width: 100%;
-    }
+    } */
 
     .category {
         position: static;
