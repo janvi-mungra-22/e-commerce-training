@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+    <link href="./src/output.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
@@ -20,53 +21,53 @@
                     </p>
                     <span class="mdi mdi-close hidden sm:inline"></span>
                 </div>
-                <nav class="py-2 md:px-15 px-2 border-b border-[rgba(0,0,0,0.1)] w-full">
+                <nav class="py-2 md:px-15 px-2 border-b border-border-color w-full">
                     <div class="flex justify-between items-center w-full sm:relative">
-                    <input type="checkbox" id="check" class="peer hidden">
-                    <div class="flex items-center w-[50%] justify-start sm:w-[28%]">
-                        <label for="check">
-                            <span class="mdi mdi-menu text-[25.2px] text-black md:hidden"></span>
-                        </label>
-                        <h1 class="font-[integralcf-bold] text-[25.2px] pl-2.5 sm:text-[32px]">SHOP.CO</h1>
-                    </div>
-                    <div
-                        class="min-w-full hidden peer-checked:block top-20 absolute bg-white left-0 md:block md:min-w-[59%] md:static lg:min-w-[49%]">
-                        <ul class="w-full pl-5 md:flex md:justify-center md:gap-[25px] md:pl-0 md:items-center">
-                            <li class="w-full bg-white group relative pb-[15px] md:inline md:w-auto md:pb-0">
-                                <a href="">Shop</a>
-                                <span class="mdi mdi-chevron-down"></span>
-                                <div
-                                    class="hidden top-5 group-hover:block group-hover:top-0 group-hover:static md:top-2.5">
-                                    <ul class="w-[20%] md:block md:w-full md:bg-white md:pl-5 md:pr-5 md:absolute">
-                                        <li class="pl-5 pt-[15px] md:pt-5 md:w-20 md:bg-white md:pl-0"><a
-                                                href="prodect_detail.html">Men</a></li>
-                                        <li class="pl-5 pt-[15px] md:pt-5 md:w-20 md:bg-white md:pl-0"><a
-                                                href="">Women</a></li>
-                                        <li class="pl-5 pt-[15px] md:pt-5 md:w-20 md:bg-white md:pl-0"><a
-                                                href="">Children</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="pb-[15px] md:inline md:pb-0"><a href="category.html">On sale</a></li>
-                            <li class="pb-[15px] md:inline md:pb-0">
-                                <a href="">New Arrivals</a>
-                            </li>
-                            <li class="pb-[15px] md:inline md:pb-0"><a href="">Brands</a></li>
-                        </ul>
-                    </div>
+                        <input type="checkbox" id="check" class="peer hidden">
+                        <div class="flex items-center w-[50%] justify-start sm:w-[28%]">
+                            <label for="check">
+                                <span class="mdi mdi-menu text-[25.2px] text-black md:hidden"></span>
+                            </label>
+                            <h1 class="font-integralcf-bold text-[25.2px] pl-2.5 sm:text-thirteen-px">SHOP.CO</h1>
+                        </div>
+                        <div
+                            class="min-w-full hidden peer-checked:block top-20 absolute bg-white left-0 md:block md:min-w-[59%] md:static lg:min-w-[49%]">
+                            <ul class="w-full pl-5 md:flex md:justify-center md:gap-6.25 md:pl-0 md:items-center">
+                                <li class="w-full bg-white group relative pb-3.75 md:inline md:w-auto md:pb-0">
+                                    <a href="">Shop</a>
+                                    <span class="mdi mdi-chevron-down"></span>
+                                    <div
+                                        class="hidden top-5 group-hover:block group-hover:top-0 group-hover:static md:top-2.5">
+                                        <ul class="w-[20%] md:block md:w-full md:bg-white md:pl-5 md:pr-5 md:absolute">
+                                            <li class="pl-5 pt-3.75 md:pt-5 md:w-20 md:bg-white md:pl-0"><a
+                                                    href="prodect_detail.html">Men</a></li>
+                                            <li class="pl-5 pt-3.75 md:pt-5 md:w-20 md:bg-white md:pl-0"><a
+                                                    href="">Women</a></li>
+                                            <li class="pl-5 pt-3.75 md:pt-5 md:w-20 md:bg-white md:pl-0"><a
+                                                    href="">Children</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="pb-3.75 md:inline md:pb-0"><a href="category.html">On sale</a></li>
+                                <li class="pb-3.75 md:inline md:pb-0">
+                                    <a href="">New Arrivals</a>
+                                </li>
+                                <li class="pb-3.75 md:inline md:pb-0"><a href="">Brands</a></li>
+                            </ul>
+                        </div>
 
-                    <div class="w-[50%] sm:w-[40%]">
-                        <div class="flex justify-end items-center gap-x-2.5">
-                            <div class="hidden lg:block sm:bg-[#F0F0F0] p-2 rounded-[50px] lg:relative">
-                                <span class="mdi mdi-magnify lg:absolute lg:left-5"></span>
-                                <input type="text" placeholder="Search for products" class="lg:pl-[35px]">
+                        <div class="w-[50%] sm:w-[40%]">
+                            <div class="flex justify-end items-center gap-x-2.5">
+                                <div class="hidden lg:block sm:bg-[#F0F0F0] p-2 rounded-[50px] lg:relative">
+                                    <span class="mdi mdi-magnify lg:absolute lg:left-5"></span>
+                                    <input type="text" placeholder="Search for products" class="lg:pl-8.75 focus:outline-none">
+                                </div>
+                                <span class="mdi mdi-magnify text-[25.2px] lg:hidden"></span>
+                                <a href="cart.html"><span class="mdi mdi-cart-outline text-[25.2px]"></a></span>
+                                <a href=""><span class="mdi mdi-account-circle-outline text-[25.2px]"></a></span>
                             </div>
-                            <span class="mdi mdi-magnify text-[25.2px] lg:hidden"></span>
-                            <a href="cart.html"><span class="mdi mdi-cart-outline text-[25.2px]"></a></span>
-                            <a href=""><span class="mdi mdi-account-circle-outline text-[25.2px]"></a></span>
                         </div>
                     </div>
-                </div>
                 </nav>
             </header>
 
@@ -74,36 +75,36 @@
                 <div class="flex flex-col gap-5 sm:max-w-[60%] md:justify-center">
                     <div class="flex flex-col gap-5">
                         <p
-                            class="font-[integralcf-bold] leading-[34px] text-[36px] sm:text-[64ox] lg:text-[64px] lg:leading-16">
+                            class="font-integralcf-bold leading-8.5 text-[36px] sm:text-[64ox] lg:text-[64px] lg:leading-16">
                             FIND CLOTHES THAT MATCHES YOUR STYLE</p>
-                        <p class="font-[Satoshi-Regular] leading-5 text-[14px] text-[rgba(0,0,0,0.6)] md:text-[16px]">
+                        <p class="font-satoshi-reg leading-5 text-[14px] text-gray-line md:text-sixteen-px">
                             Browse through our diverse range of meticulously crafted garments, designed to bring out
                             your
                             individuality and cater to your sense of style.</p>
                         <button type="button"
-                            class="bg-black text-white p-4 rounded-[50px] text-[16px] font-[Satoshi-Medium] sm:w-[200px]">Shop
+                            class="bg-black text-white p-4 rounded-[50px] text-sixteen-px font-satoshi-medium sm:w-50">Shop
                             Now</button>
                     </div>
                     <div class="flex justify-center flex-wrap md:flex-nowrap md:justify-start">
                         <div class="w-[50%] text-center md:w-[33%] md:text-left sm:p-0.5">
-                            <h1 class="font-[Satoshi-Bold] text-[24px] xl:text-[40px]">200<span
+                            <h1 class="font-satoshi-bold text-[24px] xl:text-[40px]">200<span
                                     class="mdi mdi-plus"></span></h1>
-                            <p class="font-[Satoshi-Regular] text-[12px] text-[rgba(0,0,0,0.6)] md:text-[16px]">
+                            <p class="font-satoshi-reg text-[12px] text-gray-line md:text-sixteen-px">
                                 International Brands</p>
                         </div>
 
                         <div
-                            class="w-[50%] text-center border-l border-[rgba(0,0,0,0.1)] md:w-[33%] md:text-left sm:p-0.5 md:border-0">
-                            <h1 class="font-[Satoshi-Bold] text-[24px] xl:text-[40px]">2,000<span
+                            class="w-[50%] text-center border-l border-border-color md:w-[33%] md:text-left sm:p-0.5 md:border-0">
+                            <h1 class="font-satoshi-bold text-[24px] xl:text-[40px]">2,000<span
                                     class="mdi mdi-plus"></span></h1>
-                            <p class="font-[Satoshi-Regular text-[12px] text-[rgba(0,0,0,0.6)] md:text-[16px]">
+                            <p class="font-[Satoshi-Regular text-[12px] text-gray-line md:text-sixteen-px">
                                 High-Quality Products</p>
                         </div>
 
                         <div class="w-[50%] text-center pt-3 md:w-[33%] md:text-left sm:p-0.5">
-                            <h1 class="font-[Satoshi-Bold] text-[24px] xl:text-[40px]">30,000<span
+                            <h1 class="font-satoshi-bold text-[24px] xl:text-[40px]">30,000<span
                                     class="mdi mdi-plus"></span></h1>
-                            <p class="font-[Satoshi-Regular] text-[12px] text-[rgba(0,0,0,0.6)] md:text-[16px]">Happy
+                            <p class="font-satoshi-reg text-[12px] text-gray-line md:text-sixteen-px">Happy
                                 Customers</p>
                         </div>
                     </div>
@@ -129,103 +130,115 @@
 
             <!-- things section part 1-->
 
-            <div class="px-2 pt-[50px] md:px-15 sm:pt-[72px]">
-                <div class="border-b border-[rgba(0,0,0,0.1)]">
+            <div class="px-2 pt-12.5 md:px-15 sm:pt-18">
+                <div class="border-b border-border-color">
                     <p
-                        class="font-[integralcf-bold] text-[32px] text-black text-center md:text-[48px] pb-8 sm:pb-[55px]">
+                        class="font-integralcf-bold text-thirteen-px text-black text-center md:text-[48px] pb-8 sm:pb-13.75">
                         NEW
                         ARRIVALS</p>
                     <div
                         class="flex overflow-auto whitespace-nowrap gap-5 mb-6 sm:flex-wrap justify-between lg:gap-2.5 sm:mb-9">
-                        <div class="w-[198px] lg:w-[280px]">
-                            <div class="h-[200px] bg-[#F0EEED] flex items-center rounded-2xl w-full lg:h-[298px]">
+                        <div class="w-49.5 lg:w-70">
+                            <div class="h-50 bg-[#F0EEED] flex items-center rounded-2xl w-full lg:h-74.5">
                                 <img src="images/cloth1.png" class="min-w-full max-w-none">
                             </div>
                             <div class="">
-                                <p class="font-[Satoshi-Bold] text-[16px] lg:text-[20px]">T-shirt with Tape Details</p>
+                                <p class="font-satoshi-bold text-sixteen-px lg:text-[20px]">T-shirt with Tape Details</p>
                                 <div class="">
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px] text-[#FFC633]"></span>
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px] text-[#FFC633]"></span>
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px] text-[#FFC633]"></span>
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px] text-[#FFC633]"></span>
+                                    <!-- <span class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-[var(--color-rating-star)]"></span> -->
                                     <span
-                                        class="mdi mdi-star-half font-[Satoshi-Regular] text-[12px] lg:text-[14px] text-[#FFC633]"></span>
-                                    <span class="font-[Satoshi-Regular] text-[12px] lg:text-[14px]">4.5/<span class="text-[rgba(0,0,0,0.6)]">5</span></span>
+                                        class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span
+                                        class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span
+                                        class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span
+                                        class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span
+                                        class="mdi mdi-star-half font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span class="font-satoshi-reg text-[12px] lg:text-[14px]">4.5/<span
+                                            class="text-gray-line">5</span></span>
                                 </div>
                                 <div class="flex gap-2.5 items-center">
-                                    <p class="font-[Satoshi-Bold] text-[20px] lg:text-[24px]">$120</p>
+                                    <p class="font-satoshi-bold text-[20px] lg:text-[24px]">$120</p>
                                     <del
-                                        class="text-[rgba(0,0,0,0.4)] font-[Satoshi-Bold] text-[20px] lg:text-[24px]">$220</del>
+                                        class="text-[rgba(0,0,0,0.4)] font-satoshi-bold text-[20px] lg:text-[24px]">$220</del>
                                     <p
-                                        class="font-[Satoshi-Medium] text-[10px] lg:text-[12px] text-[#FF3333] px-3.5 py-1.5 bg-[rgba(255,51,51,0.1)] rounded-2xl">
+                                        class="font-satoshi-medium text-[10px] lg:text-[12px] text-[#FF3333] px-3.5 py-1.5 bg-[rgba(255,51,51,0.1)] rounded-2xl">
                                         -20%</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="w-[198px] lg:w-[280px]">
-                            <div class="h-[200px] bg-[#F0EEED] flex items-center rounded-2xl w-full lg:h-[298px] overflow-hidden">
+                        <div class="w-49.5 lg:w-70">
+                            <div
+                                class="h-50 bg-[#F0EEED] flex items-center rounded-2xl w-full lg:h-74.5 overflow-hidden">
                                 <img src="images/cloth2.png" class="min-w-full max-w-none">
                             </div>
                             <div class="">
-                                <p class="font-[Satoshi-Bold] text-[16px] lg:text-[20px]">Skinny Fit Jeans</p>
+                                <p class="font-satoshi-bold text-sixteen-px lg:text-[20px]">Skinny Fit Jeans</p>
                                 <div class="">
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px] text-[#FFC633]"></span>
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px] text-[#FFC633]"></span>
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px] text-[#FFC633]"></span>
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px] text-[#FFC633]"></span>
                                     <span
-                                        class="mdi mdi-star-half font-[Satoshi-Regular] text-[12px] lg:text-[14px] text-[#FFC633]"></span>
-                                    <span class="font-[Satoshi-Regular] text-[12px] lg:text-[14px]">3.5/<span class="text-[rgba(0,0,0,0.6)]">5</span></span>
+                                        class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span
+                                        class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span
+                                        class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span
+                                        class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span
+                                        class="mdi mdi-star-half font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span class="font-satoshi-reg text-[12px] lg:text-[14px]">3.5/<span
+                                            class="text-gray-line">5</span></span>
                                 </div>
                                 <div class="">
-                                    <h2 class="font-[Satoshi-Bold] text-[20px]">$120</h2>
+                                    <h2 class="font-satoshi-bold text-[20px]">$120</h2>
                                 </div>
                             </div>
                         </div>
-                        <div class="w-[198px] lg:w-[280px]">
-                            <div class="h-[200px] bg-[#F0EEED] flex items-center rounded-2xl w-full lg:h-[298px]">
+                        <div class="w-49.5 lg:w-70">
+                            <div class="h-50 bg-[#F0EEED] flex items-center rounded-2xl w-full lg:h-74.5">
                                 <img src="images/cloth3.png" class="min-w-full max-w-none">
                             </div>
                             <div class="">
-                                <p class="font-[Satoshi-Bold] text-[16px] lg:text-[20px]">T-shirt with Tape Details</p>
+                                <p class="font-satoshi-bold text-sixteen-px lg:text-[20px]">T-shirt with Tape Details</p>
                                 <div class="">
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
                                     <span
-                                        class="mdi mdi-star-half font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
-                                    <span class="font-[Satoshi-Regular] text-[12px] lg:text-[14px]">4.5/5</span>
+                                        class="mdi mdi-star-half font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span class="font-satoshi-reg text-[12px] lg:text-[14px]">4.5/5</span>
                                 </div>
                                 <div class="">
-                                    <h2 class="font-[Satoshi-Bold] text-[20px]">$120</h2>
+                                    <h2 class="font-satoshi-bold text-[20px]">$120</h2>
                                 </div>
                             </div>
                         </div>
-                        <div class="w-[198px] lg:w-[280px]">
-                            <div class="h-[200px] bg-[#F0EEED] flex items-center rounded-2xl w-full lg:h-[298px]">
+                        <div class="w-49.5 lg:w-70">
+                            <div class="h-50 bg-[#F0EEED] flex items-center rounded-2xl w-full lg:h-74.5">
                                 <img src="images/cloth4.png" class="min-w-full max-w-none">
                             </div>
                             <div class="">
-                                <p class="font-[Satoshi-Bold] text-[16px] lg:text-[20px]">T-shirt with Tape Details</p>
+                                <p class="font-satoshi-bold text-sixteen-px lg:text-[20px]">T-shirt with Tape Details</p>
                                 <div class="">
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
                                     <span
-                                        class="mdi mdi-star-half font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
-                                    <span class="font-[Satoshi-Regular] text-[12px] lg:text-[14px]">4.5/5</span>
+                                        class="mdi mdi-star-half font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span class="font-satoshi-reg text-[12px] lg:text-[14px]">4.5/5</span>
                                 </div>
                                 <div class="">
-                                    <h2 class="font-[Satoshi-Bold] text-[20px]">$120</h2>
+                                    <h2 class="font-satoshi-bold text-[20px]">$120</h2>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="flex justify-center">
                         <button type="button"
-                            class="w-full p-2.5 rounded-3xl border border-[rgba(0,0,0,0.1)] mb-10 sm:w-[50%] lg:w-[30%] sm:mb-16">View
+                            class="w-full p-2.5 rounded-3xl border border-border-color mb-10 sm:w-[50%] lg:w-[30%] sm:mb-16">View
                             All</button>
                     </div>
                 </div>
@@ -236,95 +249,95 @@
             <div class="px-2 pt-10 md:px-15 sm:pt-16">
                 <div>
                     <p
-                        class="font-[integralcf-bold] text-[32px] text-black text-center md:text-[48px] pb-8 sm:pb-[55px]">
+                        class="font-integralcf-bold text-thirteen-px text-black text-center md:text-[48px] pb-8 sm:pb-13.75">
                         NEW
                         ARRIVALS</p>
                     <div
                         class="flex overflow-auto whitespace-nowrap gap-5 mb-6 sm:flex-wrap justify-between lg:gap-2.5 sm:mb-9">
-                        <div class="w-[198px] lg:w-[280px]">
-                            <div class="h-[200px] bg-[#F0EEED] flex items-center rounded-2xl w-full lg:h-[298px]">
+                        <div class="w-49.5 lg:w-70">
+                            <div class="h-50 bg-[#F0EEED] flex items-center rounded-2xl w-full lg:h-74.5">
                                 <img src="images/t1.png" class="min-w-full max-w-none">
                             </div>
                             <div>
-                                <p class="font-[Satoshi-Bold] text-[16px] lg:text-[20px]">T-shirt with Tape Details</p>
+                                <p class="font-satoshi-bold text-sixteen-px lg:text-[20px]">T-shirt with Tape Details</p>
                                 <div>
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
                                     <span
-                                        class="mdi mdi-star-half font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
-                                    <span class="font-[Satoshi-Regular] text-[12px] lg:text-[14px]">4.5/5</span>
+                                        class="mdi mdi-star-half font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span class="font-satoshi-reg text-[12px] lg:text-[14px]">4.5/5</span>
                                 </div>
                                 <div>
-                                    <h2 class="font-[Satoshi-Bold] text-[20px]">$120</h2>
+                                    <h2 class="font-satoshi-bold text-[20px]">$120</h2>
                                 </div>
                             </div>
                         </div>
-                        <div class="w-[198px] lg:w-[280px]">
-                            <div class="h-[200px] bg-[#F0EEED] flex items-center rounded-2xl w-full lg:h-[298px]">
+                        <div class="w-49.5 lg:w-70">
+                            <div class="h-50 bg-[#F0EEED] flex items-center rounded-2xl w-full lg:h-74.5">
                                 <img src="images/t1.png" class="min-w-full max-w-none">
                             </div>
                             <div class="">
-                                <p class="font-[Satoshi-Bold] text-[16px] lg:text-[20px]">T-shirt with Tape Details</p>
+                                <p class="font-satoshi-bold text-sixteen-px lg:text-[20px]">T-shirt with Tape Details</p>
                                 <div class="">
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
                                     <span
-                                        class="mdi mdi-star-half font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
-                                    <span class="font-[Satoshi-Regular] text-[12px] lg:text-[14px]">4.5/5</span>
+                                        class="mdi mdi-star-half font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span class="font-satoshi-reg text-[12px] lg:text-[14px]">4.5/5</span>
                                 </div>
                                 <div class="">
-                                    <h2 class="font-[Satoshi-Bold] text-[20px]">$120</h2>
+                                    <h2 class="font-satoshi-bold text-[20px]">$120</h2>
                                 </div>
                             </div>
                         </div>
-                        <div class="w-[198px] lg:w-[280px]">
-                            <div class="h-[200px] bg-[#F0EEED] flex items-center rounded-2xl w-full lg:h-[298px]">
+                        <div class="w-49.5 lg:w-70">
+                            <div class="h-50 bg-[#F0EEED] flex items-center rounded-2xl w-full lg:h-74.5">
                                 <img src="images/t1.png" class="min-w-full max-w-none">
                             </div>
                             <div class="">
-                                <p class="font-[Satoshi-Bold] text-[16px] lg:text-[20px]">T-shirt with Tape Details</p>
+                                <p class="font-satoshi-bold text-sixteen-px lg:text-[20px]">T-shirt with Tape Details</p>
                                 <div class="">
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
                                     <span
-                                        class="mdi mdi-star-half font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
-                                    <span class="font-[Satoshi-Regular] text-[12px] lg:text-[14px]">4.5/5</span>
+                                        class="mdi mdi-star-half font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span class="font-satoshi-reg text-[12px] lg:text-[14px]">4.5/5</span>
                                 </div>
                                 <div class="">
-                                    <h2 class="font-[Satoshi-Bold] text-[20px]">$120</h2>
+                                    <h2 class="font-satoshi-bold text-[20px]">$120</h2>
                                 </div>
                             </div>
                         </div>
-                        <div class="w-[198px] lg:w-[280px]">
-                            <div class="h-[200px] bg-[#F0EEED] flex items-center rounded-2xl w-full lg:h-[298px]">
+                        <div class="w-49.5 lg:w-70">
+                            <div class="h-50 bg-[#F0EEED] flex items-center rounded-2xl w-full lg:h-74.5">
                                 <img src="images/t1.png" class="min-w-full max-w-none">
                             </div>
                             <div class="">
-                                <p class="font-[Satoshi-Bold] text-[16px] lg:text-[20px]">T-shirt with Tape Details</p>
+                                <p class="font-satoshi-bold text-sixteen-px lg:text-[20px]">T-shirt with Tape Details</p>
                                 <div class="">
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
-                                    <span class="mdi mdi-star font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
+                                    <span class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span class="mdi mdi-star font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
                                     <span
-                                        class="mdi mdi-star-half font-[Satoshi-Regular] text-[12px] lg:text-[14px]"></span>
-                                    <span class="font-[Satoshi-Regular] text-[12px] lg:text-[14px]">4.5/5</span>
+                                        class="mdi mdi-star-half font-satoshi-reg text-[12px] lg:text-[14px] text-rating-star"></span>
+                                    <span class="font-satoshi-reg text-[12px] lg:text-[14px]">4.5/5</span>
                                 </div>
                                 <div class="">
-                                    <h2 class="font-[Satoshi-Bold] text-[20px]">$120</h2>
+                                    <h2 class="font-satoshi-bold text-[20px]">$120</h2>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="flex justify-center">
                         <button type="button"
-                            class="w-full p-2.5 rounded-3xl border border-[rgba(0,0,0,0.1)] sm:w-[50%] lg:w-[30%]">View
+                            class="w-full p-2.5 rounded-3xl border border-border-color sm:w-[50%] lg:w-[30%]">View
                             All</button>
                     </div>
                 </div>
@@ -332,34 +345,24 @@
 
             <!-- dress style -->
 
-            <div class="sm:mt-20 mt-[50px] px-2 md:px-15">
-                <div class="bg-[#F0F0F0] rounded-2xl px-[15px] sm:px-10">
-                    <p class="font-[integralcf-bold] text-[32px] text-center pt-[30px] sm:pt-[50px]">BROWSE BY DRESS
+            <div class="sm:mt-20 mt-12.5 px-2 md:px-15">
+                <div class="bg-[#F0F0F0] rounded-2xl px-3.75 sm:px-10">
+                    <p class="font-integralcf-bold text-thirteen-px text-center pt-7.5 sm:pt-12.5">BROWSE BY DRESS
                         STYLE</p>
-                    <div class="flex flex-wrap py-5 gap-2.5 justify-between sm:py-[50px] sm:gap-5">
+                    <div class="flex flex-wrap py-5 gap-2.5 justify-between sm:py-12.5 sm:gap-5">
                         <div
-                            class="bg-[#FFFFFF] rounded-2xl h-[190px] relative overflow-hidden w-full sm:w-[40%] lg:h-[289px]">
-                            <div class="absolute top-2.5 left-[30px]">
-                                <p class="font-[Satoshi-Bold] text-[24px] lg:text-[36px]">Casual</p>
+                            class="bg-[#FFFFFF] rounded-2xl h-47.5 relative overflow-hidden w-full sm:w-[40%] lg:h-72.25">
+                            <div class="absolute top-2.5 left-7.5">
+                                <p class="font-satoshi-bold text-[24px] lg:text-[36px]">Casual</p>
                             </div>
                             <div class="flex justify-end">
                                 <img src="images/bg1.png" class="w-[70%]">
                             </div>
                         </div>
                         <div
-                            class="bg-[#FFFFFF] rounded-2xl h-[190px] relative overflow-hidden w-full sm:w-[30%] sm:grow lg:h-[289px]">
-                            <div class="absolute top-2.5 left-[30px]">
-                                <p class="font-[Satoshi-Bold] text-[24px] lg:text-[36px]">Casual</p>
-                            </div>
-                            <div class="flex justify-end">
-                                <img src="images/bg1.png" class="w-[70%]">
-                            </div>
-
-                        </div>
-                        <div
-                            class="bg-[#FFFFFF] rounded-2xl h-[190px] relative overflow-hidden w-full sm:max-w-[55%] lg:h-[289px]">
-                            <div class="absolute top-2.5 left-[30px]">
-                                <p class="font-[Satoshi-Bold] text-[24px] lg:text-[36px]">Casual</p>
+                            class="bg-[#FFFFFF] rounded-2xl h-47.5 relative overflow-hidden w-full sm:w-[30%] sm:grow lg:h-72.25">
+                            <div class="absolute top-2.5 left-7.5">
+                                <p class="font-satoshi-bold text-[24px] lg:text-[36px]">Casual</p>
                             </div>
                             <div class="flex justify-end">
                                 <img src="images/bg1.png" class="w-[70%]">
@@ -367,9 +370,19 @@
 
                         </div>
                         <div
-                            class="bg-[#FFFFFF] rounded-2xl h-[190px] relative overflow-hidden sm:w-[35%] w-full sm:grow lg:h-[289px]">
-                            <div class="absolute top-2.5 left-[30px]">
-                                <p class="font-[Satoshi-Bold] text-[24px] lg:text-[36px]">Casual</p>
+                            class="bg-[#FFFFFF] rounded-2xl h-47.5 relative overflow-hidden w-full sm:max-w-[55%] lg:h-72.25">
+                            <div class="absolute top-2.5 left-7.5">
+                                <p class="font-satoshi-bold text-[24px] lg:text-[36px]">Casual</p>
+                            </div>
+                            <div class="flex justify-end">
+                                <img src="images/bg1.png" class="w-[70%]">
+                            </div>
+
+                        </div>
+                        <div
+                            class="bg-[#FFFFFF] rounded-2xl h-47.5 relative overflow-hidden sm:w-[35%] w-full sm:grow lg:h-72.25">
+                            <div class="absolute top-2.5 left-7.5">
+                                <p class="font-satoshi-bold text-[24px] lg:text-[36px]">Casual</p>
                             </div>
                             <div class="flex justify-end">
                                 <img src="images/bg1.png" class="w-[70%]">
@@ -380,10 +393,10 @@
                 </div>
             </div>
 
-            <div class="px-2 md:px-15 pt-[50px] md:py-20 pb-[200px] md:pb-[200px]">
+            <div class="px-2 md:px-15 pt-12.5 md:py-20 pb-50 md:pb-50">
                 <div class="flex justify-between items-end">
                     <div class="w-[80%]">
-                        <p class="font-[integralcf-bold] text-[32px] text-black leading-9 lg:text-[48px]">OUR HAPPY
+                        <p class="font-integralcf-bold text-thirteen-px text-black leading-9 lg:text-[48px]">OUR HAPPY
                             CUSTOMERS</p>
                     </div>
                     <div class="flex gap-4">
@@ -393,18 +406,18 @@
                 </div>
                 <div class="flex pt-6 flex-col gap-4 sm:flex-row sm:flex-wrap lg:pt-10">
                     <div
-                        class="border rounded-2xl border-[rgba(0,0,0,0.1)] p-6 flex gap-3 flex-col sm:w-[48.5%] lg:w-[32%] lg:p-7 lg:gap-[15px]">
+                        class="border rounded-2xl border-border-color p-6 flex gap-3 flex-col sm:w-[48.5%] lg:w-[32%] lg:p-7 lg:gap-3.75">
                         <div class="flex gap-1.5">
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
                         </div>
                         <div class="flex flex-col gap-2 lg:gap-3">
                             <div class="flex gap-1">
                                 <div>
-                                    <p class="font-[Satoshi-Bold] text-[16px] lg:text-[20px] leading-[22px]">
+                                    <p class="font-satoshi-bold text-sixteen-px lg:text-[20px] leading-5.5">
                                         Samantha D.
                                     </p>
                                 </div>
@@ -413,7 +426,7 @@
                                 </div>
                             </div>
                             <p
-                                class="font-[Satoshi-Regular] text-[14px] text-[rgba(0,0,0,0.6)] leading-[20PX] lg:text-[16px] lg:leading-[22px]">
+                                class="font-satoshi-reg text-[14px] text-gray-line leading-[20PX] lg:text-sixteen-px lg:leading-5.5">
                                 "I'm
                                 blown
                                 away by the quality and style of the clothes I received from Shop.co. From casual
@@ -421,18 +434,18 @@
                         </div>
                     </div>
                     <div
-                        class="border rounded-2xl border-[rgba(0,0,0,0.1)] p-6 flex gap-3 flex-col sm:w-[48.5%] lg:w-[32%] lg:p-7 lg:gap-[15px]">
+                        class="border rounded-2xl border-border-color p-6 flex gap-3 flex-col sm:w-[48.5%] lg:w-[32%] lg:p-7 lg:gap-3.75">
                         <div class="flex gap-1.5">
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
                         </div>
                         <div class="flex flex-col gap-2 lg:gap-3">
                             <div class="flex gap-1">
                                 <div>
-                                    <p class="font-[Satoshi-Bold] text-[16px] lg:text-[20px] leading-[22px]">
+                                    <p class="font-satoshi-bold text-sixteen-px lg:text-[20px] leading-5.5">
                                         Samantha D.
                                     </p>
                                 </div>
@@ -441,7 +454,7 @@
                                 </div>
                             </div>
                             <p
-                                class="font-[Satoshi-Regular] text-[14px] text-[rgba(0,0,0,0.6)] leading-[20PX] lg:text-[16px] lg:leading-[22px]">
+                                class="font-satoshi-reg text-[14px] text-gray-line leading-[20PX] lg:text-sixteen-px lg:leading-5.5">
                                 "I'm
                                 blown
                                 away by the quality and style of the clothes I received from Shop.co. From casual
@@ -449,18 +462,18 @@
                         </div>
                     </div>
                     <div
-                        class="border rounded-2xl border-[rgba(0,0,0,0.1)] p-6 flex gap-3 flex-col sm:w-[48.5%] lg:w-[32%] lg:p-7 lg:gap-[15px]">
+                        class="border rounded-2xl border-border-color p-6 flex gap-3 flex-col sm:w-[48.5%] lg:w-[32%] lg:p-7 lg:gap-3.75">
                         <div class="flex gap-1.5">
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
                         </div>
                         <div class="flex flex-col gap-2 lg:gap-3">
                             <div class="flex gap-1">
                                 <div>
-                                    <p class="font-[Satoshi-Bold] text-[16px] lg:text-[20px] leading-[22px]">
+                                    <p class="font-satoshi-bold text-sixteen-px lg:text-[20px] leading-5.5">
                                         Samantha D.
                                     </p>
                                 </div>
@@ -469,7 +482,7 @@
                                 </div>
                             </div>
                             <p
-                                class="font-[Satoshi-Regular] text-[14px] text-[rgba(0,0,0,0.6)] leading-[20PX] lg:text-[16px] lg:leading-[22px]">
+                                class="font-satoshi-reg text-[14px] text-gray-line leading-[20PX] lg:text-sixteen-px lg:leading-5.5">
                                 "I'm
                                 blown
                                 away by the quality and style of the clothes I received from Shop.co. From casual
@@ -477,18 +490,18 @@
                         </div>
                     </div>
                     <div
-                        class="border rounded-2xl border-[rgba(0,0,0,0.1)] p-6 flex gap-3 flex-col sm:w-[48.5%] lg:w-[32%] lg:p-7 lg:gap-[15px]">
+                        class="border rounded-2xl border-border-color p-6 flex gap-3 flex-col sm:w-[48.5%] lg:w-[32%] lg:p-7 lg:gap-3.75">
                         <div class="flex gap-1.5">
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
                         </div>
                         <div class="flex flex-col gap-2 lg:gap-3">
                             <div class="flex gap-1">
                                 <div>
-                                    <p class="font-[Satoshi-Bold] text-[16px] lg:text-[20px] leading-[22px]">
+                                    <p class="font-satoshi-bold text-sixteen-px lg:text-[20px] leading-5.5">
                                         Samantha D.
                                     </p>
                                 </div>
@@ -497,7 +510,7 @@
                                 </div>
                             </div>
                             <p
-                                class="font-[Satoshi-Regular] text-[14px] text-[rgba(0,0,0,0.6)] leading-[20PX] lg:text-[16px] lg:leading-[22px]">
+                                class="font-satoshi-reg text-[14px] text-gray-line leading-[20PX] lg:text-sixteen-px lg:leading-5.5">
                                 "I'm
                                 blown
                                 away by the quality and style of the clothes I received from Shop.co. From casual
@@ -505,18 +518,18 @@
                         </div>
                     </div>
                     <div
-                        class="border rounded-2xl border-[rgba(0,0,0,0.1)] p-6 flex gap-3 flex-col sm:w-[48.5%] lg:w-[32%] lg:p-7 lg:gap-[15px]">
+                        class="border rounded-2xl border-border-color p-6 flex gap-3 flex-col sm:w-[48.5%] lg:w-[32%] lg:p-7 lg:gap-3.75">
                         <div class="flex gap-1.5">
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
                         </div>
                         <div class="flex flex-col gap-2 lg:gap-3">
                             <div class="flex gap-1">
                                 <div>
-                                    <p class="font-[Satoshi-Bold] text-[16px] lg:text-[20px] leading-[22px]">
+                                    <p class="font-satoshi-bold text-sixteen-px lg:text-[20px] leading-5.5">
                                         Samantha D.
                                     </p>
                                 </div>
@@ -525,7 +538,7 @@
                                 </div>
                             </div>
                             <p
-                                class="font-[Satoshi-Regular] text-[14px] text-[rgba(0,0,0,0.6)] leading-[20PX] lg:text-[16px] lg:leading-[22px]">
+                                class="font-satoshi-reg text-[14px] text-gray-line leading-[20PX] lg:text-sixteen-px lg:leading-5.5">
                                 "I'm
                                 blown
                                 away by the quality and style of the clothes I received from Shop.co. From casual
@@ -533,18 +546,18 @@
                         </div>
                     </div>
                     <div
-                        class="border rounded-2xl border-[rgba(0,0,0,0.1)] p-6 flex gap-3 flex-col sm:w-[48.5%] lg:w-[32%] lg:p-7 lg:gap-[15px]">
+                        class="border rounded-2xl border-border-color p-6 flex gap-3 flex-col sm:w-[48.5%] lg:w-[32%] lg:p-7 lg:gap-3.75">
                         <div class="flex gap-1.5">
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
                         </div>
                         <div class="flex flex-col gap-2 lg:gap-3">
                             <div class="flex gap-1">
                                 <div>
-                                    <p class="font-[Satoshi-Bold] text-[16px] lg:text-[20px] leading-[22px]">
+                                    <p class="font-satoshi-bold text-sixteen-px lg:text-[20px] leading-5.5">
                                         Samantha D.
                                     </p>
                                 </div>
@@ -553,7 +566,7 @@
                                 </div>
                             </div>
                             <p
-                                class="font-[Satoshi-Regular] text-[14px] text-[rgba(0,0,0,0.6)] leading-[20PX] lg:text-[16px] lg:leading-[22px]">
+                                class="font-satoshi-reg text-[14px] text-gray-line leading-[20PX] lg:text-sixteen-px lg:leading-5.5">
                                 "I'm
                                 blown
                                 away by the quality and style of the clothes I received from Shop.co. From casual
@@ -561,18 +574,18 @@
                         </div>
                     </div>
                     <div
-                        class="border rounded-2xl border-[rgba(0,0,0,0.1)] p-6 flex gap-3 flex-col sm:w-[48.5%] lg:w-[32%] lg:p-7 lg:gap-[15px]">
+                        class="border rounded-2xl border-border-color p-6 flex gap-3 flex-col sm:w-[48.5%] lg:w-[32%] lg:p-7 lg:gap-3.75">
                         <div class="flex gap-1.5">
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
-                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px]"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
+                            <span class="mdi mdi-star text-[19.19px] lg:text-[22.58px] text-rating-star"></span>
                         </div>
                         <div class="flex flex-col gap-2 lg:gap-3">
                             <div class="flex gap-1">
                                 <div>
-                                    <p class="font-[Satoshi-Bold] text-[16px] lg:text-[20px] leading-[22px]">
+                                    <p class="font-satoshi-bold text-sixteen-px lg:text-[20px] leading-5.5">
                                         Samantha D.
                                     </p>
                                 </div>
@@ -581,7 +594,7 @@
                                 </div>
                             </div>
                             <p
-                                class="font-[Satoshi-Regular] text-[14px] text-[rgba(0,0,0,0.6)] leading-[20PX] lg:text-[16px] lg:leading-[22px]">
+                                class="font-satoshi-reg text-[14px] text-gray-line leading-[20PX] lg:text-sixteen-px lg:leading-5.5">
                                 "I'm
                                 blown
                                 away by the quality and style of the clothes I received from Shop.co. From casual
@@ -592,11 +605,11 @@
 
             </div>
 
-           <footer class="flex flex-col items-center bg-[#F0F0F0] relative">
+            <footer class="flex flex-col items-center bg-[#F0F0F0] relative">
                 <div
-                    class="bg-black flex flex-col py-8 px-[25PX] rounded-3xl mx-2 md:mx-15 h-[300px] absolute top-[-150px] md:h-[200px] md:flex-row md:justify-between md:top-[-100px] justify-center items-center">
+                    class="bg-black flex flex-col py-8 px-[25PX] rounded-3xl mx-2 md:mx-15 h-75 absolute -top-37.5 md:h-50 md:flex-row md:justify-between md:-top-25 justify-center items-center">
                     <div class="md:max-w-[40%]">
-                        <h2 class="font-[integralcf-bold] text-[32px] leading-[35px] text-[#FFFFFF]">STAY UPTO DATE
+                        <h2 class="font-integralcf-bold text-thirteen-px leading-8.75 text-[#FFFFFF]">STAY UPTO DATE
                             ABOUT OUR LATEST OFFERS</h2>
                     </div>
                     <div class="pt-8 flex flex-col gap-3 md:max-w-[45%] w-full md:justify-center md:pt-0">
@@ -604,23 +617,23 @@
                             <span
                                 class="mdi mdi-email-outline text-[rgba(0,0,0,0.4)] text-[20px] leading-5 font-bold"></span>
                             <input type="text" placeholder="Enter your email address"
-                                class="focus:outline-none font-[Satoshi-Regular] text-[14px] grow placeholder:text-[rgba(0,0,0,0.4)]">
+                                class="focus:outline-none font-satoshi-reg text-[14px] grow placeholder:text-[rgba(0,0,0,0.4)]">
                         </div>
                         <div class="py-3 px-4 bg-white rounded-3xl">
                             <div class="flex justify-center">
-                                <span class="font-[Satoshi-Medium] text-[14px] leading-normal">Subscribe to
+                                <span class="font-satoshi-medium text-[14px] leading-normal">Subscribe to
                                     Newsletter</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="px-2 md:px-15 bg-[#F0F0F0] pb-10 pt-[170px] w-full">
-                    <div class="md:flex md:gap-7 md:border-b md:border-[rgba(0,0,0,0.1)] md:items-center md:pb-[30px]">
+                <div class="px-2 md:px-15 bg-[#F0F0F0] pb-10 pt-42.5 w-full">
+                    <div class="md:flex md:gap-7 md:border-b md:border-border-color md:items-center md:pb-7.5">
                         <div class="flex flex-col gap-5 md:w-[30%] md:justify-start md:gap-4">
                             <div class="flex flex-col gap-3.5">
-                                <h1 class="font-[integralcf-bold] text-[28.85px] md:text-[33.45]">SHOP.CO</h1>
+                                <h1 class="font-integralcf-bold text-[28.85px] md:text-[33.45]">SHOP.CO</h1>
                                 <p
-                                    class="font-[Satoshi-Regular] leading-5 text-[14px] text-[rgba(0,0,0,0.6)] md:leading-[22px]">
+                                    class="font-satoshi-reg leading-5 text-[14px] text-gray-line md:leading-5.5">
                                     We have
                                     clothes that suits your style and which you’re proud to wear. From women to
                                     men.
@@ -646,95 +659,95 @@
                             </div>
                         </div>
                         <div
-                            class="flex flex-wrap pb-10 border-b border-[rgba(0,0,0,0.1)] md:justify-between md:w-[70%] md:border-0 md:pb-0">
+                            class="flex flex-wrap pb-10 border-b border-border-color md:justify-between md:w-[70%] md:border-0 md:pb-0">
                             <div class="pt-6 w-[50%] flex flex-col gap-4 sm:w-[25%] md:pt-0">
-                                <p class="text-[14px] font-[Satoshi-Medium] leading-[18px] tracking-[3px] md:text-16px">
+                                <p class="text-[14px] font-satoshi-medium leading-4.5 tracking-[3px] md:text-16px">
                                     COMPANY
                                 </p>
                                 <ul class="flex flex-col gap-3">
                                     <li
-                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
                                         <a href="#" class="">About</a>
                                     </li>
                                     <li
-                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
                                         <a href="#" class="">Features</a>
                                     </li>
                                     <li
-                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
                                         <a href="#" class="">Works</a>
                                     </li>
                                     <li
-                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
                                         <a href="#" class="">Career</a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="pt-6 w-[50%] flex flex-col gap-4 sm:w-[25%] md:pt-0">
-                                <p class="text-[14px] font-[Satoshi-Medium] leading-[18px] tracking-[3px] md:text-16px">
+                                <p class="text-[14px] font-satoshi-medium leading-4.5 tracking-[3px] md:text-16px">
                                     COMPANY
                                 </p>
                                 <ul class="flex flex-col gap-3">
                                     <li
-                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
                                         <a href="#" class="">About</a>
                                     </li>
                                     <li
-                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
                                         <a href="#" class="">Features</a>
                                     </li>
                                     <li
-                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
                                         <a href="#" class="">Works</a>
                                     </li>
                                     <li
-                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
                                         <a href="#" class="">Career</a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="pt-6 w-[50%] flex flex-col gap-4 sm:w-[25%] md:pt-0">
-                                <p class="text-[14px] font-[Satoshi-Medium] leading-[18px] tracking-[3px] md:text-16px">
+                                <p class="text-[14px] font-satoshi-medium leading-4.5 tracking-[3px] md:text-16px">
                                     COMPANY
                                 </p>
                                 <ul class="flex flex-col gap-3">
                                     <li
-                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
                                         <a href="#" class="">About</a>
                                     </li>
                                     <li
-                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
                                         <a href="#" class="">Features</a>
                                     </li>
                                     <li
-                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
                                         <a href="#" class="">Works</a>
                                     </li>
                                     <li
-                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
                                         <a href="#" class="">Career</a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="pt-6 w-[50%] flex flex-col gap-4 sm:w-[25%] md:pt-0">
-                                <p class="text-[14px] font-[Satoshi-Medium] leading-[18px] tracking-[3px] md:text-16px">
+                                <p class="text-[14px] font-satoshi-medium leading-4.5 tracking-[3px] md:text-16px">
                                     COMPANY
                                 </p>
                                 <ul class="flex flex-col gap-3">
                                     <li
-                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
                                         <a href="#" class="">About</a>
                                     </li>
                                     <li
-                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
                                         <a href="#" class="">Features</a>
                                     </li>
                                     <li
-                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
                                         <a href="#" class="">Works</a>
                                     </li>
                                     <li
-                                        class="text-[16px] font-[Satoshi-Regular] tracking-[0px] text-[rgba(0,0,0,0.6)] md:leading-[19px]">
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
                                         <a href="#" class="">Career</a>
                                     </li>
                                 </ul>
@@ -743,23 +756,23 @@
                     </div>
                     <div class="md:flex md:justify-between">
                         <div class="flex justify-center pt-4">
-                            <p class="font-[Satoshi-Regular] text-[14px] text-[rgba(0,0,0,0.6)]">Shop.co © 2000-2023,
+                            <p class="font-satoshi-reg text-[14px] text-gray-line">Shop.co © 2000-2023,
                                 All rights reserved</p>
                         </div>
-                        <div class="pt-4 flex gap-[5px] justify-center">
-                            <div class="bg-white flex items-center justify-center rounded-sm min-w-[45px] p-[5px]">
+                        <div class="pt-4 flex gap-1.25 justify-center">
+                            <div class="bg-white flex items-center justify-center rounded-sm min-w-11.25 p-1.25">
                                 <img src="images/Visa.png" class="w-[80%] h-[80%] object-contain">
                             </div>
-                            <div class="bg-white flex items-center justify-center rounded-sm min-w-[45px] p-[5px]">
+                            <div class="bg-white flex items-center justify-center rounded-sm min-w-11.25 p-1.25">
                                 <img src="images/Mastercard.png" class="w-[80%] h-[80%] object-contain">
                             </div>
-                            <div class="bg-white flex items-center justify-center rounded-sm min-w-[45px] p-[5px]">
+                            <div class="bg-white flex items-center justify-center rounded-sm min-w-11.25 p-1.25">
                                 <img src="images/Paypal.png" class="w-[80%] h-[80%] object-contain">
                             </div>
-                            <div class="bg-white flex items-center justify-center rounded-sm min-w-[45px] p-[5px]">
+                            <div class="bg-white flex items-center justify-center rounded-sm min-w-11.25 p-1.25">
                                 <img src="images/applepay.png" class="w-[80%] h-[80%] object-contain">
                             </div>
-                            <div class="bg-white flex items-center justify-center rounded-sm min-w-[45px] p-[5px]">
+                            <div class="bg-white flex items-center justify-center rounded-sm min-w-11.25 p-1.25">
                                 <img src="images/GPay.png" class="w-[80%] h-[80%] object-contain">
                             </div>
                         </div>

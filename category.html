@@ -6,435 +6,517 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+    <link href="./src/output.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
-     <div class="xl:flex justify-center">
+    <div class="xl:flex justify-center">
         <div class="max-w-7xl flex flex-col justify-center">
-            <header>
-                <div class="header-top h-padding">
-                    <p class="head-line">
-                        Sign up and 20% off your first order. <a href="">Sign Up Now</a>
+            <header class="flex justify-between flex-wrap sticky bg-white z-99 -top-px">
+                <div class="bg-black text-white min-w-full flex justify-between py-2 md:px-15 px-2">
+                    <p class="w-full inline-block text-center text-xs sm:w-[90%] sm:text-sm">
+                        Sign up and 20% off your first order. <a href="" class="underline">Sign Up Now</a>
                     </p>
-                    <span class="mdi mdi-close"></span>
+                    <span class="mdi mdi-close hidden sm:inline"></span>
                 </div>
-                <nav class="navmenu h-padding">
-                    <input type="checkbox" id="check">
-                    <div class="logo">
+                <nav class="py-2 md:px-15 px-2 border-b border-border-color w-full">
+                    <div class="flex justify-between items-center w-full sm:relative">
+                        <input type="checkbox" id="check" class="peer hidden">
+                        <div class="flex items-center w-[50%] justify-start sm:w-[28%]">
+                            <label for="check">
+                                <span class="mdi mdi-menu text-[25.2px] text-black md:hidden"></span>
+                            </label>
+                            <h1 class="font-integralcf-bold text-[25.2px] pl-2.5 sm:text-thirteen-px">SHOP.CO</h1>
+                        </div>
+                        <div
+                            class="min-w-full hidden peer-checked:block top-20 absolute bg-white left-0 md:block md:min-w-[59%] md:static lg:min-w-[49%]">
+                            <ul class="w-full pl-5 md:flex md:justify-center md:gap-6.25 md:pl-0 md:items-center">
+                                <li class="w-full bg-white group relative pb-3.75 md:inline md:w-auto md:pb-0">
+                                    <a href="">Shop</a>
+                                    <span class="mdi mdi-chevron-down"></span>
+                                    <div
+                                        class="hidden top-5 group-hover:block group-hover:top-0 group-hover:static md:top-2.5">
+                                        <ul class="w-[20%] md:block md:w-full md:bg-white md:pl-5 md:pr-5 md:absolute">
+                                            <li class="pl-5 pt-3.75 md:pt-5 md:w-20 md:bg-white md:pl-0"><a
+                                                    href="prodect_detail.html">Men</a></li>
+                                            <li class="pl-5 pt-3.75 md:pt-5 md:w-20 md:bg-white md:pl-0"><a
+                                                    href="">Women</a></li>
+                                            <li class="pl-5 pt-3.75 md:pt-5 md:w-20 md:bg-white md:pl-0"><a
+                                                    href="">Children</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="pb-3.75 md:inline md:pb-0"><a href="category.html">On sale</a></li>
+                                <li class="pb-3.75 md:inline md:pb-0">
+                                    <a href="">New Arrivals</a>
+                                </li>
+                                <li class="pb-3.75 md:inline md:pb-0"><a href="">Brands</a></li>
+                            </ul>
+                        </div>
 
-                        <label for="check" class="checkbtn">
-                            <span class="mdi mdi-menu menubar"></span>
-                        </label>
-                        <h1>SHOP.CO</h1>
-                    </div>
-                    <div class="menu">
-                        <ul>
-                            <li class="cat-list">
-                                <a href="">Shop</a>
-                                <span class="mdi mdi-chevron-down"></span>
-                                <div class="category">
-                                    <ul>
-                                        <li><a href="prodect_detail.html">Men</a></li>
-                                        <li><a href="">Women</a></li>
-                                        <li><a href="">Children</a></li>
-                                    </ul>
+                        <div class="w-[50%] sm:w-[40%]">
+                            <div class="flex justify-end items-center gap-x-2.5">
+                                <div class="hidden lg:block sm:bg-[#F0F0F0] p-2 rounded-[50px] lg:relative">
+                                    <span class="mdi mdi-magnify lg:absolute lg:left-5"></span>
+                                    <input type="text" placeholder="Search for products"
+                                        class="lg:pl-8.75 focus:outline-none">
                                 </div>
-                            </li>
-                            <li><a href="category.html">On sale</a></li>
-                            <li>
-                                <a href="">New Arrivals</a>
-                            </li>
-                            <li><a href="">Brands</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="menu-list-2">
-                        <div class="icon-menu">
-
-                            <div class="search-box">
-                                <span class="mdi mdi-magnify"></span>
-                                <input type="text" placeholder="Search for products">
+                                <span class="mdi mdi-magnify text-[25.2px] lg:hidden"></span>
+                                <a href="cart.html"><span class="mdi mdi-cart-outline text-[25.2px]"></a></span>
+                                <a href=""><span class="mdi mdi-account-circle-outline text-[25.2px]"></a></span>
                             </div>
-                            <span class="mdi mdi-magnify serchicon nav-icons"></span>
-                            <a href="cart.html"><span class="mdi mdi-cart-outline nav-icons"></a></span>
-                            <a href=""><span class="mdi mdi-account-circle-outline nav-icons"></a></span>
                         </div>
                     </div>
                 </nav>
             </header>
 
-            <hr class="hr-line">
-
-            <div class="navigation h-padding">
-                <p>Home</p>
-                <span class="mdi mdi-chevron-right"></span>
-                <p class="active">Causal</p>
+            <div class="md:px-15 px-2 flex pt-5">
+                <p class="font-satoshi-reg text-[14px] text-gray-line md:text-sixteen-px">Home</p>
+                <span class="mdi mdi-chevron-right text-gray-line"></span>
+                <p class="font-satoshi-reg text-[14px] md:text-sixteen-px">Causal</p>
             </div>
 
-            <div class="casual-section h-padding">
-                <div class="filter">
-                    <div class="filter-area">
-                        <div class="filter-row-first">
-                            <h2>Filters</h2>
-                            <span class="mdi mdi-filter-variant-plus"></span>
+            <div class="md:px-15 px-2 lg:flex lg:gap-4 lg:justify-between lg:pt-6 lg:mb-37.5 xl:mb-0">
+                <div class="hidden lg:block lg:max-w-[30%]">
+                    <div class="lg:border border-border-color px-6 py-5 rounded-2xl flex flex-col gap-6">
+                        <div class="flex justify-between">
+                            <h2 class="font-satoshi-bold text-[20px]">Filters</h2>
+                            <span class="mdi mdi-filter-variant-plus text-[rgba(0,0,0,0.4)] text-[20px]"></span>
                         </div>
-                        <hr class="cat-hr-line">
-                        <div class="filter-row-second">
-                            <div class="filter-row-second-item">
-                                <p class="color-gray">T-shirts</p>
-                                <span class="mdi mdi-chevron-right"></span>
+                        <div class="border-t border-border-color"></div>
+                        <div class="flex flex-col gap-5">
+                            <div class="flex justify-between">
+                                <p class="font-satoshi-reg text-sixteen-px text-gray-line">T-shirts</p>
+                                <span class="mdi mdi-chevron-right text-sixteen-px text-gray-line"></span>
                             </div>
-                            <div class="filter-row-second-item">
-                                <p class="color-gray">Shorts</p>
-                                <span class="mdi mdi-chevron-right"></span>
+                            <div class="flex justify-between">
+                                <p class="font-satoshi-reg text-sixteen-px text-gray-line">Shorts</p>
+                                <span class="mdi mdi-chevron-right text-sixteen-px text-gray-line"></span>
                             </div>
-                            <div class="filter-row-second-item">
-                                <p class="color-gray">Shirts</p>
-                                <span class="mdi mdi-chevron-right"></span>
+                            <div class="flex justify-between">
+                                <p class="font-satoshi-reg text-sixteen-px text-gray-line">Shirts</p>
+                                <span class="mdi mdi-chevron-right text-sixteen-px text-gray-line"></span>
                             </div>
-                            <div class="filter-row-second-item">
-                                <p class="color-gray">Hoodie</p>
-                                <span class="mdi mdi-chevron-right"></span>
+                            <div class="flex justify-between">
+                                <p class="font-satoshi-reg text-sixteen-px text-gray-line">Hoodie</p>
+                                <span class="mdi mdi-chevron-right text-sixteen-px text-gray-line"></span>
                             </div>
-                            <div class="filter-row-second-item">
-                                <p class="color-gray">Jeans</p>
-                                <span class="mdi mdi-chevron-right"></span>
-                            </div>
-                        </div>
-                        <hr class="cat-hr-line">
-                        <div class="filter-row-third">
-                            <div class="filter-row-second-item">
-                                <h2>Price</h2>
-                                <span class="mdi mdi-chevron-up"></span>
-                            </div>
-                            <input type="range" name="Price" min="100" max="1000" class="slider" id="myrange" />
-                            <p>Value: <span id="demo"></span></p>
-                        </div>
-                        <hr class="cat-hr-line">
-                        <div class="filter-row-forth">
-                            <div class="filter-row-second-item">
-                                <h2>Colors</h2>
-                                <span class="mdi mdi-chevron-up"></span>
-                            </div>
-                            <div class="all-circle">
-                                <div class="circle green">
-                                    <span class="mdi mdi-check check-mark"></span>
-                                </div>
-                                <div class="circle red">
-                                    <span class="mdi mdi-check check-mark"></span>
-                                </div>
-                                <div class="circle yellow">
-                                    <span class="mdi mdi-check check-mark"></span>
-                                </div>
-                                <div class="circle orange">
-                                    <span class="mdi mdi-check check-mark"></span>
-                                </div>
-                                <div class="circle nav-blue">
-                                    <span class="mdi mdi-check check-mark"></span>
-                                </div>
-                                <div class="circle blue">
-                                    <span class="mdi mdi-check"></span>
-                                </div>
-                                <div class="circle violte">
-                                    <span class="mdi mdi-check check-mark"></span>
-                                </div>
-                                <div class="circle pink">
-                                    <span class="mdi mdi-check check-mark"></span>
-                                </div>
-                                <div class="circle white">
-                                    <span class="mdi mdi-check check-mark"></span>
-                                </div>
-                                <div class="circle black">
-                                    <span class="mdi mdi-check check-mark"></span>
-                                </div>
+                            <div class="flex justify-between">
+                                <p class="font-satoshi-reg text-sixteen-px text-gray-line">Jeans</p>
+                                <span class="mdi mdi-chevron-right text-sixteen-px text-gray-line"></span>
                             </div>
                         </div>
-                        <hr class="cat-hr-line">
-                        <div class="filter-row-fifth">
-                            <div class="filter-row-second-item">
-                                <h2>Size</h2>
-                                <span class="mdi mdi-chevron-up"></span>
-                            </div>
-                            <div class="len-btn-filter">
-                                <button type="button" class="button choose-size-filter">XX-Small</button>
-                                <button type="button" class="button choose-size-filter">X-Small</button>
-                                <button type="button" class="button choose-size-filter">Small</button>
-                                <button type="button" class="button choose-size-filter">Medium</button>
-                                <button type="button" class="button choose-size-filter">Large</button>
-                                <button type="button" class="button choose-size-filter">X-Large</button>
-                                <button type="button" class="button choose-size-filter">XX-Large</button>
-                                <button type="button" class="button choose-size-filter">3X-Large</button>
-                                <button type="button" class="button choose-size-filter">4X-Large</button>
-                            </div>
-                        </div>
-                        <hr class="cat-hr-line">
-                        <div class="filter-row-sixth">
-                            <div class="filter-row-second-item">
-                                <h2>Dress Style</h2>
+                        <div class="border-t border-border-color"></div>
+                        <div class="flex flex-col gap-5">
+                            <div class="flex justify-between">
+                                <h2 class="font-satoshi-bold text-[20px]">Price</h2>
                                 <span class="mdi mdi-chevron-up"></span>
                             </div>
                             <div>
-                                <div class="filter-row-second-item">
-                                    <p>T-shirts</p>
-                                    <span class="mdi mdi-chevron-right"></span>
+                                <input type="range" name="Price" min="100" max="1000" class="slider" id="myrange" />
+                                <p>Value: <span id="demo"></span></p>
+                            </div>
+                        </div>
+                        <div class="border-t border-border-color"></div>
+                        <div class="flex flex-col gap-5">
+                            <div class="flex justify-between">
+                                <h2 class="font-satoshi-bold text-[20px]">Colors</h2>
+                                <span class="mdi mdi-chevron-up"></span>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <div class="bg-[#00C12B] border border-[rgba(0,0,0,0.2)] rounded-full w-9.25 h-9.25">
                                 </div>
-                                <div class="filter-row-second-item">
-                                    <p>Shorts</p>
-                                    <span class="mdi mdi-chevron-right"></span>
+                                <div class="bg-[#F50606] border border-[rgba(0,0,0,0.2)] rounded-full w-9.25 h-9.25">
                                 </div>
-                                <div class="filter-row-second-item">
-                                    <p>Shirts</p>
-                                    <span class="mdi mdi-chevron-right"></span>
+                                <div class="bg-[#F5DD06] border border-[rgba(0,0,0,0.2)] rounded-full w-9.25 h-9.25">
+
                                 </div>
-                                <div class="filter-row-second-item">
-                                    <p>Hoodie</p>
-                                    <span class="mdi mdi-chevron-right"></span>
+                                <div class="bg-[#F57906] border border-[rgba(0,0,0,0.2)] rounded-full w-9.25 h-9.25">
+
                                 </div>
-                                <div class="filter-row-second-item">
-                                    <p>Jeans</p>
-                                    <span class="mdi mdi-chevron-right"></span>
+                                <div class="bg-[#06CAF5] border border-[rgba(0,0,0,0.2)] rounded-full w-9.25 h-9.25">
+
+                                </div>
+                                <div
+                                    class="bg-[#063AF5] border border-[rgba(0,0,0,0.2)] rounded-full w-9.25 h-9.25 flex justify-center items-center">
+                                    <span class="mdi mdi-check text-sixteen-px text-white"></span>
+                                </div>
+                                <div class="bg-[#7D06F5] border border-[rgba(0,0,0,0.2)] rounded-full w-9.25 h-9.25">
+
+                                </div>
+                                <div class="bg-[#F506A4] border border-[rgba(0,0,0,0.2)] rounded-full w-9.25 h-9.25">
+
+                                </div>
+                                <div class="bg-[#FFFFFF] border border-[rgba(0,0,0,0.2)] rounded-full w-9.25 h-9.25">
+
+                                </div>
+                                <div class="bg-[#000000] border border-[rgba(0,0,0,0.2)] rounded-full w-9.25 h-9.25">
+
                                 </div>
                             </div>
                         </div>
-                        <button type="button" class="button apply-filter">Apply Filter</button>
+                        <div class="border-t border-border-color"></div>
+                        <div class="flex flex-col gap-5">
+                            <div class="flex justify-between">
+                                <h2 class="font-satoshi-bold text-[20px]">Size</h2>
+                                <span class="mdi mdi-chevron-up"></span>
+                            </div>
+                            <div class="flex gap-2 flex-wrap">
+                                <button type="button"
+                                    class="py-2.5 px-5 bg-[#F0F0F0] text-gray-line rounded-full">XX-Small</button>
+                                <button type="button"
+                                    class="py-2.5 px-5 bg-[#F0F0F0] text-gray-line rounded-full">X-Small</button>
+                                <button type="button"
+                                    class="py-2.5 px-5 bg-[#F0F0F0] text-gray-line rounded-full">Small</button>
+                                <button type="button"
+                                    class="py-2.5 px-5 bg-[#F0F0F0] text-gray-line rounded-full">Medium</button>
+                                <button type="button"
+                                    class="py-2.5 px-5 bg-black text-white rounded-full">Large</button>
+                                <button type="button"
+                                    class="py-2.5 px-5 bg-[#F0F0F0] text-gray-line rounded-full">X-Large</button>
+                                <button type="button"
+                                    class="py-2.5 px-5 bg-[#F0F0F0] text-gray-line rounded-full">XX-Large</button>
+                                <button type="button"
+                                    class="py-2.5 px-5 bg-[#F0F0F0] text-gray-line rounded-full">3X-Large</button>
+                                <button type="button"
+                                    class="py-2.5 px-5 bg-[#F0F0F0] text-gray-line rounded-full">4X-Large</button>
+                            </div>
+                        </div>
+                        <div class="border-t border-border-color"></div>
+                        <div class="flex flex-col gap-5">
+                            <div class="flex justify-between">
+                                <h2 class="font-satoshi-bold text-[20px]">Dress Style</h2>
+                                <span class="mdi mdi-chevron-up"></span>
+                            </div>
+                            <div class="flex flex-col gap-5">
+                                <div class="flex justify-between">
+                                    <p class="font-satoshi-reg text-sixteen-px text-gray-line">T-shirts</p>
+                                    <span class="mdi mdi-chevron-right text-sixteen-px text-gray-line"></span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <p class="font-satoshi-reg text-sixteen-px text-gray-line">Shorts</p>
+                                    <span class="mdi mdi-chevron-right text-sixteen-px text-gray-line"></span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <p class="font-satoshi-reg text-sixteen-px text-gray-line">Shirts</p>
+                                    <span class="mdi mdi-chevron-right text-sixteen-px text-gray-line"></span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <p class="font-satoshi-reg text-sixteen-px text-gray-line">Hoodie</p>
+                                    <span class="mdi mdi-chevron-right text-sixteen-px text-gray-line"></span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <p class="font-satoshi-reg text-sixteen-px text-gray-line">Jeans</p>
+                                    <span class="mdi mdi-chevron-right text-sixteen-px text-gray-line"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="bg-black text-white w-full py-3.75 rounded-full">Apply
+                            Filter</button>
                     </div>
                 </div>
 
-                <div class="filter-product-section">
-                    <div class="filter-product-headline">
-                        <h1>Casual</h1>
-                        <div class="filter-product-headline-part2">
-                            <p class="color-gray">Showing 1-10 of 100 Products</p>
-                            <div class="sorting">
-                                <p class="color-gray">Sort by:
+                <div class="lg:max-w-[70%]">
+                    <div class="flex gap-2 md:justify-between md:items-end">
+                        <h1 class="font-satoshi-bold text-[24px] sm:text-thirteen-px">Casual</h1>
+                        <div class="flex justify-between items-center flex-1 md:justify-end md:gap-3">
+                            <p class="font-satoshi-reg text-[14px] text-gray-line sm:text-sixteen-px">Showing 1-10 of 100
+                                Products</p>
+                            <div class="hidden md:flex md:gap-1">
+                                <p class="md:text-sixteen-px text-gray-line">Sort by:
                                 </p>
-                                <p class="select-filter">Most Popular<span
-                                        class="mdi mdi-chevron-down color-black"></span>
+                                <p class="md:text-sixteen-px">Most Popular<span class="mdi mdi-chevron-down"></span>
                                 </p>
                             </div>
-                            <div class="mobile-filter">
-                                <span class="mdi mdi-filter-variant-plus color-black"></span>
+                            <div class="bg-[#F0F0F0] px-2.5 py-1.5 rounded-4xl md:hidden">
+                                <span class="mdi mdi-filter-variant-plus text-xl"></span>
                             </div>
                         </div>
                     </div>
-                    <div class="things">
-                        <div class="cloth">
-                            <div class="cloth-img">
+                    <div class="flex flex-wrap justify-between pt-7.25 border-b border-border-color gap-y-9 pb-6 md:pb-5">
+                        <div class="max-w-[49%] pb-6 sm:max-w-[32%] flex flex-col sm:gap-4">
+                            <div class="bg-[#F0EEED] rounded-3xl max-w-full flex items-center min-h-[75%]">
                                 <img src="images/t1.png">
                             </div>
-                            <div class="cloth-desc">
-                                <p>T-shirt with Tape Details</p>
-                                <div class="rating">
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star-half"></span>
-                                    <span>4.5/5</span>
+                            <div class="flex flex-col sm:gap-2">
+                                <p class="font-satoshi-bold text-sixteen-px sm:text-[20px]">Gradient Graphic T...</p>
+                                <div class="flex items-center flex-wrap">
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star-half text-rating-star"></span>
+                                    <p class="font-satoshi-reg text-[12px] sm:text-[14px]">4.5/<span
+                                            class="text-gray-line">5</span></p>
                                 </div>
-                                <div class="thing-price">
-                                    <h2 class="real-price">$120</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cloth">
-                            <div class="cloth-img">
-                                <img src="images/bg1.png">
-                            </div>
-                            <div class="cloth-desc">
-                                <p>Skinny Fit Jeans</p>
-                                <div class="rating">
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star-half"></span>
-                                    <span>3.5/5</span>
-                                </div>
-                                <div class="thing-price">
-                                    <h2 class="real-price">$240</h2>
-                                    <h2 class="real-price delete-price"><del>$260</del></h2>
-                                    <div class="discount real-price">
-                                        <p class="real-price">-20%</p>
-                                    </div>
+                                <div class="flex gap-2 flex-wrap md:gap-3">
+                                    <h2 class="font-satoshi-bold text-[20px] sm:text-[24px]">$120</h2>
+                                    <h2 class="font-satoshi-bold text-[20px] text-[rgba(0,0,0,0.4)] sm:text-[24px]">
+                                        <del>$120</del>
+                                    </h2>
+                                    <p
+                                        class="bg-[rgba(255,51,51,0.1)] py-2 px-3.5 font-satoshi-medium text-[10px] text-[#FF3333] rounded-3xl sm:text-[12px]">
+                                        20%</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="cloth">
-                            <div class="cloth-img">
-                                <img src="images/cloth3.png">
-                            </div>
-                            <div class="cloth-desc">
-                                <p>Checkered Shirt</p>
-                                <div class="rating">
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star-half"></span>
-                                    <span>4.5/5</span>
-                                </div>
-                                <div class="thing-price">
-                                    <h2 class="real-price">$180</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cloth">
-                            <div class="cloth-img">
-                                <img src="images/shirt2.png">
-                            </div>
-                            <div class="cloth-desc">
-                                <p>Checkered Shirt</p>
-                                <div class="rating">
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star-half"></span>
-                                    <span>4.5/5</span>
-                                </div>
-                                <div class="thing-price">
-                                    <h2 class="real-price">$180</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cloth">
-                            <div class="cloth-img">
-                                <img src="images/cloth4.png">
-                            </div>
-                            <div class="cloth-desc">
-                                <p>Sleeve Striped T-shirt</p>
-                                <div class="rating">
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star-half"></span>
-                                    <span>4.5/5</span>
-                                </div>
-                                <div class="thing-price">
-                                    <h2 class="real-price">$130</h2>
-                                    <h2 class="real-price delete-price"><del>$160</del></h2>
-                                    <div class="discount real-price">
-                                        <p class="real-price">-30%</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cloth">
-                            <div class="cloth-img">
+                        <div class="max-w-[49%] pb-6 sm:max-w-[32%] flex flex-col sm:gap-4">
+                            <div class="bg-[#F0EEED] rounded-3xl max-w-full flex items-center min-h-[75%]">
                                 <img src="images/t1.png">
                             </div>
-                            <div class="cloth-desc">
-                                <p>T-shirt with Tape Details</p>
-                                <div class="rating">
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star-half"></span>
-                                    <span>4.5/5</span>
+                            <div class="flex flex-col sm:gap-2">
+                                <p class="font-satoshi-bold text-sixteen-px sm:text-[20px]">Gradient Graphic T...</p>
+                                <div class="flex items-center flex-wrap">
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star-half text-rating-star"></span>
+                                    <p class="font-satoshi-reg text-[12px] sm:text-[14px]">4.5/<span
+                                            class="text-gray-line">5</span></p>
                                 </div>
-                                <div class="thing-price">
-                                    <h2 class="real-price">$120</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="cloth">
-                            <div class="cloth-img">
-                                <img src="images/bg1.png">
-                            </div>
-                            <div class="cloth-desc">
-                                <p>Skinny Fit Jeans</p>
-                                <div class="rating">
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star-half"></span>
-                                    <span>3.5/5</span>
-                                </div>
-                                <div class="thing-price">
-                                    <h2 class="real-price">$240</h2>
-                                    <h2 class="real-price delete-price"><del>$260</del></h2>
-                                    <div class="discount real-price">
-                                        <p class="real-price">-20%</p>
-                                    </div>
+                                <div class="flex gap-2 flex-wrap md:gap-3">
+                                    <h2 class="font-satoshi-bold text-[20px] sm:text-[24px]">$120</h2>
+                                    <h2 class="font-satoshi-bold text-[20px] text-[rgba(0,0,0,0.4)] sm:text-[24px]">
+                                        <del>$120</del>
+                                    </h2>
+                                    <p
+                                        class="bg-[rgba(255,51,51,0.1)] py-2 px-3.5 font-satoshi-medium text-[10px] text-[#FF3333] rounded-3xl sm:text-[12px]">
+                                        20%</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="cloth">
-                            <div class="cloth-img">
-                                <img src="images/cloth3.png">
+                        <div class="max-w-[49%] pb-6 sm:max-w-[32%] flex flex-col sm:gap-4">
+                            <div class="bg-[#F0EEED] rounded-3xl max-w-full flex items-center min-h-[75%]">
+                                <img src="images/t1.png">
                             </div>
-                            <div class="cloth-desc">
-                                <p>Checkered Shirt</p>
-                                <div class="rating">
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star-half"></span>
-                                    <span>4.5/5</span>
+                            <div class="flex flex-col sm:gap-2">
+                                <p class="font-satoshi-bold text-sixteen-px sm:text-[20px]">Gradient Graphic T...</p>
+                                <div class="flex items-center flex-wrap">
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star-half text-rating-star"></span>
+                                    <p class="font-satoshi-reg text-[12px] sm:text-[14px]">4.5/<span
+                                            class="text-gray-line">5</span></p>
                                 </div>
-                                <div class="thing-price">
-                                    <h2 class="real-price">$180</h2>
+                                <div class="flex gap-2 flex-wrap md:gap-3">
+                                    <h2 class="font-satoshi-bold text-[20px] sm:text-[24px]">$120</h2>
+                                    <h2 class="font-satoshi-bold text-[20px] text-[rgba(0,0,0,0.4)] sm:text-[24px]">
+                                        <del>$120</del>
+                                    </h2>
+                                    <p
+                                        class="bg-[rgba(255,51,51,0.1)] py-2 px-3.5 font-satoshi-medium text-[10px] text-[#FF3333] rounded-3xl sm:text-[12px]">
+                                        20%</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="cloth">
-                            <div class="cloth-img">
-                                <img src="images/shirt2.png">
+                        <div class="max-w-[49%] pb-6 sm:max-w-[32%] flex flex-col sm:gap-4">
+                            <div class="bg-[#F0EEED] rounded-3xl max-w-full flex items-center min-h-[75%]">
+                                <img src="images/t1.png">
                             </div>
-                            <div class="cloth-desc">
-                                <p>Checkered Shirt</p>
-                                <div class="rating">
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star"></span>
-                                    <span class="mdi mdi-star-half"></span>
-                                    <span>4.5/5</span>
+                            <div class="flex flex-col sm:gap-2">
+                                <p class="font-satoshi-bold text-sixteen-px sm:text-[20px]">Gradient Graphic T...</p>
+                                <div class="flex items-center flex-wrap">
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star-half text-rating-star"></span>
+                                    <p class="font-satoshi-reg text-[12px] sm:text-[14px]">4.5/<span
+                                            class="text-gray-line">5</span></p>
                                 </div>
-                                <div class="thing-price">
-                                    <h2 class="real-price">$180</h2>
+                                <div class="flex gap-2 flex-wrap md:gap-3">
+                                    <h2 class="font-satoshi-bold text-[20px] sm:text-[24px]">$120</h2>
+                                    <h2 class="font-satoshi-bold text-[20px] text-[rgba(0,0,0,0.4)] sm:text-[24px]">
+                                        <del>$120</del>
+                                    </h2>
+                                    <p
+                                        class="bg-[rgba(255,51,51,0.1)] py-2 px-3.5 font-satoshi-medium text-[10px] text-[#FF3333] rounded-3xl sm:text-[12px]">
+                                        20%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="max-w-[49%] pb-6 sm:max-w-[32%] flex flex-col sm:gap-4">
+                            <div class="bg-[#F0EEED] rounded-3xl max-w-full flex items-center min-h-[75%]">
+                                <img src="images/t1.png">
+                            </div>
+                            <div class="flex flex-col sm:gap-2">
+                                <p class="font-satoshi-bold text-sixteen-px sm:text-[20px]">Gradient Graphic T...</p>
+                                <div class="flex items-center flex-wrap">
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star-half text-rating-star"></span>
+                                    <p class="font-satoshi-reg text-[12px] sm:text-[14px]">4.5/<span
+                                            class="text-gray-line">5</span></p>
+                                </div>
+                                <div class="flex gap-2 flex-wrap md:gap-3">
+                                    <h2 class="font-satoshi-bold text-[20px] sm:text-[24px]">$120</h2>
+                                    <h2 class="font-satoshi-bold text-[20px] text-[rgba(0,0,0,0.4)] sm:text-[24px]">
+                                        <del>$120</del>
+                                    </h2>
+                                    <p
+                                        class="bg-[rgba(255,51,51,0.1)] py-2 px-3.5 font-satoshi-medium text-[10px] text-[#FF3333] rounded-3xl sm:text-[12px]">
+                                        20%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="max-w-[49%] pb-6 sm:max-w-[32%] flex flex-col sm:gap-4">
+                            <div class="bg-[#F0EEED] rounded-3xl max-w-full flex items-center min-h-[75%]">
+                                <img src="images/t1.png">
+                            </div>
+                            <div class="flex flex-col sm:gap-2">
+                                <p class="font-satoshi-bold text-sixteen-px sm:text-[20px]">Gradient Graphic T...</p>
+                                <div class="flex items-center flex-wrap">
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star-half text-rating-star"></span>
+                                    <p class="font-satoshi-reg text-[12px] sm:text-[14px]">4.5/<span
+                                            class="text-gray-line">5</span></p>
+                                </div>
+                                <div class="flex gap-2 flex-wrap md:gap-3">
+                                    <h2 class="font-satoshi-bold text-[20px] sm:text-[24px]">$120</h2>
+                                    <h2 class="font-satoshi-bold text-[20px] text-[rgba(0,0,0,0.4)] sm:text-[24px]">
+                                        <del>$120</del>
+                                    </h2>
+                                    <p
+                                        class="bg-[rgba(255,51,51,0.1)] py-2 px-3.5 font-satoshi-medium text-[10px] text-[#FF3333] rounded-3xl sm:text-[12px]">
+                                        20%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="max-w-[49%] pb-6 sm:max-w-[32%] flex flex-col sm:gap-4">
+                            <div class="bg-[#F0EEED] rounded-3xl max-w-full flex items-center min-h-[75%]">
+                                <img src="images/t1.png">
+                            </div>
+                            <div class="flex flex-col sm:gap-2">
+                                <p class="font-satoshi-bold text-sixteen-px sm:text-[20px]">Gradient Graphic T...</p>
+                                <div class="flex items-center flex-wrap">
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star-half text-rating-star"></span>
+                                    <p class="font-satoshi-reg text-[12px] sm:text-[14px]">4.5/<span
+                                            class="text-gray-line">5</span></p>
+                                </div>
+                                <div class="flex gap-2 flex-wrap md:gap-3">
+                                    <h2 class="font-satoshi-bold text-[20px] sm:text-[24px]">$120</h2>
+                                    <h2 class="font-satoshi-bold text-[20px] text-[rgba(0,0,0,0.4)] sm:text-[24px]">
+                                        <del>$120</del>
+                                    </h2>
+                                    <p
+                                        class="bg-[rgba(255,51,51,0.1)] py-2 px-3.5 font-satoshi-medium text-[10px] text-[#FF3333] rounded-3xl sm:text-[12px]">
+                                        20%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="max-w-[49%] pb-6 sm:max-w-[32%] flex flex-col sm:gap-4">
+                            <div class="bg-[#F0EEED] rounded-3xl max-w-full flex items-center min-h-[75%]">
+                                <img src="images/t1.png">
+                            </div>
+                            <div class="flex flex-col sm:gap-2">
+                                <p class="font-satoshi-bold text-sixteen-px sm:text-[20px]">Gradient Graphic T...</p>
+                                <div class="flex items-center flex-wrap">
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star-half text-rating-star"></span>
+                                    <p class="font-satoshi-reg text-[12px] sm:text-[14px]">4.5/<span
+                                            class="text-gray-line">5</span></p>
+                                </div>
+                                <div class="flex gap-2 flex-wrap md:gap-3">
+                                    <h2 class="font-satoshi-bold text-[20px] sm:text-[24px]">$120</h2>
+                                    <h2 class="font-satoshi-bold text-[20px] text-[rgba(0,0,0,0.4)] sm:text-[24px]">
+                                        <del>$120</del>
+                                    </h2>
+                                    <p
+                                        class="bg-[rgba(255,51,51,0.1)] py-2 px-3.5 font-satoshi-medium text-[10px] text-[#FF3333] rounded-3xl sm:text-[12px]">
+                                        20%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="max-w-[49%] pb-6 sm:max-w-[32%] flex flex-col sm:gap-4">
+                            <div class="bg-[#F0EEED] rounded-3xl max-w-full flex items-center min-h-[75%]">
+                                <img src="images/t1.png">
+                            </div>
+                            <div class="flex flex-col sm:gap-2">
+                                <p class="font-satoshi-bold text-sixteen-px sm:text-[20px]">Gradient Graphic T...</p>
+                                <div class="flex items-center flex-wrap">
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star text-rating-star"></span>
+                                    <span class="mdi mdi-star-half text-rating-star"></span>
+                                    <p class="font-satoshi-reg text-[12px] sm:text-[14px]">4.5/<span
+                                            class="text-gray-line">5</span></p>
+                                </div>
+                                <div class="flex gap-2 flex-wrap md:gap-3">
+                                    <h2 class="font-satoshi-bold text-[20px] sm:text-[24px]">$120</h2>
+                                    <h2 class="font-satoshi-bold text-[20px] text-[rgba(0,0,0,0.4)] sm:text-[24px]">
+                                        <del>$120</del>
+                                    </h2>
+                                    <p
+                                        class="bg-[rgba(255,51,51,0.1)] py-2 px-3.5 font-satoshi-medium text-[10px] text-[#FF3333] rounded-3xl sm:text-[12px]">
+                                        20%</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="pagiation">
-                        <div class="page-part">
-                            <div class="f-and-n prev">
+                    <div class="flex mb-50 justify-between pt-5">
+                        <div class="">
+                            <div
+                                class="flex border border-border-color rounded-xl px-2.5 gap-2 py-1.25 items-center sm:px-5 sm:py-2.5">
                                 <span class="mdi mdi-arrow-left"></span>
-                                <p>Previous</p>
+                                <p class="font-satoshi-medium text-[12px] leading-5 sm:text-[14px]">Previous</p>
                             </div>
                         </div>
-                        <div class="page-part">
-                            <div class="page-count page-active">
-                                <p>1</p>
+                        <div class="flex justify-center items-center max-w-[20%]">
+                            <div
+                                class="bg-[rgba(0,0,0,0.06)] px-3 py-1.25 flex justify-center items-center rounded-s sm:px-2.5">
+                                <p class="font-satoshi-medium text-[12px] leading-5 sm:text-[14px]">1</p>
                             </div>
-                            <div class="page-count">
-                                <p>2</p>
+                            <div class="px-3 py-1.25">
+                                <p
+                                    class="text-[rgba(0,0,0,0.5)] font-satoshi-medium text-[12px] leading-5 sm:text-[14px] sm:px-2.5 py-1.5">
+                                    2</p>
                             </div>
-                            <div class="page-count sort-hide">
-                                <p>3</p>
+                            <div class="px-3 py-1.25 hidden sm:block">
+                                <p
+                                    class="text-[rgba(0,0,0,0.5)] font-satoshi-medium text-[12px] leading-5 sm:text-[14px] sm:px-2.5 py-1.5">
+                                    3</p>
                             </div>
-                            <div class="page-count">
-                                <p>...</p>
+                            <div class="px-3 py-1.25">
+                                <p class="text-[rgba(0,0,0,0.5)]">...</p>
                             </div>
-                            <div class="page-count sort-hide">
-                                <p>8</p>
+                            <div class="px-3 py-1.25 hidden sm:block">
+                                <p
+                                    class="text-[rgba(0,0,0,0.5)] font-satoshi-medium text-[12px] leading-5 sm:text-[14px] sm:px-2.5 py-1.5">
+                                    8</p>
                             </div>
-                            <div class="page-count">
-                                <p>9</p>
+                            <div class="px-3 py-1.25">
+                                <p
+                                    class="text-[rgba(0,0,0,0.5)] font-satoshi-medium text-[12px] leading-5 sm:text-[14px] sm:px-2.5 py-1.5">
+                                    9</p>
                             </div>
-                            <div class="page-count">
-                                <p>10</p>
+                            <div class="px-3 py-1.25">
+                                <p
+                                    class="text-[rgba(0,0,0,0.5)] font-satoshi-medium text-[12px] leading-5 sm:text-[14px] sm:px-2.5 py-1.5">
+                                    10</p>
                             </div>
                         </div>
-                        <div class="page-part">
-                            <div class="f-and-n next">
-                                <p>Next</p>
+                        <div class="">
+                            <div
+                                class="flex border border-border-color rounded-xl px-2.5 gap-2 py-1.25 items-center sm:px-5">
+                                <p class="font-satoshi-medium text-[12px] leading-5 sm:text-[14px]">Next</p>
                                 <span class="mdi mdi-arrow-right"></span>
                             </div>
                         </div>
@@ -442,120 +524,180 @@
                 </div>
             </div>
 
-             <footer>
-                <div class="footer-top">
-                    <div class="head-line-footer">
-                        <h2>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+            <footer class="flex flex-col items-center bg-[#F0F0F0] relative">
+                <div
+                    class="bg-black flex flex-col py-8 px-[25PX] rounded-3xl mx-2 md:mx-15 h-75 absolute -top-37.5 md:h-50 md:flex-row md:justify-between md:-top-25 justify-center items-center">
+                    <div class="md:max-w-[40%]">
+                        <h2 class="font-integralcf-bold text-thirteen-px leading-8.75 text-[#FFFFFF]">STAY UPTO DATE
+                            ABOUT OUR LATEST OFFERS</h2>
                     </div>
-                    <div class="footer-compo">
-                        <div class="footer-box email-box">
-                            <span class="mdi mdi-email-outline"></span>
-                            <input type="text" placeholder="Enter your email address">
+                    <div class="pt-8 flex flex-col gap-3 md:max-w-[45%] w-full md:justify-center md:pt-0">
+                        <div class="bg-white rounded-3xl py-3 px-4 flex gap-3">
+                            <span
+                                class="mdi mdi-email-outline text-[rgba(0,0,0,0.4)] text-[20px] leading-5 font-bold"></span>
+                            <input type="text" placeholder="Enter your email address"
+                                class="focus:outline-none font-satoshi-reg text-[14px] grow placeholder:text-[rgba(0,0,0,0.4)]">
                         </div>
-                        <div class="footer-box">
-                            <!-- <button type="button" class="button subscribe-btn">Subscribe to Newsletter</button> -->
-                            <div class="subscribe-site">
-                                <span>Subscribe to Newsletter</span>
+                        <div class="py-3 px-4 bg-white rounded-3xl">
+                            <div class="flex justify-center">
+                                <span class="font-satoshi-medium text-[14px] leading-normal">Subscribe to
+                                    Newsletter</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="main-footer h-padding">
-                    <div class="footer-menu">
-                        <div class="footer-logo">
-                            <h2>SHOP.CO</h2>
-                            <p>We have clothes that suits your style and which you’re proud to wear. From women to
-                                men.
-                            </p>
-                            <div class="social-icons">
-                                <div class="twd">
+                <div class="px-2 md:px-15 bg-[#F0F0F0] pb-10 pt-42.5 w-full">
+                    <div class="md:flex md:gap-7 md:border-b md:border-border-color md:items-center md:pb-7.5">
+                        <div class="flex flex-col gap-5 md:w-[30%] md:justify-start md:gap-4">
+                            <div class="flex flex-col gap-3.5">
+                                <h1 class="font-integralcf-bold text-[28.85px] md:text-[33.45]">SHOP.CO</h1>
+                                <p
+                                    class="font-satoshi-reg leading-5 text-[14px] text-gray-line md:leading-5.5">
+                                    We have
+                                    clothes that suits your style and which you’re proud to wear. From women to
+                                    men.
+                                </p>
+                            </div>
+                            <div class="flex gap-3">
+                                <div
+                                    class="border rounded-full w-7 bg-white border-[rgba(0,0,0,0.2)] flex justify-center p-0.5">
                                     <span class="mdi mdi-twitter color-black"></span>
                                 </div>
-                                <div class="twd">
+                                <div
+                                    class="border rounded-full w-7 bg-white border-[rgba(0,0,0,0.2)] flex justify-center p-0.5">
                                     <span class="mdi mdi-facebook color-black"></span>
                                 </div>
-                                <div class="twd">
+                                <div
+                                    class="border rounded-full w-7 bg-white border-[rgba(0,0,0,0.2)] flex justify-center p-0.5">
                                     <span class="mdi mdi-instagram color-black"></span>
                                 </div>
-                                <div class="twd">
+                                <div
+                                    class="border rounded-full w-7 bg-white border-[rgba(0,0,0,0.2)] flex justify-center p-0.5">
                                     <span class="mdi mdi-github color-black"></span>
                                 </div>
                             </div>
                         </div>
-                        <div class="all-part-menu">
-                            <div class="menu-part">
-                                <p>
+                        <div
+                            class="flex flex-wrap pb-10 border-b border-border-color md:justify-between md:w-[70%] md:border-0 md:pb-0">
+                            <div class="pt-6 w-[50%] flex flex-col gap-4 sm:w-[25%] md:pt-0">
+                                <p class="text-[14px] font-satoshi-medium leading-4.5 tracking-[3px] md:text-16px">
                                     COMPANY
                                 </p>
-                                <ul>
-                                    <li><a href="#" class="color-gray">About</a></li>
-                                    <li><a href="#" class="color-gray">Features</a></li>
-                                    <li><a href="#" class="color-gray">Works</a></li>
-                                    <li><a href="#" class="color-gray">Career</a></li>
+                                <ul class="flex flex-col gap-3">
+                                    <li
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
+                                        <a href="#" class="">About</a>
+                                    </li>
+                                    <li
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
+                                        <a href="#" class="">Features</a>
+                                    </li>
+                                    <li
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
+                                        <a href="#" class="">Works</a>
+                                    </li>
+                                    <li
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
+                                        <a href="#" class="">Career</a>
+                                    </li>
                                 </ul>
                             </div>
-                            <div class="menu-part">
-                                <p>
-                                    HELP
+                            <div class="pt-6 w-[50%] flex flex-col gap-4 sm:w-[25%] md:pt-0">
+                                <p class="text-[14px] font-satoshi-medium leading-4.5 tracking-[3px] md:text-16px">
+                                    COMPANY
                                 </p>
-                                <ul>
-                                    <li><a href="#" class="color-gray">Customer Support</a></li>
-                                    <li><a href="#" class="color-gray">Delivery Details</a></li>
-                                    <li><a href="#" class="color-gray">Terms and Conditions</a></li>
-                                    <li><a href="#" class="color-gray">Privacy Policy</a></li>
+                                <ul class="flex flex-col gap-3">
+                                    <li
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
+                                        <a href="#" class="">About</a>
+                                    </li>
+                                    <li
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
+                                        <a href="#" class="">Features</a>
+                                    </li>
+                                    <li
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
+                                        <a href="#" class="">Works</a>
+                                    </li>
+                                    <li
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
+                                        <a href="#" class="">Career</a>
+                                    </li>
                                 </ul>
                             </div>
-                            <div class="menu-part">
-                                <p>
-                                    FAQ
+                            <div class="pt-6 w-[50%] flex flex-col gap-4 sm:w-[25%] md:pt-0">
+                                <p class="text-[14px] font-satoshi-medium leading-4.5 tracking-[3px] md:text-16px">
+                                    COMPANY
                                 </p>
-                                <ul>
-                                    <li><a href="#" class="color-gray">Account</a></li>
-                                    <li><a href="#" class="color-gray">Manage Deliveries</a></li>
-                                    <li><a href="#" class="color-gray">Orders</a></li>
-                                    <li><a href="#" class="color-gray">Payments</a></li>
+                                <ul class="flex flex-col gap-3">
+                                    <li
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
+                                        <a href="#" class="">About</a>
+                                    </li>
+                                    <li
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
+                                        <a href="#" class="">Features</a>
+                                    </li>
+                                    <li
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
+                                        <a href="#" class="">Works</a>
+                                    </li>
+                                    <li
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
+                                        <a href="#" class="">Career</a>
+                                    </li>
                                 </ul>
                             </div>
-                            <div class="menu-part">
-                                <p>
-                                    RESOURES
+                            <div class="pt-6 w-[50%] flex flex-col gap-4 sm:w-[25%] md:pt-0">
+                                <p class="text-[14px] font-satoshi-medium leading-4.5 tracking-[3px] md:text-16px">
+                                    COMPANY
                                 </p>
-                                <ul>
-                                    <li><a href="#" class="color-gray">Free eBooks</a></li>
-                                    <li><a href="#" class="color-gray">Development Tutorial</a></li>
-                                    <li><a href="#" class="color-gray">How to - Blog</a></li>
-                                    <li><a href="#" class="color-gray">Youtube Playlist</a></li>
+                                <ul class="flex flex-col gap-3">
+                                    <li
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
+                                        <a href="#" class="">About</a>
+                                    </li>
+                                    <li
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
+                                        <a href="#" class="">Features</a>
+                                    </li>
+                                    <li
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
+                                        <a href="#" class="">Works</a>
+                                    </li>
+                                    <li
+                                        class="text-sixteen-px font-satoshi-reg tracking-normal text-gray-line md:leading-4.75">
+                                        <a href="#" class="">Career</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
-
                     </div>
-                    <hr>
-                    <div class="bottom-part">
-                        <div class="author">
-                            <p>Shop.co © 2000-2023, All rights reserved</p>
+                    <div class="md:flex md:justify-between">
+                        <div class="flex justify-center pt-4">
+                            <p class="font-satoshi-reg text-[14px] text-gray-line">Shop.co © 2000-2023,
+                                All rights reserved</p>
                         </div>
-                        <div class="payment">
-                            <div class="pmt">
-                                <img src="images/Visa.png">
+                        <div class="pt-4 flex gap-1.25 justify-center">
+                            <div class="bg-white flex items-center justify-center rounded-sm min-w-11.25 p-1.25">
+                                <img src="images/Visa.png" class="w-[80%] h-[80%] object-contain">
                             </div>
-                            <div class="pmt">
-                                <img src="images/Mastercard.png">
+                            <div class="bg-white flex items-center justify-center rounded-sm min-w-11.25 p-1.25">
+                                <img src="images/Mastercard.png" class="w-[80%] h-[80%] object-contain">
                             </div>
-                            <div class="pmt">
-                                <img src="images/Paypal.png">
+                            <div class="bg-white flex items-center justify-center rounded-sm min-w-11.25 p-1.25">
+                                <img src="images/Paypal.png" class="w-[80%] h-[80%] object-contain">
                             </div>
-                            <div class="pmt">
-                                <img src="images/applepay.png">
+                            <div class="bg-white flex items-center justify-center rounded-sm min-w-11.25 p-1.25">
+                                <img src="images/applepay.png" class="w-[80%] h-[80%] object-contain">
                             </div>
-                            <div class="pmt">
-                                <img src="images/GPay.png">
+                            <div class="bg-white flex items-center justify-center rounded-sm min-w-11.25 p-1.25">
+                                <img src="images/GPay.png" class="w-[80%] h-[80%] object-contain">
                             </div>
                         </div>
                     </div>
                 </div>
             </footer>
-
         </div>
     </div>
 
